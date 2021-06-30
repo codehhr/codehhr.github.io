@@ -445,6 +445,13 @@
 
   
   <url>
+    <loc>https://codehhr.cn/tags/css%E5%B8%83%E5%B1%80/</loc>
+    <lastmod>2021-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://codehhr.cn/tags/hexo/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
@@ -466,7 +473,7 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/tags/css%E5%B8%83%E5%B1%80/</loc>
+    <loc>https://codehhr.cn/tags/flex/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -481,13 +488,6 @@
   
   <url>
     <loc>https://codehhr.cn/tags/github/</loc>
-    <lastmod>2021-06-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://codehhr.cn/tags/maven/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -529,7 +529,7 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/tags/flex/</loc>
+    <loc>https://codehhr.cn/tags/maven/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1056,13 +1056,6 @@
 
   
   <url>
-    <loc>https://codehhr.cn/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-06-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://codehhr.cn/categories/css/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
@@ -1070,7 +1063,7 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/categories/%E5%8D%9A%E5%AE%A2/hexo/</loc>
+    <loc>https://codehhr.cn/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1084,13 +1077,6 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/categories/java/</loc>
-    <lastmod>2021-06-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://codehhr.cn/categories/Html-Css-%E7%BB%86%E8%8A%82/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
@@ -1098,7 +1084,14 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/categories/%E5%8D%9A%E5%AE%A2/hugo/</loc>
+    <loc>https://codehhr.cn/categories/%E5%8D%9A%E5%AE%A2/hexo/</loc>
+    <lastmod>2021-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://codehhr.cn/categories/java/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1106,6 +1099,13 @@
   
   <url>
     <loc>https://codehhr.cn/categories/js/</loc>
+    <lastmod>2021-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://codehhr.cn/categories/%E5%8D%9A%E5%AE%A2/hugo/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1140,14 +1140,14 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <loc>https://codehhr.cn/categories/js/jQuery/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://codehhr.cn/categories/js/jQuery/</loc>
+    <loc>https://codehhr.cn/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
     <lastmod>2021-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

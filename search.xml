@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>jQuery Ajax</title>
+      <link href="2021/07/01/js/jquery-ajax/"/>
+      <url>2021/07/01/js/jquery-ajax/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>jQuery Ajax 模板</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">  url: <span class="string">&quot;&quot;</span>,</span><br><span class="line">  type: <span class="string">&quot;POST&quot;</span>, <span class="comment">//GET</span></span><br><span class="line">  <span class="keyword">async</span>: <span class="literal">true</span>, <span class="comment">//或 false,是否异步</span></span><br><span class="line">  data: &#123;</span><br><span class="line">    name: <span class="string">&quot;llc&quot;</span>,</span><br><span class="line">    age: <span class="number">22</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  timeout: <span class="number">5000</span>, <span class="comment">//超时时间</span></span><br><span class="line">  dataType: <span class="string">&quot;json&quot;</span>, <span class="comment">//返回的数据格式：json/xml/html/script/jsonp/text</span></span><br><span class="line">  beforeSend: <span class="function"><span class="keyword">function</span> (<span class="params">xhr</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(xhr);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;发送前&quot;</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">  success: <span class="function"><span class="keyword">function</span> (<span class="params">data, textStatus, jqXHR</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data);</span><br><span class="line">  &#125;,</span><br><span class="line">  error: <span class="function"><span class="keyword">function</span> (<span class="params">xhr, textStatus</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(xhr.responseText);</span><br><span class="line">    <span class="built_in">console</span>.log(xhr);</span><br><span class="line">    <span class="built_in">console</span>.log(textStatus);</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>jQuery ( 二 )</title>
       <link href="2021/06/30/js/jquery-day02/"/>
       <url>2021/06/30/js/jquery-day02/</url>

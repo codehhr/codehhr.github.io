@@ -219,13 +219,6 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/2020/09/06/js/js-Sleep/</loc>
-    
-    <lastmod>2021-06-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://codehhr.cn/2021/06/15/js/js-find-longest-word-and-sort/</loc>
     
     <lastmod>2021-06-15</lastmod>
@@ -712,13 +705,6 @@
   
   <url>
     <loc>https://codehhr.cn/tags/%E6%8B%96%E6%94%BE/</loc>
-    <lastmod>2021-07-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://codehhr.cn/tags/sleep/</loc>
     <lastmod>2021-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

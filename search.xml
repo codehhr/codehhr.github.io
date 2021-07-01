@@ -1024,35 +1024,6 @@
     
     
     <entry>
-      <title>JavaScript 模拟 sleep</title>
-      <link href="2020/09/06/js/js-Sleep/"/>
-      <url>2020/09/06/js/js-Sleep/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="用-JS-实现沉睡几秒后再执行-有好几种方式-但都不完美-以下是我感觉比较好的一种方式"><a href="#用-JS-实现沉睡几秒后再执行-有好几种方式-但都不完美-以下是我感觉比较好的一种方式" class="headerlink" title="用 JS 实现沉睡几秒后再执行,有好几种方式,但都不完美,以下是我感觉比较好的一种方式"></a>用 JS 实现沉睡几秒后再执行,有好几种方式,但都不完美,以下是我感觉比较好的一种方式</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sleep</span>(<span class="params">time</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      resolve();</span><br><span class="line">    &#125;, time);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">start</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;start&quot;</span>);</span><br><span class="line">  sleep(<span class="number">3000</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;end&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">start();</span><br></pre></td></tr></table></figure><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> js </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> js </tag>
-            
-            <tag> javascript </tag>
-            
-            <tag> sleep </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>微信小程序使用彩色图标(阿里巴巴 iconfont Symbol 的用法)</title>
       <link href="2020/08/14/wxapp/wxapp-iconfont/"/>
       <url>2020/08/14/wxapp/wxapp-iconfont/</url>

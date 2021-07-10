@@ -550,13 +550,6 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/tags/maven/</loc>
-    <lastmod>2021-07-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://codehhr.cn/tags/js/</loc>
     <lastmod>2021-07-10</lastmod>
     <changefreq>daily</changefreq>
@@ -614,6 +607,13 @@
   
   <url>
     <loc>https://codehhr.cn/tags/%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC/</loc>
+    <lastmod>2021-07-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://codehhr.cn/tags/maven/</loc>
     <lastmod>2021-07-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -928,13 +928,6 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/tags/%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2021-07-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://codehhr.cn/tags/kali/</loc>
     <lastmod>2021-07-10</lastmod>
     <changefreq>daily</changefreq>
@@ -943,6 +936,13 @@
   
   <url>
     <loc>https://codehhr.cn/tags/swaks/</loc>
+    <lastmod>2021-07-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://codehhr.cn/tags/%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2021-07-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1140,14 +1140,14 @@
   </url>
   
   <url>
-    <loc>https://codehhr.cn/categories/java/</loc>
+    <loc>https://codehhr.cn/categories/js/</loc>
     <lastmod>2021-07-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://codehhr.cn/categories/js/</loc>
+    <loc>https://codehhr.cn/categories/java/</loc>
     <lastmod>2021-07-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

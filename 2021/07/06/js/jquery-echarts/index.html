@@ -1,0 +1,629 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>jQuery ECharts 的使用 | Saturday_</title><meta name="keywords" content="js,javascript,jQuery,echarts"><meta name="author" content="HHR"><meta name="copyright" content="HHR"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="ECharts 的使用ECharts 是什么ECharts 是一个使用 JavaScript 实现的开源可视化库 , 涵盖各行业图表 , 满足各种需求ECharts 遵循 Apache-2.0 开源协议 , 免费商用ECharts 兼容当前绝大部分浏览器 ( IE8&#x2F;9&#x2F;10&#x2F;11 , Chrome , Firefox , Safari 等 ) 及兼容多种设备 , 可随时随地任性展示  echar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery ECharts 的使用">
+<meta property="og:url" content="https://codehhr.cn/2021/07/06/js/jquery-echarts/index.html">
+<meta property="og:site_name" content="Saturday_">
+<meta property="og:description" content="ECharts 的使用ECharts 是什么ECharts 是一个使用 JavaScript 实现的开源可视化库 , 涵盖各行业图表 , 满足各种需求ECharts 遵循 Apache-2.0 开源协议 , 免费商用ECharts 兼容当前绝大部分浏览器 ( IE8&#x2F;9&#x2F;10&#x2F;11 , Chrome , Firefox , Safari 等 ) 及兼容多种设备 , 可随时随地任性展示  echar">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://codehhr.coding.net/p/codehhr/d/wallpaper/git/raw/master/desktop.png">
+<meta property="article:published_time" content="2021-07-06T03:30:16.000Z">
+<meta property="article:modified_time" content="2021-07-18T10:49:19.361Z">
+<meta property="article:author" content="HHR">
+<meta property="article:tag" content="js">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="jQuery">
+<meta property="article:tag" content="echarts">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://codehhr.coding.net/p/codehhr/d/wallpaper/git/raw/master/desktop.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://codehhr.cn/2021/07/06/js/jquery-echarts/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":680,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: HHR","link":"链接: ","source":"来源: Saturday_","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'jQuery ECharts 的使用',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-18 18:49:19'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/cursor.css"><link rel="stylesheet" href="https://codehhr.cn/css/scrollbar.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/avatar/tusiji.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">54</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">90</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-image"></i><span> 照片</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/school/"><i class="fa-fw fas fa-graduation-cap"></i><span> 科大</span></a></li><li><a class="site-page child" href="/wallpaper/"><i class="fa-fw fas fa-image"></i><span> 壁纸</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/selftalk/"><i class="fa-fw fas fa-coffee"></i><span> 自言自语</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.novipnoad.com/"><i class="fa-fw fas fa-film"></i><span> 影视</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/csslayouts/sunrise.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Saturday_</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-image"></i><span> 照片</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/school/"><i class="fa-fw fas fa-graduation-cap"></i><span> 科大</span></a></li><li><a class="site-page child" href="/wallpaper/"><i class="fa-fw fas fa-image"></i><span> 壁纸</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/selftalk/"><i class="fa-fw fas fa-coffee"></i><span> 自言自语</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.novipnoad.com/"><i class="fa-fw fas fa-film"></i><span> 影视</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">jQuery ECharts 的使用</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-07-06T03:30:16.000Z" title="发表于 2021-07-06 11:30:16">2021-07-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-18T10:49:19.361Z" title="更新于 2021-07-18 18:49:19">2021-07-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/js/">js</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/js/jQuery/">jQuery</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="jQuery ECharts 的使用"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="ECharts-的使用"><a href="#ECharts-的使用" class="headerlink" title="ECharts 的使用"></a>ECharts 的使用</h1><h2 id="ECharts-是什么"><a href="#ECharts-是什么" class="headerlink" title="ECharts 是什么"></a>ECharts 是什么</h2><p>ECharts 是一个使用 <code>JavaScript</code> 实现的开源可视化库 , 涵盖各行业图表 , 满足各种需求<br>ECharts 遵循 <code>Apache-2.0</code> 开源协议 , 免费商用<br>ECharts 兼容当前绝大部分浏览器 ( IE8/9/10/11 , Chrome , Firefox , Safari 等 ) 及兼容多种设备 , 可随时随地任性展示</p>
+<blockquote>
+<h2 id="echarts-apache-org"><a href="#echarts-apache-org" class="headerlink" title="echarts.apache.org/"></a><a target="_blank" rel="noopener" href="https://echarts.apache.org/">echarts.apache.org/</a></h2></blockquote>
+<h2 id="使用实例"><a href="#使用实例" class="headerlink" title="使用实例"></a>使用实例</h2><h3 id="引入-jQuery-js-和-echarts-js"><a href="#引入-jQuery-js-和-echarts-js" class="headerlink" title="引入 jQuery.js 和 echarts.js"></a>引入 <code>jQuery.js</code> 和 <code>echarts.js</code></h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/echarts.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/echarts.min.js"></script>
+
+<p><img class="tom-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/tom/tom.jpg"></img></p>
+<h3 id="创建一个容器"><a href="#创建一个容器" class="headerlink" title="创建一个容器"></a>创建一个容器</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;pie1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="给定容器具体大小"><a href="#给定容器具体大小" class="headerlink" title="给定容器具体大小"></a>给定容器具体大小</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.pie1</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">600px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="完整的数据配置"><a href="#完整的数据配置" class="headerlink" title="完整的数据配置"></a>完整的数据配置</h2><style>
+.pie1,
+.pie2,
+.bar,
+.kline,
+.radar,
+.draggable {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+}
+@media screen and (max-width: 768px){
+.pie1,
+.pie2,
+.bar,
+.kline,
+.radar,
+.draggable {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+  }
+}
+</style>
+
+<h3 id="饼状图"><a href="#饼状图" class="headerlink" title="饼状图"></a>饼状图</h3><div class="pie1"></div>
+
+<div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>饼状图配置</span></div>
+    <div class="hide-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;pie1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.pie1</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">600px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 饼图</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">echartsPie1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> chart = echarts.init($(<span class="string">&quot;.pie1&quot;</span>)[<span class="number">0</span>]);</span><br><span class="line">  <span class="keyword">let</span> option = &#123;</span><br><span class="line">    <span class="attr">title</span>: &#123;</span><br><span class="line">      <span class="attr">text</span>: <span class="string">&quot;Text&quot;</span>,</span><br><span class="line">      <span class="attr">subtext</span>: <span class="string">&quot;Subtext&quot;</span>,</span><br><span class="line">      <span class="attr">left</span>: <span class="string">&quot;center&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">tooltip</span>: &#123;</span><br><span class="line">      <span class="attr">trigger</span>: <span class="string">&quot;item&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">legend</span>: &#123;</span><br><span class="line">      <span class="attr">orient</span>: <span class="string">&quot;vertical&quot;</span>,</span><br><span class="line">      <span class="attr">left</span>: <span class="string">&quot;left&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">series</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&quot;NAME&quot;</span>,</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;pie&quot;</span>,</span><br><span class="line">        <span class="attr">radius</span>: <span class="string">&quot;50%&quot;</span>,</span><br><span class="line">        <span class="attr">data</span>: [</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">148</span>, <span class="attr">name</span>: <span class="string">&quot;A&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">735</span>, <span class="attr">name</span>: <span class="string">&quot;B&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">580</span>, <span class="attr">name</span>: <span class="string">&quot;C&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">484</span>, <span class="attr">name</span>: <span class="string">&quot;D&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">300</span>, <span class="attr">name</span>: <span class="string">&quot;E&quot;</span> &#125;,</span><br><span class="line">        ],</span><br><span class="line">        <span class="attr">emphasis</span>: &#123;</span><br><span class="line">          <span class="attr">itemStyle</span>: &#123;</span><br><span class="line">            <span class="attr">shadowBlur</span>: <span class="number">10</span>,</span><br><span class="line">            <span class="attr">shadowOffsetX</span>: <span class="number">0</span>,</span><br><span class="line">            <span class="attr">shadowColor</span>: <span class="string">&quot;rgba(0, 0, 0, 0.5)&quot;</span>,</span><br><span class="line">          &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;;</span><br><span class="line">  chart.setOption(option);</span><br><span class="line">&#125;</span><br><span class="line">echartsPie1();</span><br></pre></td></tr></table></figure>
+
+<script>
+// 饼图
+function echartsPie1() {
+  let chart = echarts.init($(".pie1")[0]);
+  let option = {
+    title: {
+      text: "Text",
+      subtext: "Subtext",
+      left: "center",
+    },
+    tooltip: {
+      trigger: "item",
+    },
+    legend: {
+      orient: "vertical",
+      left: "left",
+    },
+    series: [
+      {
+        name: "NAME",
+        type: "pie",
+        radius: "50%",
+        data: [
+          { value: 148, name: "A" },
+          { value: 735, name: "B" },
+          { value: 580, name: "C" },
+          { value: 484, name: "D" },
+          { value: 300, name: "E" },
+        ],
+        emphasis: {
+          itemStyle: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: "rgba(0, 0, 0, 0.5)",
+          },
+        },
+      },
+    ],
+  };
+  chart.setOption(option);
+}
+echartsPie1();
+</script>
+</div></div>
+
+<h3 id="带背景的柱状图"><a href="#带背景的柱状图" class="headerlink" title="带背景的柱状图"></a>带背景的柱状图</h3><div class="bar"></div>
+
+<div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>带背景的柱状图配置</span></div>
+    <div class="hide-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;bar&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.bar</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">600px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 带背景的柱状图</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">echartsBar</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> echart = echarts.init($(<span class="string">&quot;.bar&quot;</span>)[<span class="number">0</span>]);</span><br><span class="line">  <span class="keyword">let</span> option = &#123;</span><br><span class="line">    <span class="attr">xAxis</span>: &#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;category&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: [<span class="string">&quot;Mon&quot;</span>, <span class="string">&quot;Tue&quot;</span>, <span class="string">&quot;Wed&quot;</span>, <span class="string">&quot;Thu&quot;</span>, <span class="string">&quot;Fri&quot;</span>, <span class="string">&quot;Sat&quot;</span>, <span class="string">&quot;Sun&quot;</span>],</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">yAxis</span>: &#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;value&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">series</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&quot;NAME&quot;</span>,</span><br><span class="line">        <span class="attr">data</span>: [<span class="number">120</span>, <span class="number">200</span>, <span class="number">150</span>, <span class="number">80</span>, <span class="number">70</span>, <span class="number">110</span>, <span class="number">130</span>],</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;bar&quot;</span>,</span><br><span class="line">        <span class="attr">showBackground</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">backgroundStyle</span>: &#123;</span><br><span class="line">          <span class="attr">color</span>: <span class="string">&quot;rgba(180, 180, 180, 0.2)&quot;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;;</span><br><span class="line">  echart.setOption(option);</span><br><span class="line">&#125;</span><br><span class="line">echartsBar();</span><br></pre></td></tr></table></figure>
+
+<script>
+// 带背景的柱状图
+function echartsBar() {
+  let echart = echarts.init($(".bar")[0]);
+  let option = {
+    xAxis: {
+      type: "category",
+      data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    },
+    yAxis: {
+      type: "value",
+    },
+    series: [
+      {
+        name: "NAME",
+        data: [120, 200, 150, 80, 70, 110, 130],
+        type: "bar",
+        showBackground: true,
+        backgroundStyle: {
+          color: "rgba(180, 180, 180, 0.2)",
+        },
+      },
+    ],
+  };
+  echart.setOption(option);
+}
+echartsBar();
+</script>
+</div></div>
+
+<h3 id="另一种饼图"><a href="#另一种饼图" class="headerlink" title="另一种饼图"></a>另一种饼图</h3><div class="pie2"></div>
+
+<div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>另一种饼图配置</span></div>
+    <div class="hide-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;pie2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.pie2</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">600px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">echartsPie2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> echart = echarts.init($(<span class="string">&quot;.pie2&quot;</span>)[<span class="number">0</span>]);</span><br><span class="line">  <span class="keyword">let</span> option = &#123;</span><br><span class="line">    <span class="attr">legend</span>: &#123;</span><br><span class="line">      <span class="attr">top</span>: <span class="string">&quot;bottom&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">toolbox</span>: &#123;</span><br><span class="line">      <span class="attr">show</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="comment">// feature: &#123;</span></span><br><span class="line">      <span class="comment">//   mark: &#123; show: true &#125;,</span></span><br><span class="line">      <span class="comment">//   dataView: &#123; show: true, readOnly: false &#125;,</span></span><br><span class="line">      <span class="comment">//   restore: &#123; show: true &#125;,</span></span><br><span class="line">      <span class="comment">//   saveAsImage: &#123; show: true &#125;,</span></span><br><span class="line">      <span class="comment">// &#125;,</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">series</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&quot;NAME&quot;</span>,</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;pie&quot;</span>,</span><br><span class="line">        <span class="attr">radius</span>: [<span class="number">50</span>, <span class="number">250</span>],</span><br><span class="line">        <span class="attr">center</span>: [<span class="string">&quot;50%&quot;</span>, <span class="string">&quot;50%&quot;</span>],</span><br><span class="line">        <span class="attr">roseType</span>: <span class="string">&quot;area&quot;</span>,</span><br><span class="line">        <span class="attr">itemStyle</span>: &#123;</span><br><span class="line">          <span class="attr">borderRadius</span>: <span class="number">8</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">data</span>: [</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">40</span>, <span class="attr">name</span>: <span class="string">&quot;rose 1&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">38</span>, <span class="attr">name</span>: <span class="string">&quot;rose 2&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">32</span>, <span class="attr">name</span>: <span class="string">&quot;rose 3&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">30</span>, <span class="attr">name</span>: <span class="string">&quot;rose 4&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">28</span>, <span class="attr">name</span>: <span class="string">&quot;rose 5&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">26</span>, <span class="attr">name</span>: <span class="string">&quot;rose 6&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">22</span>, <span class="attr">name</span>: <span class="string">&quot;rose 7&quot;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">value</span>: <span class="number">18</span>, <span class="attr">name</span>: <span class="string">&quot;rose 8&quot;</span> &#125;,</span><br><span class="line">        ],</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;;</span><br><span class="line">  echart.setOption(option);</span><br><span class="line">&#125;</span><br><span class="line">echartsPie2();</span><br></pre></td></tr></table></figure>
+
+<script>
+function echartsPie2() {
+  let echart = echarts.init($(".pie2")[0]);
+  let option = {
+    legend: {
+      top: "bottom",
+    },
+    toolbox: {
+      show: true,
+      // feature: {
+      //   mark: { show: true },
+      //   dataView: { show: true, readOnly: false },
+      //   restore: { show: true },
+      //   saveAsImage: { show: true },
+      // },
+    },
+    series: [
+      {
+        name: "NAME",
+        type: "pie",
+        radius: [50, 250],
+        center: ["50%", "50%"],
+        roseType: "area",
+        itemStyle: {
+          borderRadius: 8,
+        },
+        data: [
+          { value: 40, name: "rose 1" },
+          { value: 38, name: "rose 2" },
+          { value: 32, name: "rose 3" },
+          { value: 30, name: "rose 4" },
+          { value: 28, name: "rose 5" },
+          { value: 26, name: "rose 6" },
+          { value: 22, name: "rose 7" },
+          { value: 18, name: "rose 8" },
+        ],
+      },
+    ],
+  };
+  echart.setOption(option);
+}
+echartsPie2();
+</script>
+</div></div>
+
+<h3 id="K-线图"><a href="#K-线图" class="headerlink" title="K 线图"></a>K 线图</h3><div class="kline"></div>
+
+<div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>K 线图配置</span></div>
+    <div class="hide-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;kline&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.kline</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">600px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">echartsKline</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> echart = echarts.init($(<span class="string">&quot;.kline&quot;</span>)[<span class="number">0</span>]);</span><br><span class="line">  <span class="keyword">let</span> option = &#123;</span><br><span class="line">    <span class="attr">xAxis</span>: &#123;</span><br><span class="line">      <span class="attr">data</span>: [<span class="string">&quot;2017-10-24&quot;</span>, <span class="string">&quot;2017-10-25&quot;</span>, <span class="string">&quot;2017-10-26&quot;</span>, <span class="string">&quot;2017-10-27&quot;</span>],</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">yAxis</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">series</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;k&quot;</span>,</span><br><span class="line">        <span class="attr">data</span>: [</span><br><span class="line">          [<span class="number">20</span>, <span class="number">34</span>, <span class="number">10</span>, <span class="number">38</span>],</span><br><span class="line">          [<span class="number">40</span>, <span class="number">35</span>, <span class="number">30</span>, <span class="number">50</span>],</span><br><span class="line">          [<span class="number">31</span>, <span class="number">38</span>, <span class="number">33</span>, <span class="number">44</span>],</span><br><span class="line">          [<span class="number">38</span>, <span class="number">15</span>, <span class="number">5</span>, <span class="number">42</span>],</span><br><span class="line">        ],</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;;</span><br><span class="line">  echart.setOption(option);</span><br><span class="line">&#125;</span><br><span class="line">echartsKline();</span><br></pre></td></tr></table></figure>
+
+<script>
+function echartsKline() {
+  let echart = echarts.init($(".kline")[0]);
+  let option = {
+    xAxis: {
+      data: ["2017-10-24", "2017-10-25", "2017-10-26", "2017-10-27"],
+    },
+    yAxis: {},
+    series: [
+      {
+        type: "k",
+        data: [
+          [20, 34, 10, 38],
+          [40, 35, 30, 50],
+          [31, 38, 33, 44],
+          [38, 15, 5, 42],
+        ],
+      },
+    ],
+  };
+  echart.setOption(option);
+}
+echartsKline();
+</script>
+</div></div>
+
+<h3 id="雷达图"><a href="#雷达图" class="headerlink" title="雷达图"></a>雷达图</h3><div class="radar"></div>
+
+<div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>雷达图配置</span></div>
+    <div class="hide-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;radar&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.radar</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">600px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">echartsRadar</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> echart = echarts.init($(<span class="string">&quot;.radar&quot;</span>)[<span class="number">0</span>]);</span><br><span class="line">  <span class="keyword">let</span> option = &#123;</span><br><span class="line">    <span class="attr">title</span>: &#123;</span><br><span class="line">      <span class="attr">text</span>: <span class="string">&quot;基础雷达图&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">legend</span>: &#123;</span><br><span class="line">      <span class="attr">data</span>: [<span class="string">&quot;预算分配（Allocated Budget）&quot;</span>, <span class="string">&quot;实际开销（Actual Spending）&quot;</span>],</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">radar</span>: &#123;</span><br><span class="line">      <span class="comment">// shape: &#x27;circle&#x27;,</span></span><br><span class="line">      <span class="attr">indicator</span>: [</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;销售（Sales）&quot;</span>, <span class="attr">max</span>: <span class="number">6500</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;管理（Administration）&quot;</span>, <span class="attr">max</span>: <span class="number">16000</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;信息技术（Information Technology）&quot;</span>, <span class="attr">max</span>: <span class="number">30000</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;客服（Customer Support）&quot;</span>, <span class="attr">max</span>: <span class="number">38000</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;研发（Development）&quot;</span>, <span class="attr">max</span>: <span class="number">52000</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;市场（Marketing）&quot;</span>, <span class="attr">max</span>: <span class="number">25000</span> &#125;,</span><br><span class="line">      ],</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">series</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&quot;预算 vs 开销（Budget vs spending）&quot;</span>,</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;radar&quot;</span>,</span><br><span class="line">        <span class="attr">data</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">value</span>: [<span class="number">4200</span>, <span class="number">3000</span>, <span class="number">20000</span>, <span class="number">35000</span>, <span class="number">50000</span>, <span class="number">18000</span>],</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&quot;预算分配（Allocated Budget）&quot;</span>,</span><br><span class="line">          &#125;,</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">value</span>: [<span class="number">5000</span>, <span class="number">14000</span>, <span class="number">28000</span>, <span class="number">26000</span>, <span class="number">42000</span>, <span class="number">21000</span>],</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&quot;实际开销（Actual Spending）&quot;</span>,</span><br><span class="line">          &#125;,</span><br><span class="line">        ],</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;;</span><br><span class="line">  echart.setOption(option);</span><br><span class="line">&#125;</span><br><span class="line">echartsRadar();</span><br></pre></td></tr></table></figure>
+
+<script>
+function echartsRadar() {
+  let echart = echarts.init($(".radar")[0]);
+  let option = {
+    title: {
+      text: "基础雷达图",
+    },
+    legend: {
+      data: ["预算分配（Allocated Budget）", "实际开销（Actual Spending）"],
+    },
+    radar: {
+      // shape: 'circle',
+      indicator: [
+        { name: "销售（Sales）", max: 6500 },
+        { name: "管理（Administration）", max: 16000 },
+        { name: "信息技术（Information Technology）", max: 30000 },
+        { name: "客服（Customer Support）", max: 38000 },
+        { name: "研发（Development）", max: 52000 },
+        { name: "市场（Marketing）", max: 25000 },
+      ],
+    },
+    series: [
+      {
+        name: "预算 vs 开销（Budget vs spending）",
+        type: "radar",
+        data: [
+          {
+            value: [4200, 3000, 20000, 35000, 50000, 18000],
+            name: "预算分配（Allocated Budget）",
+          },
+          {
+            value: [5000, 14000, 28000, 26000, 42000, 21000],
+            name: "实际开销（Actual Spending）",
+          },
+        ],
+      },
+    ],
+  };
+  echart.setOption(option);
+}
+echartsRadar();
+</script>
+</div></div>
+
+<h3 id="可拖拽图"><a href="#可拖拽图" class="headerlink" title="可拖拽图"></a>可拖拽图</h3><div class="draggable"></div>
+
+<div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>可拖拽图配置</span></div>
+    <div class="hide-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;draggable&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.draggable</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">600px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">echartsDraggable</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> myChart = echarts.init($(<span class="string">&quot;.draggable&quot;</span>)[<span class="number">0</span>]);</span><br><span class="line">  <span class="keyword">let</span> symbolSize = <span class="number">20</span>;</span><br><span class="line">  <span class="keyword">let</span> data = [</span><br><span class="line">    [<span class="number">40</span>, -<span class="number">10</span>],</span><br><span class="line">    [-<span class="number">30</span>, -<span class="number">5</span>],</span><br><span class="line">    [-<span class="number">76.5</span>, <span class="number">20</span>],</span><br><span class="line">    [-<span class="number">63.5</span>, <span class="number">40</span>],</span><br><span class="line">    [-<span class="number">22.1</span>, <span class="number">50</span>],</span><br><span class="line">  ];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> option = &#123;</span><br><span class="line">    <span class="attr">title</span>: &#123;</span><br><span class="line">      <span class="attr">text</span>: <span class="string">&quot;Try Dragging these Points&quot;</span>,</span><br><span class="line">      <span class="attr">left</span>: <span class="string">&quot;center&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">tooltip</span>: &#123;</span><br><span class="line">      <span class="attr">triggerOn</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">      <span class="attr">formatter</span>: <span class="function"><span class="keyword">function</span> (<span class="params">params</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">          <span class="string">&quot;X: &quot;</span> +</span><br><span class="line">          params.data[<span class="number">0</span>].toFixed(<span class="number">2</span>) +</span><br><span class="line">          <span class="string">&quot;&lt;br&gt;Y: &quot;</span> +</span><br><span class="line">          params.data[<span class="number">1</span>].toFixed(<span class="number">2</span>)</span><br><span class="line">        );</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">grid</span>: &#123;</span><br><span class="line">      <span class="attr">top</span>: <span class="string">&quot;8%&quot;</span>,</span><br><span class="line">      <span class="attr">bottom</span>: <span class="string">&quot;12%&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">xAxis</span>: &#123;</span><br><span class="line">      <span class="attr">min</span>: -<span class="number">100</span>,</span><br><span class="line">      <span class="attr">max</span>: <span class="number">70</span>,</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;value&quot;</span>,</span><br><span class="line">      <span class="attr">axisLine</span>: &#123; <span class="attr">onZero</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">yAxis</span>: &#123;</span><br><span class="line">      <span class="attr">min</span>: -<span class="number">30</span>,</span><br><span class="line">      <span class="attr">max</span>: <span class="number">60</span>,</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;value&quot;</span>,</span><br><span class="line">      <span class="attr">axisLine</span>: &#123; <span class="attr">onZero</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">dataZoom</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;slider&quot;</span>,</span><br><span class="line">        <span class="attr">xAxisIndex</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">filterMode</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;slider&quot;</span>,</span><br><span class="line">        <span class="attr">yAxisIndex</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">filterMode</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;inside&quot;</span>,</span><br><span class="line">        <span class="attr">xAxisIndex</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">filterMode</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;inside&quot;</span>,</span><br><span class="line">        <span class="attr">yAxisIndex</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">filterMode</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">series</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">id</span>: <span class="string">&quot;a&quot;</span>,</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;line&quot;</span>,</span><br><span class="line">        <span class="attr">smooth</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">symbolSize</span>: symbolSize,</span><br><span class="line">        <span class="attr">data</span>: data,</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    myChart.setOption(&#123;</span><br><span class="line">      <span class="attr">graphic</span>: data.map(<span class="function"><span class="keyword">function</span> (<span class="params">item, dataIndex</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">          <span class="attr">type</span>: <span class="string">&quot;circle&quot;</span>,</span><br><span class="line">          <span class="attr">position</span>: myChart.convertToPixel(<span class="string">&quot;grid&quot;</span>, item),</span><br><span class="line">          <span class="attr">shape</span>: &#123;</span><br><span class="line">            <span class="attr">cx</span>: <span class="number">0</span>,</span><br><span class="line">            <span class="attr">cy</span>: <span class="number">0</span>,</span><br><span class="line">            <span class="attr">r</span>: symbolSize / <span class="number">2</span>,</span><br><span class="line">          &#125;,</span><br><span class="line">          <span class="attr">invisible</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">draggable</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">ondrag</span>: <span class="function"><span class="keyword">function</span> (<span class="params">dx, dy</span>) </span>&#123;</span><br><span class="line">            onPointDragging(dataIndex, [<span class="built_in">this</span>.x, <span class="built_in">this</span>.y]);</span><br><span class="line">          &#125;,</span><br><span class="line">          <span class="attr">onmousemove</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            showTooltip(dataIndex);</span><br><span class="line">          &#125;,</span><br><span class="line">          <span class="attr">onmouseout</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            hideTooltip(dataIndex);</span><br><span class="line">          &#125;,</span><br><span class="line">          <span class="attr">z</span>: <span class="number">100</span>,</span><br><span class="line">        &#125;;</span><br><span class="line">      &#125;),</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">  <span class="built_in">window</span>.addEventListener(<span class="string">&quot;resize&quot;</span>, updatePosition);</span><br><span class="line"></span><br><span class="line">  myChart.on(<span class="string">&quot;dataZoom&quot;</span>, updatePosition);</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">updatePosition</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    myChart.setOption(&#123;</span><br><span class="line">      <span class="attr">graphic</span>: data.map(<span class="function"><span class="keyword">function</span> (<span class="params">item, dataIndex</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">          <span class="attr">position</span>: myChart.convertToPixel(<span class="string">&quot;grid&quot;</span>, item),</span><br><span class="line">        &#125;;</span><br><span class="line">      &#125;),</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">showTooltip</span>(<span class="params">dataIndex</span>) </span>&#123;</span><br><span class="line">    myChart.dispatchAction(&#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;showTip&quot;</span>,</span><br><span class="line">      <span class="attr">seriesIndex</span>: <span class="number">0</span>,</span><br><span class="line">      <span class="attr">dataIndex</span>: dataIndex,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">hideTooltip</span>(<span class="params">dataIndex</span>) </span>&#123;</span><br><span class="line">    myChart.dispatchAction(&#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;hideTip&quot;</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">onPointDragging</span>(<span class="params">dataIndex, pos</span>) </span>&#123;</span><br><span class="line">    data[dataIndex] = myChart.convertFromPixel(<span class="string">&quot;grid&quot;</span>, pos);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Update data</span></span><br><span class="line">    myChart.setOption(&#123;</span><br><span class="line">      <span class="attr">series</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">id</span>: <span class="string">&quot;a&quot;</span>,</span><br><span class="line">          <span class="attr">data</span>: data,</span><br><span class="line">        &#125;,</span><br><span class="line">      ],</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  myChart.setOption(option);</span><br><span class="line">&#125;</span><br><span class="line">echartsDraggable();</span><br></pre></td></tr></table></figure>
+
+<script>
+function echartsDraggable() {
+  let myChart = echarts.init($(".draggable")[0]);
+  let symbolSize = 20;
+  let data = [
+    [40, -10],
+    [-30, -5],
+    [-76.5, 20],
+    [-63.5, 40],
+    [-22.1, 50],
+  ];
+
+  let option = {
+    title: {
+      text: "Try Dragging these Points",
+      left: "center",
+    },
+    tooltip: {
+      triggerOn: "none",
+      formatter: function (params) {
+        return (
+          "X: " +
+          params.data[0].toFixed(2) +
+          "<br>Y: " +
+          params.data[1].toFixed(2)
+        );
+      },
+    },
+    grid: {
+      top: "8%",
+      bottom: "12%",
+    },
+    xAxis: {
+      min: -100,
+      max: 70,
+      type: "value",
+      axisLine: { onZero: false },
+    },
+    yAxis: {
+      min: -30,
+      max: 60,
+      type: "value",
+      axisLine: { onZero: false },
+    },
+    dataZoom: [
+      {
+        type: "slider",
+        xAxisIndex: 0,
+        filterMode: "none",
+      },
+      {
+        type: "slider",
+        yAxisIndex: 0,
+        filterMode: "none",
+      },
+      {
+        type: "inside",
+        xAxisIndex: 0,
+        filterMode: "none",
+      },
+      {
+        type: "inside",
+        yAxisIndex: 0,
+        filterMode: "none",
+      },
+    ],
+    series: [
+      {
+        id: "a",
+        type: "line",
+        smooth: true,
+        symbolSize: symbolSize,
+        data: data,
+      },
+    ],
+  };
+
+  setTimeout(function () {
+    myChart.setOption({
+      graphic: data.map(function (item, dataIndex) {
+        return {
+          type: "circle",
+          position: myChart.convertToPixel("grid", item),
+          shape: {
+            cx: 0,
+            cy: 0,
+            r: symbolSize / 2,
+          },
+          invisible: true,
+          draggable: true,
+          ondrag: function (dx, dy) {
+            onPointDragging(dataIndex, [this.x, this.y]);
+          },
+          onmousemove: function () {
+            showTooltip(dataIndex);
+          },
+          onmouseout: function () {
+            hideTooltip(dataIndex);
+          },
+          z: 100,
+        };
+      }),
+    });
+  }, 0);
+
+  window.addEventListener("resize", updatePosition);
+
+  myChart.on("dataZoom", updatePosition);
+
+  function updatePosition() {
+    myChart.setOption({
+      graphic: data.map(function (item, dataIndex) {
+        return {
+          position: myChart.convertToPixel("grid", item),
+        };
+      }),
+    });
+  }
+
+  function showTooltip(dataIndex) {
+    myChart.dispatchAction({
+      type: "showTip",
+      seriesIndex: 0,
+      dataIndex: dataIndex,
+    });
+  }
+
+  function hideTooltip(dataIndex) {
+    myChart.dispatchAction({
+      type: "hideTip",
+    });
+  }
+
+  function onPointDragging(dataIndex, pos) {
+    data[dataIndex] = myChart.convertFromPixel("grid", pos);
+
+    // Update data
+    myChart.setOption({
+      series: [
+        {
+          id: "a",
+          data: data,
+        },
+      ],
+    });
+  }
+  myChart.setOption(option);
+}
+echartsDraggable();
+</script>
+</div></div>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">HHR</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://codehhr.cn/2021/07/06/js/jquery-echarts/">https://codehhr.cn/2021/07/06/js/jquery-echarts/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://codehhr.cn" target="_blank">Saturday_</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/js/">js</a><a class="post-meta__tags" href="/tags/javascript/">javascript</a><a class="post-meta__tags" href="/tags/jQuery/">jQuery</a><a class="post-meta__tags" href="/tags/echarts/">echarts</a></div><div class="post_share"><div class="social-share" data-image="https://codehhr.coding.net/p/codehhr/d/wallpaper/git/raw/master/desktop.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/donate/wechatpayimg.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/donate/wechatpayimg.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/donate/alipayimg.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/donate/alipayimg.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/07/11/bootstrap/bootstrap/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/bootstrap/bootstrap.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Bootstrap</div></div></a></div><div class="next-post pull-right"><a href="/2021/07/01/js/jquery-ajax/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/wallpaper/git/raw/master/desktop.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">jQuery Ajax 模板</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/06/30/js/jquery-day02/" title="jQuery ( 二 )"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/wallpaper/git/raw/master/desktop.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-07-06</div><div class="title">jQuery ( 二 )</div></div></a></div><div><a href="/2021/07/01/js/jquery-ajax/" title="jQuery Ajax 模板"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/wallpaper/git/raw/master/desktop.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-07-06</div><div class="title">jQuery Ajax 模板</div></div></a></div><div><a href="/2021/06/29/js/jquery-day01/" title="jQuery ( 一 )"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/wallpaper/git/raw/master/desktop.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-06-30</div><div class="title">jQuery ( 一 )</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/avatar/tusiji.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">HHR</div><div class="author-info__description">引领搬砖界 ~</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">54</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">90</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/codehhr"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/codehhr" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1871973389@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ECharts-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">ECharts 的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ECharts-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.1.</span> <span class="toc-text">ECharts 是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#echarts-apache-org"><span class="toc-number">1.2.</span> <span class="toc-text">echarts.apache.org&#x2F;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.3.</span> <span class="toc-text">使用实例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E5%85%A5-jQuery-js-%E5%92%8C-echarts-js"><span class="toc-number">1.3.1.</span> <span class="toc-text">引入 jQuery.js 和 echarts.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text">创建一个容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%99%E5%AE%9A%E5%AE%B9%E5%99%A8%E5%85%B7%E4%BD%93%E5%A4%A7%E5%B0%8F"><span class="toc-number">1.3.3.</span> <span class="toc-text">给定容器具体大小</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E9%85%8D%E7%BD%AE"><span class="toc-number">1.4.</span> <span class="toc-text">完整的数据配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A5%BC%E7%8A%B6%E5%9B%BE"><span class="toc-number">1.4.1.</span> <span class="toc-text">饼状图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%A6%E8%83%8C%E6%99%AF%E7%9A%84%E6%9F%B1%E7%8A%B6%E5%9B%BE"><span class="toc-number">1.4.2.</span> <span class="toc-text">带背景的柱状图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%A6%E4%B8%80%E7%A7%8D%E9%A5%BC%E5%9B%BE"><span class="toc-number">1.4.3.</span> <span class="toc-text">另一种饼图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#K-%E7%BA%BF%E5%9B%BE"><span class="toc-number">1.4.4.</span> <span class="toc-text">K 线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%B7%E8%BE%BE%E5%9B%BE"><span class="toc-number">1.4.5.</span> <span class="toc-text">雷达图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E6%8B%96%E6%8B%BD%E5%9B%BE"><span class="toc-number">1.4.6.</span> <span class="toc-text">可拖拽图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#The-End"><span class="toc-number">2.</span> <span class="toc-text">The_End</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/18/blog/blog-hexo-butterfly-tag-plugins/" title="Hexo butterfly 的标签功能"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/wallpaper/git/raw/master/desktop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo butterfly 的标签功能"/></a><div class="content"><a class="title" href="/2021/07/18/blog/blog-hexo-butterfly-tag-plugins/" title="Hexo butterfly 的标签功能">Hexo butterfly 的标签功能</a><time datetime="2021-07-18T12:11:24.000Z" title="发表于 2021-07-18 20:11:24">2021-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/16/node/node-mysql/" title="node 连接 MySQL"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/mysql.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="node 连接 MySQL"/></a><div class="content"><a class="title" href="/2021/07/16/node/node-mysql/" title="node 连接 MySQL">node 连接 MySQL</a><time datetime="2021-07-16T03:46:10.000Z" title="发表于 2021-07-16 11:46:10">2021-07-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/12/node/node-fs-http/" title="Node"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/node.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Node"/></a><div class="content"><a class="title" href="/2021/07/12/node/node-fs-http/" title="Node">Node</a><time datetime="2021-07-12T11:57:44.000Z" title="发表于 2021-07-12 19:57:44">2021-07-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/11/bootstrap/bootstrap/" title="Bootstrap"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/bootstrap/bootstrap.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Bootstrap"/></a><div class="content"><a class="title" href="/2021/07/11/bootstrap/bootstrap/" title="Bootstrap">Bootstrap</a><time datetime="2021-07-11T12:51:51.000Z" title="发表于 2021-07-11 20:51:51">2021-07-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/06/js/jquery-echarts/" title="jQuery ECharts 的使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://codehhr.coding.net/p/codehhr/d/wallpaper/git/raw/master/desktop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="jQuery ECharts 的使用"/></a><div class="content"><a class="title" href="/2021/07/06/js/jquery-echarts/" title="jQuery ECharts 的使用">jQuery ECharts 的使用</a><time datetime="2021-07-06T03:30:16.000Z" title="发表于 2021-07-06 11:30:16">2021-07-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2021 By HHR</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">In case I don’t see you ... Good afternoon,good evening,and good night.<p>冀ICP备2020027302号-1</p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'YBFcPDqvtWLoXAu0g1SJ2O0B-MdYXbMMI',
+      appKey: 'PryQuSYaaPcbGLYXeaccig3w',
+      placeholder: '可 以 留 言 嗷 ~',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, ))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="https://codehhr.cn/js/sidenav.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

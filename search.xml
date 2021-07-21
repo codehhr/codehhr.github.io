@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo butterfly 的标签功能</title>
-    <url>/2021/07/18/blog/blog-hexo-butterfly-tag-plugins/</url>
-    <content><![CDATA[<div class="note info flat"><p>标签外挂是 <code>Hexo</code> 独有的功能 , 并不是标准的 <code>Markdown</code> 格式<br>以下的写法 , 只适用于 <code>Butterfly</code> 主题 , 用在其它主题上不会有效果 , 甚至可能会报错 , 使用前请留意<br>外挂虽然能为主题带来一些额外的功能和 <code>UI</code> 方面的强化，但是，标籤外挂也有明显的限制，使用时请留意</p>
-</div>
-
-<h1 id="未完待续-…"><a href="#未完待续-…" class="headerlink" title="未完待续 …"></a>未完待续 …</h1>]]></content>
-  </entry>
-  <entry>
     <title>用 Hexo 快速搭建博客</title>
     <url>/2020/02/01/blog/blog-hexo/</url>
     <content><![CDATA[<h1 id="如何做到一毛不拔的搭建网站"><a href="#如何做到一毛不拔的搭建网站" class="headerlink" title="如何做到一毛不拔的搭建网站"></a>如何做到一毛不拔的搭建网站</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/emoji/s.png" alt="s"></p>
@@ -107,6 +99,14 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo butterfly 的标签功能</title>
+    <url>/2021/07/18/blog/blog-hexo-butterfly-tag-plugins/</url>
+    <content><![CDATA[<div class="note info flat"><p>标签外挂是 <code>Hexo</code> 独有的功能 , 并不是标准的 <code>Markdown</code> 格式<br>以下的写法 , 只适用于 <code>Butterfly</code> 主题 , 用在其它主题上不会有效果 , 甚至可能会报错 , 使用前请留意<br>外挂虽然能为主题带来一些额外的功能和 <code>UI</code> 方面的强化，但是，标籤外挂也有明显的限制，使用时请留意</p>
+</div>
+
+<h1 id="未完待续-…"><a href="#未完待续-…" class="headerlink" title="未完待续 …"></a>未完待续 …</h1>]]></content>
+  </entry>
+  <entry>
     <title>用 Hugo 快速搭建博客</title>
     <url>/2019/06/01/blog/blog-hugo/</url>
     <content><![CDATA[<h1 id="用-Hugo-搭建博客"><a href="#用-Hugo-搭建博客" class="headerlink" title="用 Hugo 搭建博客"></a>用 Hugo 搭建博客</h1><p>Hugo 是一个用 Go 编写的静态站点生成器，生成速度很快<br>下面是具体操作：</p>
@@ -200,6 +200,16 @@
         <tag>博客</tag>
         <tag>hugo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Bootstrap</title>
+    <url>/2021/07/11/bootstrap/bootstrap/</url>
+    <content><![CDATA[<h1 id="Bootstrap-v3-中文文档"><a href="#Bootstrap-v3-中文文档" class="headerlink" title="Bootstrap v3 中文文档"></a>Bootstrap v3 中文文档</h1><blockquote>
+<h2 id="https-v3-bootcss-com"><a href="#https-v3-bootcss-com" class="headerlink" title="https://v3.bootcss.com/"></a><a href="https://v3.bootcss.com/">https://v3.bootcss.com/</a></h2></blockquote>
+<h1 id="引入使用"><a href="#引入使用" class="headerlink" title="引入使用"></a>引入使用</h1><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>如果只是用一些样式 , 可以只引入 <code>css</code> 文件</strong></p>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
   </entry>
   <entry>
     <title>几种常见css布局</title>
@@ -323,14 +333,24 @@
       </tags>
   </entry>
   <entry>
-    <title>Bootstrap</title>
-    <url>/2021/07/11/bootstrap/bootstrap/</url>
-    <content><![CDATA[<h1 id="Bootstrap-v3-中文文档"><a href="#Bootstrap-v3-中文文档" class="headerlink" title="Bootstrap v3 中文文档"></a>Bootstrap v3 中文文档</h1><blockquote>
-<h2 id="https-v3-bootcss-com"><a href="#https-v3-bootcss-com" class="headerlink" title="https://v3.bootcss.com/"></a><a href="https://v3.bootcss.com/">https://v3.bootcss.com/</a></h2></blockquote>
-<h1 id="引入使用"><a href="#引入使用" class="headerlink" title="引入使用"></a>引入使用</h1><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    <title>解决raw.githubusercontent.com无法连接问题</title>
+    <url>/2019/06/02/github/github-rawgithub/</url>
+    <content><![CDATA[<h1 id="解决-GitHub-的-raw-githubusercontent-com-无法连接问题"><a href="#解决-GitHub-的-raw-githubusercontent-com-无法连接问题" class="headerlink" title="解决 GitHub 的 raw.githubusercontent.com 无法连接问题"></a>解决 GitHub 的 raw.githubusercontent.com 无法连接问题</h1><p>在使用 curl 下载文件时,如果出现以下情况</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused</span><br></pre></td></tr></table></figure>
 
-<p><strong>如果只是用一些样式 , 可以只引入 <code>css</code> 文件</strong></p>
-<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
+<h1 id="查询-raw-githubusercontent-com-的-IP"><a href="#查询-raw-githubusercontent-com-的-IP" class="headerlink" title="查询 raw.githubusercontent.com 的 IP"></a>查询 raw.githubusercontent.com 的 IP</h1><p>修改 hosts 文件</p>
+<p>文件路径 <code>/etc/hosts</code></p>
+<p>添加以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># GitHub Start</span><br><span class="line">52.74.223.119 github.com</span><br><span class="line">192.30.253.112 gist.github.com</span><br><span class="line">192.30.253.113 gist.github.com</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">54.169.195.247 api.github.com</span><br><span class="line">185.199.111.153 assets-cdn.github.com</span><br><span class="line">151.101.76.133 raw.githubusercontent.com</span><br><span class="line">151.101.108.133 user-images.githubusercontent.com</span><br><span class="line">151.101.76.133 gist.githubusercontent.com</span><br><span class="line">151.101.76.133 cloud.githubusercontent.com</span><br><span class="line">151.101.76.133 camo.githubusercontent.com</span><br><span class="line">151.101.185.194 github.global.ssl.fastly.net</span><br><span class="line"># GitHub End</span><br></pre></td></tr></table></figure>
+
+<h1 id="如果你有代理那当以上都是废话"><a href="#如果你有代理那当以上都是废话" class="headerlink" title="如果你有代理那当以上都是废话"></a>如果你有代理那当以上都是废话</h1><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+      <tags>
+        <tag>curl</tag>
+        <tag>github</tag>
+      </tags>
   </entry>
   <entry>
     <title>一些 html css 细节</title>
@@ -355,26 +375,6 @@
         <tag>input光标</tag>
         <tag>插入符</tag>
         <tag>placeholder</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决raw.githubusercontent.com无法连接问题</title>
-    <url>/2019/06/02/github/github-rawgithub/</url>
-    <content><![CDATA[<h1 id="解决-GitHub-的-raw-githubusercontent-com-无法连接问题"><a href="#解决-GitHub-的-raw-githubusercontent-com-无法连接问题" class="headerlink" title="解决 GitHub 的 raw.githubusercontent.com 无法连接问题"></a>解决 GitHub 的 raw.githubusercontent.com 无法连接问题</h1><p>在使用 curl 下载文件时,如果出现以下情况</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused</span><br></pre></td></tr></table></figure>
-
-<h1 id="查询-raw-githubusercontent-com-的-IP"><a href="#查询-raw-githubusercontent-com-的-IP" class="headerlink" title="查询 raw.githubusercontent.com 的 IP"></a>查询 raw.githubusercontent.com 的 IP</h1><p>修改 hosts 文件</p>
-<p>文件路径 <code>/etc/hosts</code></p>
-<p>添加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># GitHub Start</span><br><span class="line">52.74.223.119 github.com</span><br><span class="line">192.30.253.112 gist.github.com</span><br><span class="line">192.30.253.113 gist.github.com</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">54.169.195.247 api.github.com</span><br><span class="line">185.199.111.153 assets-cdn.github.com</span><br><span class="line">151.101.76.133 raw.githubusercontent.com</span><br><span class="line">151.101.108.133 user-images.githubusercontent.com</span><br><span class="line">151.101.76.133 gist.githubusercontent.com</span><br><span class="line">151.101.76.133 cloud.githubusercontent.com</span><br><span class="line">151.101.76.133 camo.githubusercontent.com</span><br><span class="line">151.101.185.194 github.global.ssl.fastly.net</span><br><span class="line"># GitHub End</span><br></pre></td></tr></table></figure>
-
-<h1 id="如果你有代理那当以上都是废话"><a href="#如果你有代理那当以上都是废话" class="headerlink" title="如果你有代理那当以上都是废话"></a>如果你有代理那当以上都是废话</h1><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>github</category>
-      </categories>
-      <tags>
-        <tag>curl</tag>
-        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -449,89 +449,6 @@
         <tag>const</tag>
         <tag>babel</tag>
         <tag>兼容</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ES6 新增用法 ( 二 )</title>
-    <url>/2021/06/20/js/es6-day02/</url>
-    <content><![CDATA[<h1 id="解构赋值"><a href="#解构赋值" class="headerlink" title="解构赋值"></a>解构赋值</h1><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="解构赋值-1"><a href="#解构赋值-1" class="headerlink" title="解构赋值"></a>解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="不完全解构"><a href="#不完全解构" class="headerlink" title="不完全解构"></a>不完全解构</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, [b, [c, [d, [e, [f]]]]]] = [<span class="number">1</span>, [<span class="number">2</span>, [<span class="number">3</span>, [<span class="number">4</span>, [<span class="number">5</span>, [<span class="number">6</span>]]]]]];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">// 3</span></span><br><span class="line"><span class="built_in">console</span>.log(d); <span class="comment">// 4</span></span><br><span class="line"><span class="built_in">console</span>.log(e); <span class="comment">// 5</span></span><br><span class="line"><span class="built_in">console</span>.log(f); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="可以赋默认值"><a href="#可以赋默认值" class="headerlink" title="可以赋默认值"></a>可以赋默认值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b = <span class="number">3</span>] = [<span class="number">1</span>];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><h3 id="解构赋值-2"><a href="#解构赋值-2" class="headerlink" title="解构赋值"></a>解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123; a, b, c &#125; = &#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">c</span>: <span class="number">2</span>, <span class="attr">b</span>: <span class="number">3</span> &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 3</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="不完全解构-1"><a href="#不完全解构-1" class="headerlink" title="不完全解构"></a>不完全解构</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123; a &#125; = &#123; <span class="attr">b</span>: <span class="number">1</span> &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="嵌套-1"><a href="#嵌套-1" class="headerlink" title="嵌套"></a>嵌套</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123;</span><br><span class="line">  <span class="attr">a</span>: &#123;</span><br><span class="line">    <span class="attr">b</span>: &#123; c &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125; = &#123; <span class="attr">a</span>: &#123; <span class="attr">b</span>: &#123; <span class="attr">c</span>: <span class="number">1</span> &#125; &#125; &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(c);</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// a 与 b 只是为了样式一样</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="默认值"><a href="#默认值" class="headerlink" title="默认值"></a>默认值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123; a, b = <span class="number">1</span> &#125; = &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="解构赋值-3"><a href="#解构赋值-3" class="headerlink" title="解构赋值"></a>解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c, d, e, f] = <span class="string">&quot;pretty&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// p</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// r</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">// e</span></span><br><span class="line"><span class="built_in">console</span>.log(d); <span class="comment">// t</span></span><br><span class="line"><span class="built_in">console</span>.log(e); <span class="comment">// t</span></span><br><span class="line"><span class="built_in">console</span>.log(f); <span class="comment">// y</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="结构赋值的用途"><a href="#结构赋值的用途" class="headerlink" title="结构赋值的用途"></a>结构赋值的用途</h1><h2 id="变量交换"><a href="#变量交换" class="headerlink" title="变量交换"></a>变量交换</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">3</span>;</span><br><span class="line">[a, b] = [b, a];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 3</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="返回多个值"><a href="#返回多个值" class="headerlink" title="返回多个值"></a>返回多个值</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">demo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123; <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>, <span class="attr">age</span>: <span class="number">12</span> &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> &#123; name, age &#125; = demo();</span><br><span class="line"><span class="built_in">console</span>.log(name); <span class="comment">// 张三</span></span><br><span class="line"><span class="built_in">console</span>.log(age); <span class="comment">// 12</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="定义函数参数"><a href="#定义函数参数" class="headerlink" title="定义函数参数"></a>定义函数参数</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">demo1</span>(<span class="params">&#123; a, b, c &#125;</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(a); <span class="comment">// 李四</span></span><br><span class="line">  <span class="built_in">console</span>.log(b); <span class="comment">// 22</span></span><br><span class="line">  <span class="built_in">console</span>.log(c); <span class="comment">// 175</span></span><br><span class="line">&#125;</span><br><span class="line">demo1(&#123; <span class="attr">a</span>: <span class="string">&quot;李四&quot;</span>, <span class="attr">b</span>: <span class="number">22</span>, <span class="attr">c</span>: <span class="number">175</span> &#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="函数参数的默认值"><a href="#函数参数的默认值" class="headerlink" title="函数参数的默认值"></a>函数参数的默认值</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span>(<span class="params">&#123; name = <span class="string">&quot;张三&quot;</span> &#125;</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(name);</span><br><span class="line">&#125;</span><br><span class="line">fn1(&#123; <span class="attr">name</span>: <span class="string">&quot;李四&quot;</span> &#125;); <span class="comment">// 李四</span></span><br><span class="line">fn1(&#123;&#125;); <span class="comment">// 张三</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="ES6-中字符串的用法"><a href="#ES6-中字符串的用法" class="headerlink" title="ES6 中字符串的用法"></a>ES6 中字符串的用法</h1><h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><p><strong><code>$&#123;&#125;</code></strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> Person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">22</span>,</span><br><span class="line">  <span class="attr">sex</span>: <span class="string">&quot;男&quot;</span>,</span><br><span class="line">  <span class="attr">hobby</span>: <span class="string">&quot;钓鱼&quot;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">`我的名字是<span class="subst">$&#123;Person.name&#125;</span>,今年<span class="subst">$&#123;Person.age&#125;</span>岁了,性别<span class="subst">$&#123;Person.sex&#125;</span>,爱好<span class="subst">$&#123;Person.hobby&#125;</span>`</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str); <span class="comment">// 我的名字是张三,今年22岁了,性别男,爱好钓鱼</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="repeat"><a href="#repeat" class="headerlink" title="repeat( )"></a>repeat( )</h2><p><code>repeat()</code> 函数 : 将目标字符串重复 <code>N</code> 次 , 返回一个新的字符串 , 不影响原字符串</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str1 = <span class="string">&quot;嘿&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> str2 = str1.repeat(<span class="number">2</span>);</span><br><span class="line"><span class="built_in">console</span>.log(str2); <span class="comment">// 嘿嘿</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="includes"><a href="#includes" class="headerlink" title="includes( )"></a>includes( )</h2><p><code>includes()</code> 函数 : 判断字符串中是否含有指定的子字符串 , 返回 <code>true</code> 表示含有, <code>false</code> 表示未含有。第二个参数选填 , 表示开始搜索的位置 (下标从 <code>0</code> 开始)</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;codehhr&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&quot;c&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&quot;code&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&quot;h&quot;</span>, <span class="number">5</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&quot;h&quot;</span>, <span class="number">6</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="startsWith"><a href="#startsWith" class="headerlink" title="startsWith( )"></a>startsWith( )</h2><p>判断指定的子字符串是否出现在目标字符串的开头位置 , 第二个参数选填，表示开始搜索的位置 (从下标 <code>0</code> 开始)</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;codehhr&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str.startsWith(<span class="string">&quot;c&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.startsWith(<span class="string">&quot;code&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.startsWith(<span class="string">&quot;c&quot;</span>, <span class="number">0</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.startsWith(<span class="string">&quot;c&quot;</span>, <span class="number">1</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="endsWith"><a href="#endsWith" class="headerlink" title="endsWith( )"></a>endsWith( )</h2><p>判断子字符串是否出现在目标字符串的尾部位置 , 第二个参数选填 , 表示从头开始截取的长度</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;codehhr&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str.endsWith(<span class="string">&quot;r&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.endsWith(<span class="string">&quot;hr&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.endsWith(<span class="string">&quot;hr&quot;</span>, <span class="number">6</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(str.endsWith(<span class="string">&quot;hr&quot;</span>, <span class="number">7</span>)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="String-raw"><a href="#String-raw" class="headerlink" title="String.raw"></a>String.raw</h2><p>返回未加工的字符串</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 后面跟模板字符串</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">String</span>.raw<span class="string">`hello\nworld`</span>); <span class="comment">// hello\nworld</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="ES6-中数组的用法"><a href="#ES6-中数组的用法" class="headerlink" title="ES6 中数组的用法"></a>ES6 中数组的用法</h1><h2 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of( )"></a>Array.of( )</h2><p>将一组值 , 转换成数组</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> newArr = <span class="built_in">Array</span>.of(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line"><span class="built_in">console</span>.log(newArr); <span class="comment">// [1,2,3,4,5]</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Array-from"><a href="#Array-from" class="headerlink" title="Array.from( )"></a>Array.from( )</h2><p>将类似数组的对象或者可遍历的对象转换成真正的数组</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Array</span>.from(str)); <span class="comment">// [&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="find"><a href="#find" class="headerlink" title="find( )"></a>find( )</h2><p>找出数组中符合条件的第一个元素</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>];</span><br><span class="line"><span class="built_in">console</span>.log(</span><br><span class="line">  arr.find(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value &gt; <span class="number">7</span>;</span><br><span class="line">  &#125;)</span><br><span class="line">); <span class="comment">// 8</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="findIndex"><a href="#findIndex" class="headerlink" title="findIndex( )"></a>findIndex( )</h2><p>返回符合条件的第一个数组成员的位置</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>];</span><br><span class="line"><span class="built_in">console</span>.log(</span><br><span class="line">  arr.findIndex(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value &gt; <span class="number">7</span>;</span><br><span class="line">  &#125;)</span><br><span class="line">); <span class="comment">// 7</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="fill"><a href="#fill" class="headerlink" title="fill( )"></a>fill( )</h2><p>用指定的值 , 填充到数组 , 会更改原数组<br>多个参数时 , 第一个为要填充的内容 , 第二个为起始位置 (下标从 <code>0</code> 开始) , 第三个参数为结束位置 ( 结束位置不填充 )</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">arr.fill(<span class="number">6</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arr); <span class="comment">// [6, 6, 6, 6, 6]</span></span><br><span class="line">arr.fill(<span class="number">6</span>, <span class="number">0</span>, <span class="number">2</span>); <span class="comment">// [6, 6, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="entries"><a href="#entries" class="headerlink" title="entries( )"></a>entries( )</h2><p>对数组的键值对进行遍历 , 返回一个遍历器</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [index, value] <span class="keyword">of</span> [<span class="string">&quot;html&quot;</span>, <span class="string">&quot;css&quot;</span>, <span class="string">&quot;js&quot;</span>].entries()) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(index, value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 0 &quot;html&quot;</span></span><br><span class="line"><span class="comment">// 1 &quot;css&quot;</span></span><br><span class="line"><span class="comment">// 2 &quot;js&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="keys"><a href="#keys" class="headerlink" title="keys( )"></a>keys( )</h2><p>对数组的索引键进行遍历 , 返回一个遍历器</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">of</span> [<span class="number">1</span>, <span class="number">2</span>].keys()) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(index);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 0</span></span><br><span class="line"><span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="values"><a href="#values" class="headerlink" title="values"></a>values</h2><p>对数组的元素进行遍历 , 返回一个遍历器</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> value <span class="keyword">of</span> [<span class="number">1</span>, <span class="number">2</span>].values()) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>js</category>
-        <category>ES6</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>javascript</tag>
-        <tag>ES6</tag>
-        <tag>解构赋值</tag>
       </tags>
   </entry>
   <entry>
@@ -664,6 +581,89 @@
         <tag>js</tag>
         <tag>javascript</tag>
         <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ES6 新增用法 ( 二 )</title>
+    <url>/2021/06/20/js/es6-day02/</url>
+    <content><![CDATA[<h1 id="解构赋值"><a href="#解构赋值" class="headerlink" title="解构赋值"></a>解构赋值</h1><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="解构赋值-1"><a href="#解构赋值-1" class="headerlink" title="解构赋值"></a>解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="不完全解构"><a href="#不完全解构" class="headerlink" title="不完全解构"></a>不完全解构</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, [b, [c, [d, [e, [f]]]]]] = [<span class="number">1</span>, [<span class="number">2</span>, [<span class="number">3</span>, [<span class="number">4</span>, [<span class="number">5</span>, [<span class="number">6</span>]]]]]];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">// 3</span></span><br><span class="line"><span class="built_in">console</span>.log(d); <span class="comment">// 4</span></span><br><span class="line"><span class="built_in">console</span>.log(e); <span class="comment">// 5</span></span><br><span class="line"><span class="built_in">console</span>.log(f); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="可以赋默认值"><a href="#可以赋默认值" class="headerlink" title="可以赋默认值"></a>可以赋默认值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b = <span class="number">3</span>] = [<span class="number">1</span>];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><h3 id="解构赋值-2"><a href="#解构赋值-2" class="headerlink" title="解构赋值"></a>解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123; a, b, c &#125; = &#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">c</span>: <span class="number">2</span>, <span class="attr">b</span>: <span class="number">3</span> &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 3</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="不完全解构-1"><a href="#不完全解构-1" class="headerlink" title="不完全解构"></a>不完全解构</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123; a &#125; = &#123; <span class="attr">b</span>: <span class="number">1</span> &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="嵌套-1"><a href="#嵌套-1" class="headerlink" title="嵌套"></a>嵌套</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123;</span><br><span class="line">  <span class="attr">a</span>: &#123;</span><br><span class="line">    <span class="attr">b</span>: &#123; c &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125; = &#123; <span class="attr">a</span>: &#123; <span class="attr">b</span>: &#123; <span class="attr">c</span>: <span class="number">1</span> &#125; &#125; &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(c);</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// a 与 b 只是为了样式一样</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="默认值"><a href="#默认值" class="headerlink" title="默认值"></a>默认值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123; a, b = <span class="number">1</span> &#125; = &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="解构赋值-3"><a href="#解构赋值-3" class="headerlink" title="解构赋值"></a>解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c, d, e, f] = <span class="string">&quot;pretty&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// p</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// r</span></span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">// e</span></span><br><span class="line"><span class="built_in">console</span>.log(d); <span class="comment">// t</span></span><br><span class="line"><span class="built_in">console</span>.log(e); <span class="comment">// t</span></span><br><span class="line"><span class="built_in">console</span>.log(f); <span class="comment">// y</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="结构赋值的用途"><a href="#结构赋值的用途" class="headerlink" title="结构赋值的用途"></a>结构赋值的用途</h1><h2 id="变量交换"><a href="#变量交换" class="headerlink" title="变量交换"></a>变量交换</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">3</span>;</span><br><span class="line">[a, b] = [b, a];</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 3</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="返回多个值"><a href="#返回多个值" class="headerlink" title="返回多个值"></a>返回多个值</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">demo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123; <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>, <span class="attr">age</span>: <span class="number">12</span> &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> &#123; name, age &#125; = demo();</span><br><span class="line"><span class="built_in">console</span>.log(name); <span class="comment">// 张三</span></span><br><span class="line"><span class="built_in">console</span>.log(age); <span class="comment">// 12</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="定义函数参数"><a href="#定义函数参数" class="headerlink" title="定义函数参数"></a>定义函数参数</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">demo1</span>(<span class="params">&#123; a, b, c &#125;</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(a); <span class="comment">// 李四</span></span><br><span class="line">  <span class="built_in">console</span>.log(b); <span class="comment">// 22</span></span><br><span class="line">  <span class="built_in">console</span>.log(c); <span class="comment">// 175</span></span><br><span class="line">&#125;</span><br><span class="line">demo1(&#123; <span class="attr">a</span>: <span class="string">&quot;李四&quot;</span>, <span class="attr">b</span>: <span class="number">22</span>, <span class="attr">c</span>: <span class="number">175</span> &#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="函数参数的默认值"><a href="#函数参数的默认值" class="headerlink" title="函数参数的默认值"></a>函数参数的默认值</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span>(<span class="params">&#123; name = <span class="string">&quot;张三&quot;</span> &#125;</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(name);</span><br><span class="line">&#125;</span><br><span class="line">fn1(&#123; <span class="attr">name</span>: <span class="string">&quot;李四&quot;</span> &#125;); <span class="comment">// 李四</span></span><br><span class="line">fn1(&#123;&#125;); <span class="comment">// 张三</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="ES6-中字符串的用法"><a href="#ES6-中字符串的用法" class="headerlink" title="ES6 中字符串的用法"></a>ES6 中字符串的用法</h1><h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><p><strong><code>$&#123;&#125;</code></strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> Person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">22</span>,</span><br><span class="line">  <span class="attr">sex</span>: <span class="string">&quot;男&quot;</span>,</span><br><span class="line">  <span class="attr">hobby</span>: <span class="string">&quot;钓鱼&quot;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">`我的名字是<span class="subst">$&#123;Person.name&#125;</span>,今年<span class="subst">$&#123;Person.age&#125;</span>岁了,性别<span class="subst">$&#123;Person.sex&#125;</span>,爱好<span class="subst">$&#123;Person.hobby&#125;</span>`</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str); <span class="comment">// 我的名字是张三,今年22岁了,性别男,爱好钓鱼</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="repeat"><a href="#repeat" class="headerlink" title="repeat( )"></a>repeat( )</h2><p><code>repeat()</code> 函数 : 将目标字符串重复 <code>N</code> 次 , 返回一个新的字符串 , 不影响原字符串</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str1 = <span class="string">&quot;嘿&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> str2 = str1.repeat(<span class="number">2</span>);</span><br><span class="line"><span class="built_in">console</span>.log(str2); <span class="comment">// 嘿嘿</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="includes"><a href="#includes" class="headerlink" title="includes( )"></a>includes( )</h2><p><code>includes()</code> 函数 : 判断字符串中是否含有指定的子字符串 , 返回 <code>true</code> 表示含有, <code>false</code> 表示未含有。第二个参数选填 , 表示开始搜索的位置 (下标从 <code>0</code> 开始)</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;codehhr&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&quot;c&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&quot;code&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&quot;h&quot;</span>, <span class="number">5</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&quot;h&quot;</span>, <span class="number">6</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="startsWith"><a href="#startsWith" class="headerlink" title="startsWith( )"></a>startsWith( )</h2><p>判断指定的子字符串是否出现在目标字符串的开头位置 , 第二个参数选填，表示开始搜索的位置 (从下标 <code>0</code> 开始)</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;codehhr&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str.startsWith(<span class="string">&quot;c&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.startsWith(<span class="string">&quot;code&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.startsWith(<span class="string">&quot;c&quot;</span>, <span class="number">0</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.startsWith(<span class="string">&quot;c&quot;</span>, <span class="number">1</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="endsWith"><a href="#endsWith" class="headerlink" title="endsWith( )"></a>endsWith( )</h2><p>判断子字符串是否出现在目标字符串的尾部位置 , 第二个参数选填 , 表示从头开始截取的长度</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;codehhr&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str.endsWith(<span class="string">&quot;r&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.endsWith(<span class="string">&quot;hr&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.endsWith(<span class="string">&quot;hr&quot;</span>, <span class="number">6</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(str.endsWith(<span class="string">&quot;hr&quot;</span>, <span class="number">7</span>)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="String-raw"><a href="#String-raw" class="headerlink" title="String.raw"></a>String.raw</h2><p>返回未加工的字符串</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 后面跟模板字符串</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">String</span>.raw<span class="string">`hello\nworld`</span>); <span class="comment">// hello\nworld</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="ES6-中数组的用法"><a href="#ES6-中数组的用法" class="headerlink" title="ES6 中数组的用法"></a>ES6 中数组的用法</h1><h2 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of( )"></a>Array.of( )</h2><p>将一组值 , 转换成数组</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> newArr = <span class="built_in">Array</span>.of(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line"><span class="built_in">console</span>.log(newArr); <span class="comment">// [1,2,3,4,5]</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Array-from"><a href="#Array-from" class="headerlink" title="Array.from( )"></a>Array.from( )</h2><p>将类似数组的对象或者可遍历的对象转换成真正的数组</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Array</span>.from(str)); <span class="comment">// [&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="find"><a href="#find" class="headerlink" title="find( )"></a>find( )</h2><p>找出数组中符合条件的第一个元素</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>];</span><br><span class="line"><span class="built_in">console</span>.log(</span><br><span class="line">  arr.find(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value &gt; <span class="number">7</span>;</span><br><span class="line">  &#125;)</span><br><span class="line">); <span class="comment">// 8</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="findIndex"><a href="#findIndex" class="headerlink" title="findIndex( )"></a>findIndex( )</h2><p>返回符合条件的第一个数组成员的位置</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>];</span><br><span class="line"><span class="built_in">console</span>.log(</span><br><span class="line">  arr.findIndex(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value &gt; <span class="number">7</span>;</span><br><span class="line">  &#125;)</span><br><span class="line">); <span class="comment">// 7</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="fill"><a href="#fill" class="headerlink" title="fill( )"></a>fill( )</h2><p>用指定的值 , 填充到数组 , 会更改原数组<br>多个参数时 , 第一个为要填充的内容 , 第二个为起始位置 (下标从 <code>0</code> 开始) , 第三个参数为结束位置 ( 结束位置不填充 )</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">arr.fill(<span class="number">6</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arr); <span class="comment">// [6, 6, 6, 6, 6]</span></span><br><span class="line">arr.fill(<span class="number">6</span>, <span class="number">0</span>, <span class="number">2</span>); <span class="comment">// [6, 6, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="entries"><a href="#entries" class="headerlink" title="entries( )"></a>entries( )</h2><p>对数组的键值对进行遍历 , 返回一个遍历器</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [index, value] <span class="keyword">of</span> [<span class="string">&quot;html&quot;</span>, <span class="string">&quot;css&quot;</span>, <span class="string">&quot;js&quot;</span>].entries()) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(index, value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 0 &quot;html&quot;</span></span><br><span class="line"><span class="comment">// 1 &quot;css&quot;</span></span><br><span class="line"><span class="comment">// 2 &quot;js&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="keys"><a href="#keys" class="headerlink" title="keys( )"></a>keys( )</h2><p>对数组的索引键进行遍历 , 返回一个遍历器</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">of</span> [<span class="number">1</span>, <span class="number">2</span>].keys()) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(index);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 0</span></span><br><span class="line"><span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="values"><a href="#values" class="headerlink" title="values"></a>values</h2><p>对数组的元素进行遍历 , 返回一个遍历器</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> value <span class="keyword">of</span> [<span class="number">1</span>, <span class="number">2</span>].values()) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>js</category>
+        <category>ES6</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>javascript</tag>
+        <tag>ES6</tag>
+        <tag>解构赋值</tag>
       </tags>
   </entry>
   <entry>
@@ -2641,108 +2641,6 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>Kali 下用 swaks 发送邮件</title>
-    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
-    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
-
-<p>拿我的 QQ 举例</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
-
-<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
-<hr>
-<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
-<p>记住 smtp 的密码</p>
-<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
-
-<p>参数说明：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
-
-<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
-<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<p>收件箱收到的是 email.txt 里的内容</p>
-<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>kali</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>kali</tag>
-        <tag>swaks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Manjaro安装后简单配置</title>
-    <url>/2019/06/01/linux/linux-manjaro/</url>
-    <content><![CDATA[<h2 id="一个相见恨晚的-Linux-操作系统"><a href="#一个相见恨晚的-Linux-操作系统" class="headerlink" title="一个相见恨晚的 Linux 操作系统"></a>一个相见恨晚的 Linux 操作系统</h2><p>Manjaro 到底有多受欢迎?</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统。</span><br><span class="line">( 如OpenSolaris、MINIX及BSD等 ) 的新闻、人气排名、以及其他一般信息等的网站。</span><br><span class="line">它包含了数百种发行版的信息。</span><br><span class="line">原文链接：https://distrowatch.com/table.php?distribution=manjaro</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/i3.png" alt="screenshot"></p>
-<h1 id="Manjaro-安装后简单配置"><a href="#Manjaro-安装后简单配置" class="headerlink" title="Manjaro 安装后简单配置"></a>Manjaro 安装后简单配置</h1><h2 id="1-添加-archlinuxcn-源"><a href="#1-添加-archlinuxcn-源" class="headerlink" title="1. 添加 archlinuxcn 源"></a>1. 添加 <code>archlinuxcn</code> 源</h2><p>编辑这个文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/pacman.conf</span><br></pre></td></tr></table></figure>
-
-<p>在文末添加以下内容,添加清华源,或者别的也行,里面有国内的一些软件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">SigLevel = Never</span><br><span class="line">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="variable">$arch</span></span><br></pre></td></tr></table></figure>
-
-<p>保存退出</p>
-<h4 id="按照地区自动更新为最快最稳定的软件源镜像地址"><a href="#按照地区自动更新为最快最稳定的软件源镜像地址" class="headerlink" title="按照地区自动更新为最快最稳定的软件源镜像地址"></a>按照地区自动更新为最快最稳定的软件源镜像地址</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman-mirrors -c China</span><br></pre></td></tr></table></figure>
-
-<h4 id="强制更新一下"><a href="#强制更新一下" class="headerlink" title="强制更新一下 :"></a>强制更新一下 :</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -Syyu</span><br></pre></td></tr></table></figure>
-
-<p>========================一路回车就行= = = = = = = = = = = = = = = = = = =</p>
-<h2 id="2-安装软件"><a href="#2-安装软件" class="headerlink" title="2.安装软件"></a>2.安装软件</h2><p>需要安装的软件 <code>pacman</code> 里基本都有</p>
-<h3 id="1-安装-vim"><a href="#1-安装-vim" class="headerlink" title="1.安装 vim"></a>1.安装 vim</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S vim</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-更换-shell"><a href="#2-更换-shell" class="headerlink" title="2.更换 shell"></a>2.更换 shell</h3><p>默认为 <code>bash</code>,我比较喜欢 <code>fish</code>,方便好用,配置也简单</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装fish</span><br><span class="line">sudo pacman -S fish</span><br><span class="line">---</span><br><span class="line">更改shell为fish</span><br><span class="line">chsh -s /usr/bin/fish</span><br><span class="line">---</span><br><span class="line">安装oh-my-fish(一个友好的shell)</span><br><span class="line">curl -L https://get.oh-my.fish | fish</span><br></pre></td></tr></table></figure>
-
-<h4 id="可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件"><a href="#可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件" class="headerlink" title="可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件"></a>可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/oh-my-fish/oh-my-fish</span><br><span class="line"><span class="comment"># 如果你网不好,可以克隆镜像仓库(比如:https://github.com.cnpmjs.org/oh-my-fish/oh-my-fish)</span></span><br><span class="line"><span class="built_in">cd</span> oh-my-fish</span><br><span class="line">bin/install --offline</span><br></pre></td></tr></table></figure>
-
-<h4 id="简单配置一下-fish"><a href="#简单配置一下-fish" class="headerlink" title="简单配置一下 fish"></a>简单配置一下 fish</h4><p>终端输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">fish_config</span><br></pre></td></tr></table></figure>
-
-<p>然后它会自动打开浏览器</p>
-<h5 id="选一个主题，然后点set-theme"><a href="#选一个主题，然后点set-theme" class="headerlink" title="选一个主题，然后点set theme"></a>选一个主题，然后点<code>set theme</code></h5><p>在<code>promt</code>栏里选个提示符，然后点<code>promt set</code><br>然后就可以关闭浏览器了<br>回到终端，回车即可</p>
-<h3 id="3-安装-录屏软件（推荐simplescreenrecorder这个比较小）"><a href="#3-安装-录屏软件（推荐simplescreenrecorder这个比较小）" class="headerlink" title="3.安装 录屏软件（推荐simplescreenrecorder这个比较小）"></a>3.安装 录屏软件（推荐<code>simplescreenrecorder</code>这个比较小）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S simplescreenrecorder</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-安装-VScode"><a href="#4-安装-VScode" class="headerlink" title="4.安装 VScode"></a>4.安装 VScode</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S visual-studio-code-bin</span><br></pre></td></tr></table></figure>
-
-<p>或者</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S code</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-安装网易云音乐"><a href="#5-安装网易云音乐" class="headerlink" title="5.安装网易云音乐"></a>5.安装网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S netease-cloud-music</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="6-安装中文输入法"><a href="#6-安装中文输入法" class="headerlink" title="6.安装中文输入法"></a>6.安装中文输入法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx5 fcitx5-im fcitx5-rime</span><br><span class="line">sudo pacman -S fcitx5-material-color <span class="comment"># 主题</span></span><br><span class="line">sudo pacman -S fcitx5-configtool  <span class="comment"># 图形化配置界面</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h5 id="添加配置文件-xprofile-填入以下几句"><a href="#添加配置文件-xprofile-填入以下几句" class="headerlink" title="添加配置文件 ~/.xprofile 填入以下几句"></a>添加配置文件 <code>~/.xprofile</code> 填入以下几句</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> GTK_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> QT_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> XMODIFIERS=<span class="string">&quot;@im=fcitx5&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="然后重启-建议设置为开机让-fcitx5-自启"><a href="#然后重启-建议设置为开机让-fcitx5-自启" class="headerlink" title="然后重启 ( 建议设置为开机让 fcitx5 自启 )"></a>然后重启 ( 建议设置为开机让 <code>fcitx5</code> 自启 )</h5><h5 id="重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法"><a href="#重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法" class="headerlink" title="重启后你应该会看见一个小键盘的图标,右击选 config,添加 rime 输入法,默认应该是 ctrl+space 切换输入法"></a>重启后你应该会看见一个小键盘的图标,右击选 <code>config</code>,添加 <code>rime</code> 输入法,默认应该是 <code>ctrl+space</code> 切换输入法</h5><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/fcitx-configtool.png" alt="fcitx-configtool"></p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/rime.png" alt="rime"></p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>manjaro</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>manjaro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Js 基础总结及案例</title>
     <url>/2021/05/13/js/js/</url>
     <content><![CDATA[<h1 id="一-JavaScript-介绍"><a href="#一-JavaScript-介绍" class="headerlink" title="一. JavaScript 介绍"></a>一. JavaScript 介绍</h1><h2 id="1-、JavaScript-是什么"><a href="#1-、JavaScript-是什么" class="headerlink" title="(1) 、JavaScript 是什么"></a>(1) 、JavaScript 是什么</h2><h3 id="1-JavaScript-的历史"><a href="#1-JavaScript-的历史" class="headerlink" title="1. JavaScript 的历史"></a>1. JavaScript 的历史</h3><p>Netscape（网景）在最初将其脚本语言命名为 LiveScript，是布兰登.艾克发明的。后来 Netscape 在与 Sun 合作之后将其改名为 JavaScript。JavaScript 最初受 Java 启发而开始设计的，目的之一就是“看上去像 Java”，因此语法上有类似之处，一些名称和命名规范也借自 Java。JavaScript 与 Java 名称上的近似，是当时 Netscape 为了营销考虑与 Sun 微系统达成协议的结果。</p>
@@ -3074,6 +2972,108 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>Kali 下用 swaks 发送邮件</title>
+    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
+    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
+
+<p>拿我的 QQ 举例</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
+
+<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
+<hr>
+<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
+<p>记住 smtp 的密码</p>
+<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
+
+<p>参数说明：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
+
+<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
+<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<p>收件箱收到的是 email.txt 里的内容</p>
+<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>kali</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>kali</tag>
+        <tag>swaks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Manjaro安装后简单配置</title>
+    <url>/2019/06/01/linux/linux-manjaro/</url>
+    <content><![CDATA[<h2 id="一个相见恨晚的-Linux-操作系统"><a href="#一个相见恨晚的-Linux-操作系统" class="headerlink" title="一个相见恨晚的 Linux 操作系统"></a>一个相见恨晚的 Linux 操作系统</h2><p>Manjaro 到底有多受欢迎?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统。</span><br><span class="line">( 如OpenSolaris、MINIX及BSD等 ) 的新闻、人气排名、以及其他一般信息等的网站。</span><br><span class="line">它包含了数百种发行版的信息。</span><br><span class="line">原文链接：https://distrowatch.com/table.php?distribution=manjaro</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/i3.png" alt="screenshot"></p>
+<h1 id="Manjaro-安装后简单配置"><a href="#Manjaro-安装后简单配置" class="headerlink" title="Manjaro 安装后简单配置"></a>Manjaro 安装后简单配置</h1><h2 id="1-添加-archlinuxcn-源"><a href="#1-添加-archlinuxcn-源" class="headerlink" title="1. 添加 archlinuxcn 源"></a>1. 添加 <code>archlinuxcn</code> 源</h2><p>编辑这个文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/pacman.conf</span><br></pre></td></tr></table></figure>
+
+<p>在文末添加以下内容,添加清华源,或者别的也行,里面有国内的一些软件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">SigLevel = Never</span><br><span class="line">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="variable">$arch</span></span><br></pre></td></tr></table></figure>
+
+<p>保存退出</p>
+<h4 id="按照地区自动更新为最快最稳定的软件源镜像地址"><a href="#按照地区自动更新为最快最稳定的软件源镜像地址" class="headerlink" title="按照地区自动更新为最快最稳定的软件源镜像地址"></a>按照地区自动更新为最快最稳定的软件源镜像地址</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman-mirrors -c China</span><br></pre></td></tr></table></figure>
+
+<h4 id="强制更新一下"><a href="#强制更新一下" class="headerlink" title="强制更新一下 :"></a>强制更新一下 :</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -Syyu</span><br></pre></td></tr></table></figure>
+
+<p>========================一路回车就行= = = = = = = = = = = = = = = = = = =</p>
+<h2 id="2-安装软件"><a href="#2-安装软件" class="headerlink" title="2.安装软件"></a>2.安装软件</h2><p>需要安装的软件 <code>pacman</code> 里基本都有</p>
+<h3 id="1-安装-vim"><a href="#1-安装-vim" class="headerlink" title="1.安装 vim"></a>1.安装 vim</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S vim</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-更换-shell"><a href="#2-更换-shell" class="headerlink" title="2.更换 shell"></a>2.更换 shell</h3><p>默认为 <code>bash</code>,我比较喜欢 <code>fish</code>,方便好用,配置也简单</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装fish</span><br><span class="line">sudo pacman -S fish</span><br><span class="line">---</span><br><span class="line">更改shell为fish</span><br><span class="line">chsh -s /usr/bin/fish</span><br><span class="line">---</span><br><span class="line">安装oh-my-fish(一个友好的shell)</span><br><span class="line">curl -L https://get.oh-my.fish | fish</span><br></pre></td></tr></table></figure>
+
+<h4 id="可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件"><a href="#可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件" class="headerlink" title="可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件"></a>可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/oh-my-fish/oh-my-fish</span><br><span class="line"><span class="comment"># 如果你网不好,可以克隆镜像仓库(比如:https://github.com.cnpmjs.org/oh-my-fish/oh-my-fish)</span></span><br><span class="line"><span class="built_in">cd</span> oh-my-fish</span><br><span class="line">bin/install --offline</span><br></pre></td></tr></table></figure>
+
+<h4 id="简单配置一下-fish"><a href="#简单配置一下-fish" class="headerlink" title="简单配置一下 fish"></a>简单配置一下 fish</h4><p>终端输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">fish_config</span><br></pre></td></tr></table></figure>
+
+<p>然后它会自动打开浏览器</p>
+<h5 id="选一个主题，然后点set-theme"><a href="#选一个主题，然后点set-theme" class="headerlink" title="选一个主题，然后点set theme"></a>选一个主题，然后点<code>set theme</code></h5><p>在<code>promt</code>栏里选个提示符，然后点<code>promt set</code><br>然后就可以关闭浏览器了<br>回到终端，回车即可</p>
+<h3 id="3-安装-录屏软件（推荐simplescreenrecorder这个比较小）"><a href="#3-安装-录屏软件（推荐simplescreenrecorder这个比较小）" class="headerlink" title="3.安装 录屏软件（推荐simplescreenrecorder这个比较小）"></a>3.安装 录屏软件（推荐<code>simplescreenrecorder</code>这个比较小）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S simplescreenrecorder</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-安装-VScode"><a href="#4-安装-VScode" class="headerlink" title="4.安装 VScode"></a>4.安装 VScode</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S visual-studio-code-bin</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S code</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-安装网易云音乐"><a href="#5-安装网易云音乐" class="headerlink" title="5.安装网易云音乐"></a>5.安装网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S netease-cloud-music</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="6-安装中文输入法"><a href="#6-安装中文输入法" class="headerlink" title="6.安装中文输入法"></a>6.安装中文输入法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx5 fcitx5-im fcitx5-rime</span><br><span class="line">sudo pacman -S fcitx5-material-color <span class="comment"># 主题</span></span><br><span class="line">sudo pacman -S fcitx5-configtool  <span class="comment"># 图形化配置界面</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="添加配置文件-xprofile-填入以下几句"><a href="#添加配置文件-xprofile-填入以下几句" class="headerlink" title="添加配置文件 ~/.xprofile 填入以下几句"></a>添加配置文件 <code>~/.xprofile</code> 填入以下几句</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> GTK_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> QT_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> XMODIFIERS=<span class="string">&quot;@im=fcitx5&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="然后重启-建议设置为开机让-fcitx5-自启"><a href="#然后重启-建议设置为开机让-fcitx5-自启" class="headerlink" title="然后重启 ( 建议设置为开机让 fcitx5 自启 )"></a>然后重启 ( 建议设置为开机让 <code>fcitx5</code> 自启 )</h5><h5 id="重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法"><a href="#重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法" class="headerlink" title="重启后你应该会看见一个小键盘的图标,右击选 config,添加 rime 输入法,默认应该是 ctrl+space 切换输入法"></a>重启后你应该会看见一个小键盘的图标,右击选 <code>config</code>,添加 <code>rime</code> 输入法,默认应该是 <code>ctrl+space</code> 切换输入法</h5><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/fcitx-configtool.png" alt="fcitx-configtool"></p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/rime.png" alt="rime"></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>manjaro</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>manjaro</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux安装node环境以及cnpm</title>
     <url>/2020/02/28/linux/linux-node/</url>
     <content><![CDATA[<h3 id="其实我老早以前就发现-node-版本太高也不行"><a href="#其实我老早以前就发现-node-版本太高也不行" class="headerlink" title="其实我老早以前就发现 node 版本太高也不行"></a>其实我老早以前就发现 node 版本太高也不行</h3><h4 id="以往的版本下载地址-https-nodejs-org-zh-cn-download-releases"><a href="#以往的版本下载地址-https-nodejs-org-zh-cn-download-releases" class="headerlink" title="以往的版本下载地址: https://nodejs.org/zh-cn/download/releases/"></a>以往的版本下载地址: <a href="https://nodejs.org/zh-cn/download/releases/">https://nodejs.org/zh-cn/download/releases/</a></h4><h1 id="下载并解压到-usr-local-下"><a href="#下载并解压到-usr-local-下" class="headerlink" title="下载并解压到 /usr/local/ 下"></a>下载并解压到 <code>/usr/local/</code> 下</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/node.png" alt="node"></p>
@@ -3279,7 +3279,9 @@ echartsDraggable();
   <entry>
     <title>node 连接 MySQL</title>
     <url>/2021/07/16/node/node-mysql/</url>
-    <content><![CDATA[<h1 id="留言版案例-https-github-com-codehhr-Message-board"><a href="#留言版案例-https-github-com-codehhr-Message-board" class="headerlink" title="留言版案例 https://github.com/codehhr/Message-board"></a><span id="green-block">留言版案例</span> <a href="https://github.com/codehhr/Message-board">https://github.com/codehhr/Message-board</a></h1><h1 id="安装-mysql-驱动"><a href="#安装-mysql-驱动" class="headerlink" title="安装 mysql 驱动"></a>安装 mysql 驱动</h1><p>可以用淘宝镜像的 <code>cnpm</code> 安装</p>
+    <content><![CDATA[<a class="btn-beautify button--animated green larger" href="https://github.com/codehhr/Message-board/" 
+  title="留言版案例"><i class="far fa-hand-point-right"></i><span>留言版案例</span></a>
+<h1 id="安装-mysql-驱动"><a href="#安装-mysql-驱动" class="headerlink" title="安装 mysql 驱动"></a>安装 mysql 驱动</h1><p>可以用淘宝镜像的 <code>cnpm</code> 安装</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install mysql --save</span><br></pre></td></tr></table></figure>
 
 <h1 id="引入-mysql-模块"><a href="#引入-mysql-模块" class="headerlink" title="引入 mysql 模块"></a>引入 mysql 模块</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>);</span><br></pre></td></tr></table></figure>
@@ -3296,89 +3298,40 @@ echartsDraggable();
 <h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
   </entry>
   <entry>
-    <title>用脚手架搭建一个 vue 项目</title>
-    <url>/2021/02/27/vue/vue-createvue/</url>
-    <content><![CDATA[<h1 id="一、需要安装-node-环境"><a href="#一、需要安装-node-环境" class="headerlink" title="一、需要安装 node 环境"></a>一、需要安装 node 环境</h1><blockquote>
-<p>下载地址: <a href="https://nodejs.org/en/">https://nodejs.org/en/</a><br>中文网: <a href="http://nodejs.cn/">http://nodejs.cn/</a></p>
-</blockquote>
-<h4 id="安装后为方便国内使用，可以把-npm-换成-taobao-的-cnpm-速度快"><a href="#安装后为方便国内使用，可以把-npm-换成-taobao-的-cnpm-速度快" class="headerlink" title="安装后为方便国内使用，可以把 npm 换成 taobao 的 cnpm (速度快)"></a>安装后为方便国内使用，可以把 npm 换成 taobao 的 cnpm (速度快)</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+    <title>Axios 的使用</title>
+    <url>/2021/07/21/vue/vue-axios/</url>
+    <content><![CDATA[<h1 id="主要是-GET-和-POST-请求"><a href="#主要是-GET-和-POST-请求" class="headerlink" title="主要是 GET 和 POST 请求"></a>主要是 GET 和 POST 请求</h1><div class="tabs" id="axios"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#axios-1">GET 请求</button></li><li class="tab"><button type="button" data-href="#axios-2">POST 请求</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="axios-1"><h1 id="GET-请求"><a href="#GET-请求" class="headerlink" title="GET 请求"></a>GET 请求</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">axios</span><br><span class="line">  .get(<span class="string">&quot;/img?number=4&quot;</span>)</span><br><span class="line">  .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(err);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
 
-<p>检查是否安装成功,查看版本号</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/node.png" alt="node"></p>
-<h1 id="二、全局安装-vue-脚手架"><a href="#二、全局安装-vue-脚手架" class="headerlink" title="二、全局安装 vue 脚手架"></a>二、全局安装 vue 脚手架</h1><p>全局安装可能需要管理员权限( Windows 以管理员身份运行; Linux 加 sudo )</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br><span class="line">或者用 cnpm</span><br><span class="line">cnpm install -g @vue/cli</span><br><span class="line">简写</span><br><span class="line">cnpm i -g @vue/cli</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">axios</span><br><span class="line">  .get(<span class="string">&quot;/img&quot;</span>, &#123;</span><br><span class="line">    <span class="attr">params</span>: &#123;</span><br><span class="line">      <span class="attr">number</span>: <span class="number">4</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(err);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
 
-<h4 id="安装成功后可查看版本"><a href="#安装成功后可查看版本" class="headerlink" title="安装成功后可查看版本"></a>安装成功后可查看版本</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue -V  (大写V)</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">axios(&#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&quot;GET&quot;</span>,</span><br><span class="line">  <span class="attr">url</span>: <span class="string">&quot;https://img&quot;</span>,</span><br><span class="line">  <span class="comment">// get 请求参数</span></span><br><span class="line">  <span class="attr">params</span>: &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;zs&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">20</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="axios-2"><h1 id="POST-请求"><a href="#POST-请求" class="headerlink" title="POST 请求"></a>POST 请求</h1><p>传参方式大致用的有 <code>3</code> 种</p>
+<h2 id="①-Content-Type-multipart-form-data"><a href="#①-Content-Type-multipart-form-data" class="headerlink" title="① Content-Type = multipart/form-data"></a>① Content-Type = multipart/form-data</h2><p>传参格式为 <code>formData</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> formData = <span class="keyword">new</span> FormData();</span><br><span class="line">formData.append(<span class="string">&quot;type&quot;</span>, <span class="string">&quot;free&quot;</span>);</span><br><span class="line">formData.append(<span class="string">&quot;pageNum&quot;</span>, <span class="number">1</span>);</span><br><span class="line">formData.append(<span class="string">&quot;pageSize&quot;</span>, <span class="number">10</span>);</span><br><span class="line">axios</span><br><span class="line">  .post(<span class="string">&quot;/course&quot;</span>, formData)</span><br><span class="line">  .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(err);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vueversion.png" alt="vueversion"></p>
-<h1 id="三、创建项目"><a href="#三、创建项目" class="headerlink" title="三、创建项目"></a>三、创建项目</h1><p>为方便编辑,我一般都在 <code>vscode</code> 里操作</p>
-<h2 id="1-比如创建一个叫-project-的项目"><a href="#1-比如创建一个叫-project-的项目" class="headerlink" title="1.比如创建一个叫 project 的项目"></a>1.比如创建一个叫 project 的项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue create project</span><br></pre></td></tr></table></figure>
+<h2 id="②-Content-Type-application-x-www-form-urlencoded"><a href="#②-Content-Type-application-x-www-form-urlencoded" class="headerlink" title="② Content-Type= application/x-www-form-urlencoded"></a>② Content-Type= application/x-www-form-urlencoded</h2><p>传参格式为 <code>query</code> 形式</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">axios</span><br><span class="line">  .post(</span><br><span class="line">    <span class="string">&quot;/course&quot;</span>,</span><br><span class="line">    <span class="built_in">JSON</span>.stringify(&#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;free&quot;</span>,</span><br><span class="line">      <span class="attr">pageNum</span>: <span class="number">1</span>,</span><br><span class="line">      <span class="attr">pageSize</span>: <span class="number">10</span>,</span><br><span class="line">    &#125;)</span><br><span class="line">  )</span><br><span class="line">  .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;res=&gt;&quot;</span>, res);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(err);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
 
-<h4 id="如果安装了-cnpm-就会询问是否使用淘宝镜像-cnpm"><a href="#如果安装了-cnpm-就会询问是否使用淘宝镜像-cnpm" class="headerlink" title="如果安装了 cnpm 就会询问是否使用淘宝镜像(cnpm)"></a>如果安装了 cnpm 就会询问是否使用淘宝镜像(cnpm)</h4><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateusecnpm.png" alt="vuecreateusecnpm"></p>
-<p>都可以,只是影响网速快慢,我装了 <code>cnpm</code>,这里我填 <code>Y</code></p>
-<h2 id="2-选择配置方式"><a href="#2-选择配置方式" class="headerlink" title="2.选择配置方式"></a>2.选择配置方式</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatechooseconf.png" alt="vuecreatechooseconf"></p>
-<blockquote>
-<h4 id="说明"><a href="#说明" class="headerlink" title="说明:"></a>说明:</h4><ul>
-<li><code>Default (babel,eslint)</code>: 默认配置</li>
-<li><code>Manually select features</code>: 手动选择配置</li>
-</ul>
-</blockquote>
-<p>键盘上下就可以选择,选 <code>Manually select features</code> (最下面那个),俺不用默认配置</p>
-<h2 id="3-手动选择项目所需要的包"><a href="#3-手动选择项目所需要的包" class="headerlink" title="3.手动选择项目所需要的包"></a>3.手动选择项目所需要的包</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateconf.png" alt="vuecreateconf"></p>
-<blockquote>
-<h4 id="说明-1"><a href="#说明-1" class="headerlink" title="说明:"></a>说明:</h4><ul>
-<li><code>Babel</code>: Babel 编译,将 ES6 编译成 ES5,进行兼容</li>
-<li><code>TypeScript</code>: 给 JavaScript 添加特性的语言扩展</li>
-<li><code>Progressive Web App (PWA) Support</code>: 让网页渐进式变成 App</li>
-<li><code>Router</code>: Vue 路由</li>
-<li><code>Vuex</code>: Vue 状态管理</li>
-<li><code>CSS Pre-processors</code>: CSS 预编译器 (包括 SCSS/Sass、Less、Stylus)</li>
-<li><code>Linter / Formatter</code>: 代码检测和格式化</li>
-<li><code>Unit Testing</code>: 单元测试</li>
-<li><code>E2E Testing</code>: 端到端测试</li>
-</ul>
-<h5 id="根据需求进行勾选-上下键选择-空格是取消或选中-选完最后回车"><a href="#根据需求进行勾选-上下键选择-空格是取消或选中-选完最后回车" class="headerlink" title="根据需求进行勾选,上下键选择,空格是取消或选中,选完最后回车"></a>根据需求进行勾选,上下键选择,空格是取消或选中,选完最后回车</h5></blockquote>
-<h4 id="如图"><a href="#如图" class="headerlink" title="如图:"></a>如图:</h4><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateconfafter.png" alt="vuecreateconfafter"></p>
-<h2 id="4-选择版本"><a href="#4-选择版本" class="headerlink" title="4.选择版本"></a>4.选择版本</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatechooseversion.png" alt="vuecreatechooseversion"></p>
-<h2 id="5-路由是否采用-history-模式"><a href="#5-路由是否采用-history-模式" class="headerlink" title="5.路由是否采用 history 模式"></a>5.路由是否采用 history 模式</h2><p>选啥都可以,之后可以改</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateusehistoryforrouter.png" alt="vuecreateusehistoryforrouter"></p>
-<h2 id="6-选择-CSS-编译方法"><a href="#6-选择-CSS-编译方法" class="headerlink" title="6.选择 CSS 编译方法"></a>6.选择 CSS 编译方法</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatepickcssway.png" alt="vuecreatepickcssway"></p>
-<p>按需选择,我选的 <code>Less</code></p>
-<h2 id="7-选择代码规范"><a href="#7-选择代码规范" class="headerlink" title="7.选择代码规范"></a>7.选择代码规范</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatepickeslintway.png" alt="vuecreatepickeslintway"></p>
-<p>我选的 <code>Standard config</code></p>
-<blockquote>
-<h4 id="说明-2"><a href="#说明-2" class="headerlink" title="说明:"></a>说明:</h4><ul>
-<li><code>eslint with ...</code> : 只进行报错提醒;</li>
-<li><code>eslint + A ...</code> : 不严谨模式;</li>
-<li><code>eslint + S ...</code> : 正常模式;</li>
-<li><code>eslint + P ...</code> : 严格模式;</li>
-</ul>
-</blockquote>
-<h2 id="8-选择合适代码检验规范"><a href="#8-选择合适代码检验规范" class="headerlink" title="8.选择合适代码检验规范"></a>8.选择合适代码检验规范</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatelintonsave.png" alt="vuecreatelintonsave"></p>
-<p>选 <code>lint on save</code>,也就是报存时检验</p>
-<h2 id="9-选择放置配置的文件"><a href="#9-选择放置配置的文件" class="headerlink" title="9.选择放置配置的文件"></a>9.选择放置配置的文件</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateconfplace.png" alt="vuecreateconfplace"></p>
-<p>我选的第一个,放到一个独立文件里</p>
-<h2 id="10-是否保存配置为以后使用"><a href="#10-是否保存配置为以后使用" class="headerlink" title="10.是否保存配置为以后使用"></a>10.是否保存配置为以后使用</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatesaveconf.png" alt="vuecreatesaveconf"></p>
-<p>先不保存 (<code>N</code>)</p>
-<h2 id="11-安装完成"><a href="#11-安装完成" class="headerlink" title="11.安装完成"></a>11.安装完成</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatedone.png" alt="vuecreatedone"></p>
-<h3 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h3><p>其实安装完成后有提示</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> project (进入项目根目录)</span><br><span class="line">npm run serve</span><br></pre></td></tr></table></figure>
+<h2 id="③-Content-Type-application-json"><a href="#③-Content-Type-application-json" class="headerlink" title="③ Content-Type= application/json"></a>③ Content-Type= application/json</h2><p>传参格式为 <code>raw</code> ( <code>JSON</code> 格式)</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">axios</span><br><span class="line">  .post(<span class="string">&quot;/course&quot;</span>, &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&quot;free&quot;</span>,</span><br><span class="line">    <span class="attr">pageNum</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">pageSize</span>: <span class="number">10</span>,</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuenpmrunserve.png" alt="vuenpmrunserve"></p>
-<p>会在本地 <code>8000</code> 端口运行</p>
-<h4 id="如图-1"><a href="#如图-1" class="headerlink" title="如图"></a>如图</h4><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuerunning.png" alt="vuerunning"></p>
+<p>或者</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">axios</span><br><span class="line">  .post(</span><br><span class="line">    <span class="string">&quot;/course&quot;</span>,</span><br><span class="line">    <span class="built_in">JSON</span>.stringify(&#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;free&quot;</span>,</span><br><span class="line">      <span class="attr">pageNum</span>: <span class="number">1</span>,</span><br><span class="line">      <span class="attr">pageSize</span>: <span class="number">10</span>,</span><br><span class="line">    &#125;)</span><br><span class="line">  )</span><br><span class="line">  .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(err);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
 <h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
       <categories>
-        <category>vue</category>
+        <category>Vue</category>
       </categories>
       <tags>
-        <tag>vue</tag>
-        <tag>vue脚手架</tag>
+        <tag>Vue</tag>
+        <tag>Vue基础</tag>
+        <tag>axios</tag>
       </tags>
   </entry>
   <entry>
-    <title>Vue 基础</title>
-    <url>/2021/07/19/vue/vue-firstday/</url>
+    <title>Vue 基础 ( 一 )</title>
+    <url>/2021/07/19/vue/vue-basic-day01/</url>
     <content><![CDATA[<h1 id="Vue-js"><a href="#Vue-js" class="headerlink" title="Vue.js"></a>Vue.js</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vuebasic/vueall.png" alt="vue.js"></p>
 <h1 id="什么是-vue-js"><a href="#什么是-vue-js" class="headerlink" title="什么是 vue.js"></a>什么是 <code>vue.js</code></h1><ul>
 <li><code>Vue.js</code> 是一套<code>构建用户界面</code>的<code>渐进式</code> <code>框架</code> , 与其他重量级框架不同的是 , <code>Vue</code> 采用自底向上增量开发的设计 , <code>Vue</code> 的核心库只关注视图层 , 不仅易于上手 , 还便于与第三方库或既有项目整合 ,</li>
@@ -3548,11 +3501,143 @@ echartsDraggable();
 </div></div>
 ]]></content>
       <categories>
-        <category>vue</category>
+        <category>Vue</category>
       </categories>
       <tags>
-        <tag>vue</tag>
-        <tag>vue基础</tag>
+        <tag>Vue</tag>
+        <tag>Vue基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue 简单的品牌管理案例</title>
+    <url>/2021/07/21/vue/vue-basic-day02/</url>
+    <content><![CDATA[<a class="btn-beautify button--animated green larger" href="https://codehhr.github.io/vue-daily/brand-managment.html" 
+  title="在线预览"><i class="far fa-hand-point-right"></i><span>在线预览</span></a>
+
+<div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>Vue 简单的品牌管理案例</span></div>
+    <div class="hide-content"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-class">.container</span> &#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">margin</span>: <span class="number">60px</span> auto;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.form-group</span> &#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">20px</span>;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css">  <span class="selector-tag">th</span>,</span></span><br><span class="line"><span class="css">  <span class="selector-tag">td</span> &#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">text-align</span>: center;</span></span><br><span class="line"><span class="css">    <span class="attribute">line-height</span>: <span class="number">50px</span> <span class="meta">!important</span>;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;panel panel-info&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;panel-heading&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">&quot;panel-title&quot;</span>&gt;</span>品牌管理<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;panel-body&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;&quot;</span> <span class="attr">method</span>=<span class="string">&quot;POST&quot;</span> <span class="attr">class</span>=<span class="string">&quot;form-inline&quot;</span> <span class="attr">role</span>=<span class="string">&quot;form&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;form-group&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;search&quot;</span>&gt;</span>搜索<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">              <span class="attr">id</span>=<span class="string">&quot;search&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">type</span>=<span class="string">&quot;text&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">class</span>=<span class="string">&quot;form-control&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">placeholder</span>=<span class="string">&quot;请输入品牌关键字&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">v-model:value</span>=<span class="string">&quot;keyword&quot;</span></span></span><br><span class="line"><span class="tag">              @<span class="attr">change</span>=<span class="string">&quot;showBrandList&quot;</span></span></span><br><span class="line"><span class="tag">            /&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;form-group&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;name&quot;</span>&gt;</span>名字<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">              <span class="attr">id</span>=<span class="string">&quot;name&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">type</span>=<span class="string">&quot;text&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">class</span>=<span class="string">&quot;form-control&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">placeholder</span>=<span class="string">&quot;请输入品牌名字&quot;</span></span></span><br><span class="line"><span class="tag">              <span class="attr">v-model:value</span>=<span class="string">&quot;name&quot;</span></span></span><br><span class="line"><span class="tag">            /&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">          <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">class</span>=<span class="string">&quot;btn btn-primary&quot;</span> @<span class="attr">click</span>=<span class="string">&quot;addBrand&quot;</span>&gt;</span></span><br><span class="line">            添加</span><br><span class="line">          <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">table</span> <span class="attr">class</span>=<span class="string">&quot;table table-striped table-bordered&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>ID<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>NAME<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Time<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>OPTION<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">tr</span> <span class="attr">v-for</span>=<span class="string">&quot;(item,index) in showBrandList()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;index+1&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;item.name&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;item.time | timeFilter(&quot;YYYY-MM-DD hh:mm:ss&quot;)&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">button</span></span></span><br><span class="line"><span class="tag">                <span class="attr">type</span>=<span class="string">&quot;button&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">class</span>=<span class="string">&quot;btn btn-danger&quot;</span></span></span><br><span class="line"><span class="tag">                @<span class="attr">click</span>=<span class="string">&quot;delBrand(index)&quot;</span></span></span><br><span class="line"><span class="tag">              &gt;</span></span><br><span class="line">                删除</span><br><span class="line">              <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">  <span class="keyword">let</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">    <span class="attr">el</span>: <span class="string">&quot;#app&quot;</span>,</span></span><br><span class="line"><span class="javascript">    <span class="attr">data</span>: &#123;</span></span><br><span class="line"><span class="javascript">      <span class="attr">name</span>: <span class="string">&quot;&quot;</span>,</span></span><br><span class="line"><span class="javascript">      <span class="attr">keyword</span>: <span class="string">&quot;&quot;</span>,</span></span><br><span class="line"><span class="javascript">      <span class="attr">brandList</span>: <span class="built_in">JSON</span>.parse(<span class="built_in">localStorage</span>.getItem(<span class="string">&quot;brandList&quot;</span>)) || [</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">&quot;迈凯轮&quot;</span>, <span class="attr">time</span>: <span class="keyword">new</span> <span class="built_in">Date</span>() &#125;,</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">&quot;科尼赛格&quot;</span>, <span class="attr">time</span>: <span class="keyword">new</span> <span class="built_in">Date</span>() &#125;,</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">&quot;兰博基尼&quot;</span>, <span class="attr">time</span>: <span class="keyword">new</span> <span class="built_in">Date</span>() &#125;,</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">&quot;BMW&quot;</span>, <span class="attr">time</span>: <span class="keyword">new</span> <span class="built_in">Date</span>() &#125;,</span></span><br><span class="line"><span class="javascript">      ],</span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="title">created</span>(<span class="params"></span>)</span> &#123;&#125;,</span></span><br><span class="line"><span class="javascript">    <span class="attr">methods</span>: &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 显示</span></span></span><br><span class="line"><span class="javascript">      <span class="function"><span class="title">showBrandList</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="comment">// this.brandList = localStorage.getItem(&quot;brandList&quot;);</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> <span class="built_in">this</span>.brandList.filter(<span class="function">(<span class="params">item</span>) =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">return</span> item.name.includes(<span class="built_in">this</span>.keyword);</span></span><br><span class="line"><span class="javascript">        &#125;);</span></span><br><span class="line"><span class="javascript">      &#125;,</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 添加</span></span></span><br><span class="line"><span class="javascript">      <span class="function"><span class="title">addBrand</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span> (<span class="built_in">this</span>.name) &#123;</span></span><br><span class="line"><span class="javascript">          <span class="built_in">this</span>.brandList.push(&#123;</span></span><br><span class="line"><span class="javascript">            <span class="attr">name</span>: <span class="built_in">this</span>.name,</span></span><br><span class="line"><span class="javascript">            <span class="attr">time</span>: <span class="keyword">new</span> <span class="built_in">Date</span>(),</span></span><br><span class="line"><span class="javascript">          &#125;);</span></span><br><span class="line"><span class="javascript">          <span class="built_in">localStorage</span>.setItem(<span class="string">&quot;brandList&quot;</span>, <span class="built_in">JSON</span>.stringify(<span class="built_in">this</span>.brandList));</span></span><br><span class="line"><span class="javascript">          <span class="built_in">this</span>.name = <span class="string">&quot;&quot;</span>;</span></span><br><span class="line"><span class="javascript">        &#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="javascript">          alert(<span class="string">&quot;空&quot;</span>);</span></span><br><span class="line"><span class="javascript">        &#125;</span></span><br><span class="line"><span class="javascript">      &#125;,</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 删除</span></span></span><br><span class="line"><span class="javascript">      <span class="function"><span class="title">delBrand</span>(<span class="params">index</span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">this</span>.brandList.splice(index, <span class="number">1</span>);</span></span><br><span class="line"><span class="javascript">        <span class="built_in">localStorage</span>.setItem(<span class="string">&quot;brandList&quot;</span>, <span class="built_in">JSON</span>.stringify(<span class="built_in">this</span>.brandList));</span></span><br><span class="line"><span class="javascript">      &#125;,</span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="attr">filters</span>: &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">//定义过滤器 , 格式化时间</span></span></span><br><span class="line"><span class="javascript">      <span class="function"><span class="title">timeFilter</span>(<span class="params">nothing, dateFormat</span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> dateFormat</span></span><br><span class="line"><span class="javascript">          .replace(<span class="string">&quot;YYYY&quot;</span>, date.getFullYear())</span></span><br><span class="line"><span class="javascript">          .replace(<span class="string">&quot;MM&quot;</span>, (date.getMonth() + <span class="number">1</span>).toString().padStart(<span class="number">2</span>, <span class="string">&quot;0&quot;</span>))</span></span><br><span class="line"><span class="javascript">          .replace(<span class="string">&quot;DD&quot;</span>, date.getDate().toString().padStart(<span class="number">2</span>, <span class="string">&quot;0&quot;</span>))</span></span><br><span class="line"><span class="javascript">          .replace(<span class="string">&quot;hh&quot;</span>, date.getHours().toString().padStart(<span class="number">2</span>, <span class="string">&quot;0&quot;</span>))</span></span><br><span class="line"><span class="javascript">          .replace(<span class="string">&quot;mm&quot;</span>, date.getMinutes().toString().padStart(<span class="number">2</span>, <span class="string">&quot;0&quot;</span>))</span></span><br><span class="line"><span class="javascript">          .replace(<span class="string">&quot;ss&quot;</span>, date.getSeconds().toString().padStart(<span class="number">2</span>, <span class="string">&quot;0&quot;</span>));</span></span><br><span class="line"><span class="javascript">      &#125;,</span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">  &#125;);</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</div></div>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Vue基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用脚手架搭建一个 vue 项目</title>
+    <url>/2021/02/27/vue/vue-cli-createvue/</url>
+    <content><![CDATA[<h1 id="一、需要安装-node-环境"><a href="#一、需要安装-node-环境" class="headerlink" title="一、需要安装 node 环境"></a>一、需要安装 node 环境</h1><blockquote>
+<p>下载地址: <a href="https://nodejs.org/en/">https://nodejs.org/en/</a><br>中文网: <a href="http://nodejs.cn/">http://nodejs.cn/</a></p>
+</blockquote>
+<h4 id="安装后为方便国内使用，可以把-npm-换成-taobao-的-cnpm-速度快"><a href="#安装后为方便国内使用，可以把-npm-换成-taobao-的-cnpm-速度快" class="headerlink" title="安装后为方便国内使用，可以把 npm 换成 taobao 的 cnpm (速度快)"></a>安装后为方便国内使用，可以把 npm 换成 taobao 的 cnpm (速度快)</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p>检查是否安装成功,查看版本号</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/node.png" alt="node"></p>
+<h1 id="二、全局安装-vue-脚手架"><a href="#二、全局安装-vue-脚手架" class="headerlink" title="二、全局安装 vue 脚手架"></a>二、全局安装 vue 脚手架</h1><p>全局安装可能需要管理员权限( Windows 以管理员身份运行; Linux 加 sudo )</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br><span class="line">或者用 cnpm</span><br><span class="line">cnpm install -g @vue/cli</span><br><span class="line">简写</span><br><span class="line">cnpm i -g @vue/cli</span><br></pre></td></tr></table></figure>
+
+<h4 id="安装成功后可查看版本"><a href="#安装成功后可查看版本" class="headerlink" title="安装成功后可查看版本"></a>安装成功后可查看版本</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue -V  (大写V)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vueversion.png" alt="vueversion"></p>
+<h1 id="三、创建项目"><a href="#三、创建项目" class="headerlink" title="三、创建项目"></a>三、创建项目</h1><p>为方便编辑,我一般都在 <code>vscode</code> 里操作</p>
+<h2 id="1-比如创建一个叫-project-的项目"><a href="#1-比如创建一个叫-project-的项目" class="headerlink" title="1.比如创建一个叫 project 的项目"></a>1.比如创建一个叫 project 的项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue create project</span><br></pre></td></tr></table></figure>
+
+<h4 id="如果安装了-cnpm-就会询问是否使用淘宝镜像-cnpm"><a href="#如果安装了-cnpm-就会询问是否使用淘宝镜像-cnpm" class="headerlink" title="如果安装了 cnpm 就会询问是否使用淘宝镜像(cnpm)"></a>如果安装了 cnpm 就会询问是否使用淘宝镜像(cnpm)</h4><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateusecnpm.png" alt="vuecreateusecnpm"></p>
+<p>都可以,只是影响网速快慢,我装了 <code>cnpm</code>,这里我填 <code>Y</code></p>
+<h2 id="2-选择配置方式"><a href="#2-选择配置方式" class="headerlink" title="2.选择配置方式"></a>2.选择配置方式</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatechooseconf.png" alt="vuecreatechooseconf"></p>
+<blockquote>
+<h4 id="说明"><a href="#说明" class="headerlink" title="说明:"></a>说明:</h4><ul>
+<li><code>Default (babel,eslint)</code>: 默认配置</li>
+<li><code>Manually select features</code>: 手动选择配置</li>
+</ul>
+</blockquote>
+<p>键盘上下就可以选择,选 <code>Manually select features</code> (最下面那个),俺不用默认配置</p>
+<h2 id="3-手动选择项目所需要的包"><a href="#3-手动选择项目所需要的包" class="headerlink" title="3.手动选择项目所需要的包"></a>3.手动选择项目所需要的包</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateconf.png" alt="vuecreateconf"></p>
+<blockquote>
+<h4 id="说明-1"><a href="#说明-1" class="headerlink" title="说明:"></a>说明:</h4><ul>
+<li><code>Babel</code>: Babel 编译,将 ES6 编译成 ES5,进行兼容</li>
+<li><code>TypeScript</code>: 给 JavaScript 添加特性的语言扩展</li>
+<li><code>Progressive Web App (PWA) Support</code>: 让网页渐进式变成 App</li>
+<li><code>Router</code>: Vue 路由</li>
+<li><code>Vuex</code>: Vue 状态管理</li>
+<li><code>CSS Pre-processors</code>: CSS 预编译器 (包括 SCSS/Sass、Less、Stylus)</li>
+<li><code>Linter / Formatter</code>: 代码检测和格式化</li>
+<li><code>Unit Testing</code>: 单元测试</li>
+<li><code>E2E Testing</code>: 端到端测试</li>
+</ul>
+<h5 id="根据需求进行勾选-上下键选择-空格是取消或选中-选完最后回车"><a href="#根据需求进行勾选-上下键选择-空格是取消或选中-选完最后回车" class="headerlink" title="根据需求进行勾选,上下键选择,空格是取消或选中,选完最后回车"></a>根据需求进行勾选,上下键选择,空格是取消或选中,选完最后回车</h5></blockquote>
+<h4 id="如图"><a href="#如图" class="headerlink" title="如图:"></a>如图:</h4><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateconfafter.png" alt="vuecreateconfafter"></p>
+<h2 id="4-选择版本"><a href="#4-选择版本" class="headerlink" title="4.选择版本"></a>4.选择版本</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatechooseversion.png" alt="vuecreatechooseversion"></p>
+<h2 id="5-路由是否采用-history-模式"><a href="#5-路由是否采用-history-模式" class="headerlink" title="5.路由是否采用 history 模式"></a>5.路由是否采用 history 模式</h2><p>选啥都可以,之后可以改</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateusehistoryforrouter.png" alt="vuecreateusehistoryforrouter"></p>
+<h2 id="6-选择-CSS-编译方法"><a href="#6-选择-CSS-编译方法" class="headerlink" title="6.选择 CSS 编译方法"></a>6.选择 CSS 编译方法</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatepickcssway.png" alt="vuecreatepickcssway"></p>
+<p>按需选择,我选的 <code>Less</code></p>
+<h2 id="7-选择代码规范"><a href="#7-选择代码规范" class="headerlink" title="7.选择代码规范"></a>7.选择代码规范</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatepickeslintway.png" alt="vuecreatepickeslintway"></p>
+<p>我选的 <code>Standard config</code></p>
+<blockquote>
+<h4 id="说明-2"><a href="#说明-2" class="headerlink" title="说明:"></a>说明:</h4><ul>
+<li><code>eslint with ...</code> : 只进行报错提醒;</li>
+<li><code>eslint + A ...</code> : 不严谨模式;</li>
+<li><code>eslint + S ...</code> : 正常模式;</li>
+<li><code>eslint + P ...</code> : 严格模式;</li>
+</ul>
+</blockquote>
+<h2 id="8-选择合适代码检验规范"><a href="#8-选择合适代码检验规范" class="headerlink" title="8.选择合适代码检验规范"></a>8.选择合适代码检验规范</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatelintonsave.png" alt="vuecreatelintonsave"></p>
+<p>选 <code>lint on save</code>,也就是报存时检验</p>
+<h2 id="9-选择放置配置的文件"><a href="#9-选择放置配置的文件" class="headerlink" title="9.选择放置配置的文件"></a>9.选择放置配置的文件</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreateconfplace.png" alt="vuecreateconfplace"></p>
+<p>我选的第一个,放到一个独立文件里</p>
+<h2 id="10-是否保存配置为以后使用"><a href="#10-是否保存配置为以后使用" class="headerlink" title="10.是否保存配置为以后使用"></a>10.是否保存配置为以后使用</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatesaveconf.png" alt="vuecreatesaveconf"></p>
+<p>先不保存 (<code>N</code>)</p>
+<h2 id="11-安装完成"><a href="#11-安装完成" class="headerlink" title="11.安装完成"></a>11.安装完成</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuecreatedone.png" alt="vuecreatedone"></p>
+<h3 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h3><p>其实安装完成后有提示</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> project (进入项目根目录)</span><br><span class="line">npm run serve</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuenpmrunserve.png" alt="vuenpmrunserve"></p>
+<p>会在本地 <code>8000</code> 端口运行</p>
+<h4 id="如图-1"><a href="#如图-1" class="headerlink" title="如图"></a>如图</h4><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vue/vuerunning.png" alt="vuerunning"></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Vue脚手架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue 生命周期 和 Vue-resource</title>
+    <url>/2021/07/21/vue/vue-lifecycle-and-vue-resource/</url>
+    <content><![CDATA[<h1 id="什么是生命周期"><a href="#什么是生命周期" class="headerlink" title="什么是生命周期"></a>什么是生命周期</h1><p>从 <code>Vue</code> 实例创建 , 运行 , 到销毁期间 , 总是伴随着各种各样的事件 , 这些事件 , 统称为生命周期 !</p>
+<h1 id="vue-生命周期钩子函数"><a href="#vue-生命周期钩子函数" class="headerlink" title="vue 生命周期钩子函数"></a>vue 生命周期钩子函数</h1><p>每个 <code>Vue</code> 实例在被创建时都要经过一系列的初始化过程——例如 , 需要设置数据监听 , 编译模板 , 将实例挂载到 <code>DOM</code> 并在数据变化时更新 <code>DOM</code> 等 , 同时在这个过程中也会运行一些叫做生命周期钩子的函数 , 这给了用户在不同阶段添加自己的代码的机会</p>
+<p><strong><code>生命周期函数</code>=<code>生命周期事件</code>=<code>生命周期钩子</code></strong></p>
+<h1 id="vue-生命周期"><a href="#vue-生命周期" class="headerlink" title="vue 生命周期"></a>vue 生命周期</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vuebasic/vuelifecycle.png" alt="vue 生命周期"></p>
+<p><strong>详解</strong></p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/vuebasic/vuelifecycledetail.png" alt="vue 生命周期"></p>
+<div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>Vue生命周期函数</span></div>
+    <div class="hide-content"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引入 Vue --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span>&#123;&#123;msg&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">  <span class="keyword">let</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">    <span class="attr">el</span>: <span class="string">&quot;#app&quot;</span>,</span></span><br><span class="line"><span class="javascript">    <span class="attr">data</span>: &#123;</span></span><br><span class="line"><span class="javascript">      <span class="attr">msg</span>: <span class="string">&quot;Hello World&quot;</span>,</span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="attr">methods</span>: &#123;&#125;,</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="title">beforeCreate</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 这是我们遇到的第一个生命周期函数</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">// 在 beforeCrate 生命周期函数执行的时候, data 和 methods 中的数据还没初始化</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">&quot;beforeCreate&quot;</span>);</span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="built_in">this</span>.msg); <span class="comment">// -&gt; undefined</span></span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="title">created</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 此时 data 和 methods 中的数据已经好了始化</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">// 如果要调用 methods 中的方法或操作 data 里的数据,最早只能在 created 中操作</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">&quot;created&quot;</span>);</span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="built_in">this</span>.msg); <span class="comment">// -&gt; Hello World</span></span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="title">beforeMount</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 此时模板已在内存中编译好了,还未渲染到页面上,页面还是旧的</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">&quot;beforeMount&quot;</span>);</span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="title">mounted</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 执行完 mounted ,就表示这个 Vue 示例已经初始化完毕了</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">// 如果要通过某些插件操作页面上的 DOM 节点,最早要在 mounted 中进行</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">&quot;mounted&quot;</span>);</span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="title">beforeUpdate</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 当 data 里的数据改变后会执行 beforeUpdate</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">// 此时页面显示的数据还是旧的, data 里的数据是最新的,页面尚未和数据保持同步</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">&quot;beforeUpdate&quot;</span>);</span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// beforeUpdate 执行后,在内存里会渲染出一份最新的 内存 DOM 树,会重新渲染到真是的页面上去</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// 这时候,就完成了数据从 data(model层) -&gt; view(视图层) 的更新</span></span></span><br><span class="line"><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="title">updated</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// updated 执行的时候,页面和 data 数据已经保持同步了,都是最新的</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">&quot;updated&quot;</span>);</span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="title">beforeDestroy</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 准备销毁实例</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">// 此时还没有真正的执行销毁,还处于可用的状态</span></span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="title">destroyed</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 当执行到 destroyed函数的时候,组件已经被完全销毁了,data,methods,指令,过滤器...已经不可用了</span></span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">  &#125;);</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</div></div>
+
+<h1 id="vue-resource-的使用"><a href="#vue-resource-的使用" class="headerlink" title="vue-resource 的使用"></a>vue-resource 的使用</h1><ul>
+<li>直接在页面中 , 通过 <code>script</code> 标签 , 引入 <code>vue-resource</code> 的脚本文件 ;</li>
+<li>注意：引用的先后顺序是: 先引用 <code>Vue</code> 的脚本文件 , 再引用 <code>vue-resource</code> 的脚本文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引入 vue.js --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 引入 vue-resource.js --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/vue-resource/1.5.3/vue-resource.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>如果想在页面加载的时候就请求,可以写在 <code>update</code> 生命周期函数里</strong></p>
+<h2 id="get-请求"><a href="#get-请求" class="headerlink" title="get 请求"></a>get 请求</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// get 请求</span></span><br><span class="line"><span class="built_in">this</span>.$http</span><br><span class="line">  .get(<span class="string">&quot;http://wkt.myhope365.com/weChat/applet/course/banner/list?number=2&quot;</span>)</span><br><span class="line">  .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(e);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="post-请求"><a href="#post-请求" class="headerlink" title="post 请求"></a>post 请求</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// post请求</span></span><br><span class="line"><span class="comment">// post 方法接收三个参数：</span></span><br><span class="line"><span class="comment">//    参数1： 要请求的 URL 地址</span></span><br><span class="line"><span class="comment">//    参数2： 要发送的数据对象</span></span><br><span class="line"><span class="comment">//    参数3： 指定 post 提交的编码类型为 application/x-www-form-urlencoded 或 application/json</span></span><br><span class="line"><span class="built_in">this</span>.$http</span><br><span class="line">  .post(</span><br><span class="line">    <span class="string">&quot;http://wkt.myhope365.com/weChat/applet/subject/list&quot;</span>,</span><br><span class="line">    &#123; <span class="attr">enable</span>: <span class="number">1</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">emulateJSON</span>: <span class="literal">false</span> &#125;</span><br><span class="line">  )</span><br><span class="line">  .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Vue基础</tag>
       </tags>
   </entry>
   <entry>

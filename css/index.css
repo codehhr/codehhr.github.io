@@ -1308,7 +1308,7 @@ canvas:not(#ribbon-canvas),
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
-  --preloader-bg: #37474f;
+  --preloader-bg: #494f5c;
   --preloader-color: #fff;
   --tab-border-color: #f0f0f0;
   --tab-botton-bg: #f0f0f0;
@@ -3382,7 +3382,7 @@ blockquote footer cite:before {
 }
 #footer {
   position: relative;
-  background: #fff;
+  background: #494f5c;
   background-attachment: local;
   background-position: bottom;
   -webkit-background-size: cover;
@@ -3391,7 +3391,7 @@ blockquote footer cite:before {
 }
 #footer-wrap {
   position: relative;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   color: var(--light-grey);
   text-align: center;
 }
@@ -3399,6 +3399,7 @@ blockquote footer cite:before {
   color: var(--light-grey);
 }
 #footer-wrap a:hover {
+  color: var(--light-blue);
   text-decoration: underline;
 }
 #footer-wrap .footer-separator {

@@ -336,16 +336,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Bootstrap</title>
-    <url>/2021/07/11/bootstrap/bootstrap/</url>
-    <content><![CDATA[<h1 id="Bootstrap-v3-中文文档"><a href="#Bootstrap-v3-中文文档" class="headerlink" title="Bootstrap v3 中文文档"></a>Bootstrap v3 中文文档</h1><blockquote>
-<h2 id="https-v3-bootcss-com"><a href="#https-v3-bootcss-com" class="headerlink" title="https://v3.bootcss.com/"></a><a href="https://v3.bootcss.com/">https://v3.bootcss.com/</a></h2></blockquote>
-<h1 id="引入使用"><a href="#引入使用" class="headerlink" title="引入使用"></a>引入使用</h1><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>如果只是用一些样式 , 可以只引入 <code>css</code> 文件</strong></p>
-<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
-  </entry>
-  <entry>
     <title>hexo 报错 use_date_for_updated is deprecated...</title>
     <url>/2020/11/08/blog/blog-hexousedateforupd/</url>
     <content><![CDATA[<h1 id="hexo-报错-use-date-for-updated-is-deprecated…"><a href="#hexo-报错-use-date-for-updated-is-deprecated…" class="headerlink" title="hexo 报错 use_date_for_updated is deprecated…"></a>hexo 报错 use_date_for_updated is deprecated…</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">WARN  Deprecated config detected: &quot;use_date_for_updated&quot; is deprecated, please use &quot;updated_option&quot; instead. See https://hexo.io/docs/configuration for more details.</span><br></pre></td></tr></table></figure>
@@ -458,24 +448,14 @@
       </tags>
   </entry>
   <entry>
-    <title>解决raw.githubusercontent.com无法连接问题</title>
-    <url>/2019/06/02/github/github-rawgithub/</url>
-    <content><![CDATA[<h1 id="解决-GitHub-的-raw-githubusercontent-com-无法连接问题"><a href="#解决-GitHub-的-raw-githubusercontent-com-无法连接问题" class="headerlink" title="解决 GitHub 的 raw.githubusercontent.com 无法连接问题"></a>解决 GitHub 的 raw.githubusercontent.com 无法连接问题</h1><p>在使用 curl 下载文件时,如果出现以下情况</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused</span><br></pre></td></tr></table></figure>
+    <title>Bootstrap</title>
+    <url>/2021/07/11/bootstrap/bootstrap/</url>
+    <content><![CDATA[<h1 id="Bootstrap-v3-中文文档"><a href="#Bootstrap-v3-中文文档" class="headerlink" title="Bootstrap v3 中文文档"></a>Bootstrap v3 中文文档</h1><blockquote>
+<h2 id="https-v3-bootcss-com"><a href="#https-v3-bootcss-com" class="headerlink" title="https://v3.bootcss.com/"></a><a href="https://v3.bootcss.com/">https://v3.bootcss.com/</a></h2></blockquote>
+<h1 id="引入使用"><a href="#引入使用" class="headerlink" title="引入使用"></a>引入使用</h1><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="查询-raw-githubusercontent-com-的-IP"><a href="#查询-raw-githubusercontent-com-的-IP" class="headerlink" title="查询 raw.githubusercontent.com 的 IP"></a>查询 raw.githubusercontent.com 的 IP</h1><p>修改 hosts 文件</p>
-<p>文件路径 <code>/etc/hosts</code></p>
-<p>添加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># GitHub Start</span><br><span class="line">52.74.223.119 github.com</span><br><span class="line">192.30.253.112 gist.github.com</span><br><span class="line">192.30.253.113 gist.github.com</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">54.169.195.247 api.github.com</span><br><span class="line">185.199.111.153 assets-cdn.github.com</span><br><span class="line">151.101.76.133 raw.githubusercontent.com</span><br><span class="line">151.101.108.133 user-images.githubusercontent.com</span><br><span class="line">151.101.76.133 gist.githubusercontent.com</span><br><span class="line">151.101.76.133 cloud.githubusercontent.com</span><br><span class="line">151.101.76.133 camo.githubusercontent.com</span><br><span class="line">151.101.185.194 github.global.ssl.fastly.net</span><br><span class="line"># GitHub End</span><br></pre></td></tr></table></figure>
-
-<h1 id="如果你有代理那当以上都是废话"><a href="#如果你有代理那当以上都是废话" class="headerlink" title="如果你有代理那当以上都是废话"></a>如果你有代理那当以上都是废话</h1><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>github</category>
-      </categories>
-      <tags>
-        <tag>curl</tag>
-        <tag>github</tag>
-      </tags>
+<p><strong>如果只是用一些样式 , 可以只引入 <code>css</code> 文件</strong></p>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
   </entry>
   <entry>
     <title>几种常见css布局</title>
@@ -596,6 +576,26 @@
       <tags>
         <tag>css布局</tag>
         <tag>flex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决raw.githubusercontent.com无法连接问题</title>
+    <url>/2019/06/02/github/github-rawgithub/</url>
+    <content><![CDATA[<h1 id="解决-GitHub-的-raw-githubusercontent-com-无法连接问题"><a href="#解决-GitHub-的-raw-githubusercontent-com-无法连接问题" class="headerlink" title="解决 GitHub 的 raw.githubusercontent.com 无法连接问题"></a>解决 GitHub 的 raw.githubusercontent.com 无法连接问题</h1><p>在使用 curl 下载文件时,如果出现以下情况</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused</span><br></pre></td></tr></table></figure>
+
+<h1 id="查询-raw-githubusercontent-com-的-IP"><a href="#查询-raw-githubusercontent-com-的-IP" class="headerlink" title="查询 raw.githubusercontent.com 的 IP"></a>查询 raw.githubusercontent.com 的 IP</h1><p>修改 hosts 文件</p>
+<p>文件路径 <code>/etc/hosts</code></p>
+<p>添加以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># GitHub Start</span><br><span class="line">52.74.223.119 github.com</span><br><span class="line">192.30.253.112 gist.github.com</span><br><span class="line">192.30.253.113 gist.github.com</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">54.169.195.247 api.github.com</span><br><span class="line">185.199.111.153 assets-cdn.github.com</span><br><span class="line">151.101.76.133 raw.githubusercontent.com</span><br><span class="line">151.101.108.133 user-images.githubusercontent.com</span><br><span class="line">151.101.76.133 gist.githubusercontent.com</span><br><span class="line">151.101.76.133 cloud.githubusercontent.com</span><br><span class="line">151.101.76.133 camo.githubusercontent.com</span><br><span class="line">151.101.185.194 github.global.ssl.fastly.net</span><br><span class="line"># GitHub End</span><br></pre></td></tr></table></figure>
+
+<h1 id="如果你有代理那当以上都是废话"><a href="#如果你有代理那当以上都是废话" class="headerlink" title="如果你有代理那当以上都是废话"></a>如果你有代理那当以上都是废话</h1><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+      <tags>
+        <tag>curl</tag>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -2497,19 +2497,6 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>用 Js 找出最长的单词并排序</title>
-    <url>/2021/06/15/js/js-find-longest-word-and-sort/</url>
-    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 找出最长的单词并输出每个单词的长度</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;My name is Tom , I love jerry !&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> maxLength = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> maxLengthWord = [];</span><br><span class="line"><span class="keyword">var</span> strList = str.split(<span class="string">&quot; &quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; strList.length; i++) &#123;</span><br><span class="line">  <span class="keyword">if</span> (i + <span class="number">1</span> &lt;= strList.length - <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">// 如果后者长度大于前者长度 且 后者长度大于或等于已知的最大长度，就存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">      strList[i].length &lt; strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i + <span class="number">1</span>].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i + <span class="number">1</span>]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i + <span class="number">1</span>]);</span><br><span class="line">        maxLength = strList[i + <span class="number">1</span>].length;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果后者长度等于前者长度 且 长度大于或等于已知的最大长度，就将两者都存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (</span><br><span class="line">      strList.length == strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i]);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i + <span class="number">1</span>]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i + <span class="number">1</span>]);</span><br><span class="line">      &#125;</span><br><span class="line">      maxLength = strList[i].length;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 后者长度小于前者长度 且 前者长度大于已知的最大长度，就存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (</span><br><span class="line">      strList[i].length &gt; strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i]);</span><br><span class="line">        maxLength = strList[i].length;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;&quot; &#x27;</span> + str + <span class="string">&#x27; &quot;&#x27;</span>);</span><br><span class="line"></span><br><span class="line">maxLengthWord.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;最长单词为: &quot;</span> + value + <span class="string">&quot; ,单词长度为&quot;</span> + value.length);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Js 面向对象继承</title>
     <url>/2021/06/16/js/js-object-oriented-inherit/</url>
     <content><![CDATA[<h1 id="1-原型继承"><a href="#1-原型继承" class="headerlink" title="1. 原型继承"></a>1. 原型继承</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Person</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.name = name;</span><br><span class="line">  <span class="built_in">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Student</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Student</span>(<span class="params">className, score</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.className = className;</span><br><span class="line">  <span class="built_in">this</span>.score = score;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 在 Person 原型上添加 play 方法</span></span><br><span class="line">Person.prototype.play = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;Person_play&quot;</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 让 Student 继承 Person</span></span><br><span class="line">Student.prototype = <span class="keyword">new</span> Person(<span class="string">&quot;nameA&quot;</span>, <span class="number">20</span>);</span><br><span class="line"><span class="comment">// 实例化一个 Student 对象</span></span><br><span class="line"><span class="keyword">var</span> stu1 = <span class="keyword">new</span> Student(<span class="string">&quot;A&quot;</span>, <span class="number">60</span>);</span><br><span class="line"></span><br><span class="line">stu1.play(); <span class="comment">// Person_play</span></span><br><span class="line"><span class="comment">// Student 实例化后</span></span><br><span class="line"><span class="comment">// 在 Student 对象原型上添加 play 方法</span></span><br><span class="line">Student.prototype.play = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;Student_play&quot;</span>);</span><br><span class="line">&#125;;</span><br><span class="line">stu1.play(); <span class="comment">// Student_play</span></span><br><span class="line"><span class="built_in">console</span>.log(stu1.className); <span class="comment">// A</span></span><br><span class="line"><span class="built_in">console</span>.log(stu1.score); <span class="comment">// 60</span></span><br><span class="line"><span class="built_in">console</span>.log(stu1.name); <span class="comment">// nameA</span></span><br><span class="line"><span class="built_in">console</span>.log(stu1.age); <span class="comment">// 20</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 通过原型继承，子类本身构造函数中的属性和方法以及子类原型中的属性和方法都可以获取到，并且父类构造函数中的属性和方法以及父类原型中的属性和方法也可以获取到</span></span><br></pre></td></tr></table></figure>
@@ -2527,6 +2514,19 @@ echartsDraggable();
         <tag>javascript</tag>
         <tag>面向对象</tag>
         <tag>继承</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用 Js 找出最长的单词并排序</title>
+    <url>/2021/06/15/js/js-find-longest-word-and-sort/</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 找出最长的单词并输出每个单词的长度</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;My name is Tom , I love jerry !&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> maxLength = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> maxLengthWord = [];</span><br><span class="line"><span class="keyword">var</span> strList = str.split(<span class="string">&quot; &quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; strList.length; i++) &#123;</span><br><span class="line">  <span class="keyword">if</span> (i + <span class="number">1</span> &lt;= strList.length - <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">// 如果后者长度大于前者长度 且 后者长度大于或等于已知的最大长度，就存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">      strList[i].length &lt; strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i + <span class="number">1</span>].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i + <span class="number">1</span>]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i + <span class="number">1</span>]);</span><br><span class="line">        maxLength = strList[i + <span class="number">1</span>].length;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果后者长度等于前者长度 且 长度大于或等于已知的最大长度，就将两者都存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (</span><br><span class="line">      strList.length == strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i]);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i + <span class="number">1</span>]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i + <span class="number">1</span>]);</span><br><span class="line">      &#125;</span><br><span class="line">      maxLength = strList[i].length;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 后者长度小于前者长度 且 前者长度大于已知的最大长度，就存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (</span><br><span class="line">      strList[i].length &gt; strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i]);</span><br><span class="line">        maxLength = strList[i].length;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;&quot; &#x27;</span> + str + <span class="string">&#x27; &quot;&#x27;</span>);</span><br><span class="line"></span><br><span class="line">maxLengthWord.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;最长单词为: &quot;</span> + value + <span class="string">&quot; ,单词长度为&quot;</span> + value.length);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -2887,6 +2887,108 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>Kali 下用 swaks 发送邮件</title>
+    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
+    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
+
+<p>拿我的 QQ 举例</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
+
+<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
+<hr>
+<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
+<p>记住 smtp 的密码</p>
+<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
+
+<p>参数说明：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
+
+<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
+<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<p>收件箱收到的是 email.txt 里的内容</p>
+<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>kali</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>kali</tag>
+        <tag>swaks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Manjaro安装后简单配置</title>
+    <url>/2019/06/01/linux/linux-manjaro/</url>
+    <content><![CDATA[<h2 id="一个相见恨晚的-Linux-操作系统"><a href="#一个相见恨晚的-Linux-操作系统" class="headerlink" title="一个相见恨晚的 Linux 操作系统"></a>一个相见恨晚的 Linux 操作系统</h2><p>Manjaro 到底有多受欢迎?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统。</span><br><span class="line">( 如OpenSolaris、MINIX及BSD等 ) 的新闻、人气排名、以及其他一般信息等的网站。</span><br><span class="line">它包含了数百种发行版的信息。</span><br><span class="line">原文链接：https://distrowatch.com/table.php?distribution=manjaro</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/i3.png" alt="screenshot"></p>
+<h1 id="Manjaro-安装后简单配置"><a href="#Manjaro-安装后简单配置" class="headerlink" title="Manjaro 安装后简单配置"></a>Manjaro 安装后简单配置</h1><h2 id="1-添加-archlinuxcn-源"><a href="#1-添加-archlinuxcn-源" class="headerlink" title="1. 添加 archlinuxcn 源"></a>1. 添加 <code>archlinuxcn</code> 源</h2><p>编辑这个文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/pacman.conf</span><br></pre></td></tr></table></figure>
+
+<p>在文末添加以下内容,添加清华源,或者别的也行,里面有国内的一些软件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">SigLevel = Never</span><br><span class="line">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="variable">$arch</span></span><br></pre></td></tr></table></figure>
+
+<p>保存退出</p>
+<h4 id="按照地区自动更新为最快最稳定的软件源镜像地址"><a href="#按照地区自动更新为最快最稳定的软件源镜像地址" class="headerlink" title="按照地区自动更新为最快最稳定的软件源镜像地址"></a>按照地区自动更新为最快最稳定的软件源镜像地址</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman-mirrors -c China</span><br></pre></td></tr></table></figure>
+
+<h4 id="强制更新一下"><a href="#强制更新一下" class="headerlink" title="强制更新一下 :"></a>强制更新一下 :</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -Syyu</span><br></pre></td></tr></table></figure>
+
+<p>========================一路回车就行= = = = = = = = = = = = = = = = = = =</p>
+<h2 id="2-安装软件"><a href="#2-安装软件" class="headerlink" title="2.安装软件"></a>2.安装软件</h2><p>需要安装的软件 <code>pacman</code> 里基本都有</p>
+<h3 id="1-安装-vim"><a href="#1-安装-vim" class="headerlink" title="1.安装 vim"></a>1.安装 vim</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S vim</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-更换-shell"><a href="#2-更换-shell" class="headerlink" title="2.更换 shell"></a>2.更换 shell</h3><p>默认为 <code>bash</code>,我比较喜欢 <code>fish</code>,方便好用,配置也简单</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装fish</span><br><span class="line">sudo pacman -S fish</span><br><span class="line">---</span><br><span class="line">更改shell为fish</span><br><span class="line">chsh -s /usr/bin/fish</span><br><span class="line">---</span><br><span class="line">安装oh-my-fish(一个友好的shell)</span><br><span class="line">curl -L https://get.oh-my.fish | fish</span><br></pre></td></tr></table></figure>
+
+<h4 id="可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件"><a href="#可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件" class="headerlink" title="可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件"></a>可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/oh-my-fish/oh-my-fish</span><br><span class="line"><span class="comment"># 如果你网不好,可以克隆镜像仓库(比如:https://github.com.cnpmjs.org/oh-my-fish/oh-my-fish)</span></span><br><span class="line"><span class="built_in">cd</span> oh-my-fish</span><br><span class="line">bin/install --offline</span><br></pre></td></tr></table></figure>
+
+<h4 id="简单配置一下-fish"><a href="#简单配置一下-fish" class="headerlink" title="简单配置一下 fish"></a>简单配置一下 fish</h4><p>终端输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">fish_config</span><br></pre></td></tr></table></figure>
+
+<p>然后它会自动打开浏览器</p>
+<h5 id="选一个主题，然后点set-theme"><a href="#选一个主题，然后点set-theme" class="headerlink" title="选一个主题，然后点set theme"></a>选一个主题，然后点<code>set theme</code></h5><p>在<code>promt</code>栏里选个提示符，然后点<code>promt set</code><br>然后就可以关闭浏览器了<br>回到终端，回车即可</p>
+<h3 id="3-安装-录屏软件（推荐simplescreenrecorder这个比较小）"><a href="#3-安装-录屏软件（推荐simplescreenrecorder这个比较小）" class="headerlink" title="3.安装 录屏软件（推荐simplescreenrecorder这个比较小）"></a>3.安装 录屏软件（推荐<code>simplescreenrecorder</code>这个比较小）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S simplescreenrecorder</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-安装-VScode"><a href="#4-安装-VScode" class="headerlink" title="4.安装 VScode"></a>4.安装 VScode</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S visual-studio-code-bin</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S code</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-安装网易云音乐"><a href="#5-安装网易云音乐" class="headerlink" title="5.安装网易云音乐"></a>5.安装网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S netease-cloud-music</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="6-安装中文输入法"><a href="#6-安装中文输入法" class="headerlink" title="6.安装中文输入法"></a>6.安装中文输入法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx5 fcitx5-im fcitx5-rime</span><br><span class="line">sudo pacman -S fcitx5-material-color <span class="comment"># 主题</span></span><br><span class="line">sudo pacman -S fcitx5-configtool  <span class="comment"># 图形化配置界面</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="添加配置文件-xprofile-填入以下几句"><a href="#添加配置文件-xprofile-填入以下几句" class="headerlink" title="添加配置文件 ~/.xprofile 填入以下几句"></a>添加配置文件 <code>~/.xprofile</code> 填入以下几句</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> GTK_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> QT_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> XMODIFIERS=<span class="string">&quot;@im=fcitx5&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="然后重启-建议设置为开机让-fcitx5-自启"><a href="#然后重启-建议设置为开机让-fcitx5-自启" class="headerlink" title="然后重启 ( 建议设置为开机让 fcitx5 自启 )"></a>然后重启 ( 建议设置为开机让 <code>fcitx5</code> 自启 )</h5><h5 id="重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法"><a href="#重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法" class="headerlink" title="重启后你应该会看见一个小键盘的图标,右击选 config,添加 rime 输入法,默认应该是 ctrl+space 切换输入法"></a>重启后你应该会看见一个小键盘的图标,右击选 <code>config</code>,添加 <code>rime</code> 输入法,默认应该是 <code>ctrl+space</code> 切换输入法</h5><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/fcitx-configtool.png" alt="fcitx-configtool"></p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/rime.png" alt="rime"></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>manjaro</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>manjaro</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Js 基础总结及案例</title>
     <url>/2021/05/13/js/js/</url>
     <content><![CDATA[<h1 id="一-JavaScript-介绍"><a href="#一-JavaScript-介绍" class="headerlink" title="一. JavaScript 介绍"></a>一. JavaScript 介绍</h1><h2 id="1-、JavaScript-是什么"><a href="#1-、JavaScript-是什么" class="headerlink" title="(1) 、JavaScript 是什么"></a>(1) 、JavaScript 是什么</h2><h3 id="1-JavaScript-的历史"><a href="#1-JavaScript-的历史" class="headerlink" title="1. JavaScript 的历史"></a>1. JavaScript 的历史</h3><p>Netscape（网景）在最初将其脚本语言命名为 LiveScript，是布兰登.艾克发明的。后来 Netscape 在与 Sun 合作之后将其改名为 JavaScript。JavaScript 最初受 Java 启发而开始设计的，目的之一就是“看上去像 Java”，因此语法上有类似之处，一些名称和命名规范也借自 Java。JavaScript 与 Java 名称上的近似，是当时 Netscape 为了营销考虑与 Sun 微系统达成协议的结果。</p>
@@ -3217,108 +3319,6 @@ echartsDraggable();
         <tag>js</tag>
         <tag>javascript</tag>
         <tag>基础总结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Kali 下用 swaks 发送邮件</title>
-    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
-    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
-
-<p>拿我的 QQ 举例</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
-
-<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
-<hr>
-<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
-<p>记住 smtp 的密码</p>
-<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
-
-<p>参数说明：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
-
-<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
-<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<p>收件箱收到的是 email.txt 里的内容</p>
-<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>kali</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>kali</tag>
-        <tag>swaks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Manjaro安装后简单配置</title>
-    <url>/2019/06/01/linux/linux-manjaro/</url>
-    <content><![CDATA[<h2 id="一个相见恨晚的-Linux-操作系统"><a href="#一个相见恨晚的-Linux-操作系统" class="headerlink" title="一个相见恨晚的 Linux 操作系统"></a>一个相见恨晚的 Linux 操作系统</h2><p>Manjaro 到底有多受欢迎?</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统。</span><br><span class="line">( 如OpenSolaris、MINIX及BSD等 ) 的新闻、人气排名、以及其他一般信息等的网站。</span><br><span class="line">它包含了数百种发行版的信息。</span><br><span class="line">原文链接：https://distrowatch.com/table.php?distribution=manjaro</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/i3.png" alt="screenshot"></p>
-<h1 id="Manjaro-安装后简单配置"><a href="#Manjaro-安装后简单配置" class="headerlink" title="Manjaro 安装后简单配置"></a>Manjaro 安装后简单配置</h1><h2 id="1-添加-archlinuxcn-源"><a href="#1-添加-archlinuxcn-源" class="headerlink" title="1. 添加 archlinuxcn 源"></a>1. 添加 <code>archlinuxcn</code> 源</h2><p>编辑这个文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/pacman.conf</span><br></pre></td></tr></table></figure>
-
-<p>在文末添加以下内容,添加清华源,或者别的也行,里面有国内的一些软件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">SigLevel = Never</span><br><span class="line">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="variable">$arch</span></span><br></pre></td></tr></table></figure>
-
-<p>保存退出</p>
-<h4 id="按照地区自动更新为最快最稳定的软件源镜像地址"><a href="#按照地区自动更新为最快最稳定的软件源镜像地址" class="headerlink" title="按照地区自动更新为最快最稳定的软件源镜像地址"></a>按照地区自动更新为最快最稳定的软件源镜像地址</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman-mirrors -c China</span><br></pre></td></tr></table></figure>
-
-<h4 id="强制更新一下"><a href="#强制更新一下" class="headerlink" title="强制更新一下 :"></a>强制更新一下 :</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -Syyu</span><br></pre></td></tr></table></figure>
-
-<p>========================一路回车就行= = = = = = = = = = = = = = = = = = =</p>
-<h2 id="2-安装软件"><a href="#2-安装软件" class="headerlink" title="2.安装软件"></a>2.安装软件</h2><p>需要安装的软件 <code>pacman</code> 里基本都有</p>
-<h3 id="1-安装-vim"><a href="#1-安装-vim" class="headerlink" title="1.安装 vim"></a>1.安装 vim</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S vim</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-更换-shell"><a href="#2-更换-shell" class="headerlink" title="2.更换 shell"></a>2.更换 shell</h3><p>默认为 <code>bash</code>,我比较喜欢 <code>fish</code>,方便好用,配置也简单</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装fish</span><br><span class="line">sudo pacman -S fish</span><br><span class="line">---</span><br><span class="line">更改shell为fish</span><br><span class="line">chsh -s /usr/bin/fish</span><br><span class="line">---</span><br><span class="line">安装oh-my-fish(一个友好的shell)</span><br><span class="line">curl -L https://get.oh-my.fish | fish</span><br></pre></td></tr></table></figure>
-
-<h4 id="可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件"><a href="#可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件" class="headerlink" title="可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件"></a>可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/oh-my-fish/oh-my-fish</span><br><span class="line"><span class="comment"># 如果你网不好,可以克隆镜像仓库(比如:https://github.com.cnpmjs.org/oh-my-fish/oh-my-fish)</span></span><br><span class="line"><span class="built_in">cd</span> oh-my-fish</span><br><span class="line">bin/install --offline</span><br></pre></td></tr></table></figure>
-
-<h4 id="简单配置一下-fish"><a href="#简单配置一下-fish" class="headerlink" title="简单配置一下 fish"></a>简单配置一下 fish</h4><p>终端输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">fish_config</span><br></pre></td></tr></table></figure>
-
-<p>然后它会自动打开浏览器</p>
-<h5 id="选一个主题，然后点set-theme"><a href="#选一个主题，然后点set-theme" class="headerlink" title="选一个主题，然后点set theme"></a>选一个主题，然后点<code>set theme</code></h5><p>在<code>promt</code>栏里选个提示符，然后点<code>promt set</code><br>然后就可以关闭浏览器了<br>回到终端，回车即可</p>
-<h3 id="3-安装-录屏软件（推荐simplescreenrecorder这个比较小）"><a href="#3-安装-录屏软件（推荐simplescreenrecorder这个比较小）" class="headerlink" title="3.安装 录屏软件（推荐simplescreenrecorder这个比较小）"></a>3.安装 录屏软件（推荐<code>simplescreenrecorder</code>这个比较小）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S simplescreenrecorder</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-安装-VScode"><a href="#4-安装-VScode" class="headerlink" title="4.安装 VScode"></a>4.安装 VScode</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S visual-studio-code-bin</span><br></pre></td></tr></table></figure>
-
-<p>或者</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S code</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-安装网易云音乐"><a href="#5-安装网易云音乐" class="headerlink" title="5.安装网易云音乐"></a>5.安装网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S netease-cloud-music</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="6-安装中文输入法"><a href="#6-安装中文输入法" class="headerlink" title="6.安装中文输入法"></a>6.安装中文输入法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx5 fcitx5-im fcitx5-rime</span><br><span class="line">sudo pacman -S fcitx5-material-color <span class="comment"># 主题</span></span><br><span class="line">sudo pacman -S fcitx5-configtool  <span class="comment"># 图形化配置界面</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h5 id="添加配置文件-xprofile-填入以下几句"><a href="#添加配置文件-xprofile-填入以下几句" class="headerlink" title="添加配置文件 ~/.xprofile 填入以下几句"></a>添加配置文件 <code>~/.xprofile</code> 填入以下几句</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> GTK_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> QT_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> XMODIFIERS=<span class="string">&quot;@im=fcitx5&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="然后重启-建议设置为开机让-fcitx5-自启"><a href="#然后重启-建议设置为开机让-fcitx5-自启" class="headerlink" title="然后重启 ( 建议设置为开机让 fcitx5 自启 )"></a>然后重启 ( 建议设置为开机让 <code>fcitx5</code> 自启 )</h5><h5 id="重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法"><a href="#重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法" class="headerlink" title="重启后你应该会看见一个小键盘的图标,右击选 config,添加 rime 输入法,默认应该是 ctrl+space 切换输入法"></a>重启后你应该会看见一个小键盘的图标,右击选 <code>config</code>,添加 <code>rime</code> 输入法,默认应该是 <code>ctrl+space</code> 切换输入法</h5><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/fcitx-configtool.png" alt="fcitx-configtool"></p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/rime.png" alt="rime"></p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>manjaro</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>manjaro</tag>
       </tags>
   </entry>
   <entry>
@@ -4537,25 +4537,6 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>微信小程序滚动条设置</title>
-    <url>/2020/07/21/wxapp/wxapp-scrollbar/</url>
-    <content><![CDATA[<h1 id="隐藏滚动条"><a href="#隐藏滚动条" class="headerlink" title="隐藏滚动条"></a>隐藏滚动条</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">  width: <span class="number">0</span>rpx;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>rpx;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>其实设置为宽高为 0 或者背景颜色透明,其中任何一项都可以实现,或者你直接 <code>opacity:0;</code> 也可以,障眼法哈哈哈</p>
-<h1 id="设置滚动条样式"><a href="#设置滚动条样式" class="headerlink" title="设置滚动条样式"></a>设置滚动条样式</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">  width: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置滚动条轨道 内阴影+圆角 */</span></span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">  -webkit-box-shadow: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置滚动条 内阴影+圆角 */</span></span><br><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">  border-radius: <span class="number">10px</span>;</span><br><span class="line">  -webkit-<span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#39b54a</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>微信小程序</category>
-      </categories>
-      <tags>
-        <tag>微信小程序</tag>
-        <tag>滚动条</tag>
-        <tag>scroll</tag>
-        <tag>scrollbar</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>微信小程序切换标签改变样式</title>
     <url>/2020/08/10/wxapp/wxapp-swichtab/</url>
     <content><![CDATA[<h1 id="微信小程序切换标签改变样式"><a href="#微信小程序切换标签改变样式" class="headerlink" title="微信小程序切换标签改变样式"></a>微信小程序切换标签改变样式</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/wx/swichtab.gif" alt="swichtab"></p>
@@ -4573,6 +4554,25 @@ echartsDraggable();
         <tag>微信小程序</tag>
         <tag>标签</tag>
         <tag>tab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微信小程序滚动条设置</title>
+    <url>/2020/07/21/wxapp/wxapp-scrollbar/</url>
+    <content><![CDATA[<h1 id="隐藏滚动条"><a href="#隐藏滚动条" class="headerlink" title="隐藏滚动条"></a>隐藏滚动条</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">  width: <span class="number">0</span>rpx;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>rpx;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其实设置为宽高为 0 或者背景颜色透明,其中任何一项都可以实现,或者你直接 <code>opacity:0;</code> 也可以,障眼法哈哈哈</p>
+<h1 id="设置滚动条样式"><a href="#设置滚动条样式" class="headerlink" title="设置滚动条样式"></a>设置滚动条样式</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">  width: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置滚动条轨道 内阴影+圆角 */</span></span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">  -webkit-box-shadow: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置滚动条 内阴影+圆角 */</span></span><br><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">  border-radius: <span class="number">10px</span>;</span><br><span class="line">  -webkit-<span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#39b54a</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>微信小程序</category>
+      </categories>
+      <tags>
+        <tag>微信小程序</tag>
+        <tag>滚动条</tag>
+        <tag>scroll</tag>
+        <tag>scrollbar</tag>
       </tags>
   </entry>
 </search>

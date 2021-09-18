@@ -2497,6 +2497,19 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>用 Js 找出最长的单词并排序</title>
+    <url>/2021/06/15/js/js-find-longest-word-and-sort/</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 找出最长的单词并输出每个单词的长度</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;My name is Tom , I love jerry !&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> maxLength = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> maxLengthWord = [];</span><br><span class="line"><span class="keyword">var</span> strList = str.split(<span class="string">&quot; &quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; strList.length; i++) &#123;</span><br><span class="line">  <span class="keyword">if</span> (i + <span class="number">1</span> &lt;= strList.length - <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">// 如果后者长度大于前者长度 且 后者长度大于或等于已知的最大长度，就存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">      strList[i].length &lt; strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i + <span class="number">1</span>].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i + <span class="number">1</span>]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i + <span class="number">1</span>]);</span><br><span class="line">        maxLength = strList[i + <span class="number">1</span>].length;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果后者长度等于前者长度 且 长度大于或等于已知的最大长度，就将两者都存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (</span><br><span class="line">      strList.length == strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i]);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i + <span class="number">1</span>]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i + <span class="number">1</span>]);</span><br><span class="line">      &#125;</span><br><span class="line">      maxLength = strList[i].length;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 后者长度小于前者长度 且 前者长度大于已知的最大长度，就存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (</span><br><span class="line">      strList[i].length &gt; strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i]);</span><br><span class="line">        maxLength = strList[i].length;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;&quot; &#x27;</span> + str + <span class="string">&#x27; &quot;&#x27;</span>);</span><br><span class="line"></span><br><span class="line">maxLengthWord.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;最长单词为: &quot;</span> + value + <span class="string">&quot; ,单词长度为&quot;</span> + value.length);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Js 面向对象继承</title>
     <url>/2021/06/16/js/js-object-oriented-inherit/</url>
     <content><![CDATA[<h1 id="1-原型继承"><a href="#1-原型继承" class="headerlink" title="1. 原型继承"></a>1. 原型继承</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Person</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.name = name;</span><br><span class="line">  <span class="built_in">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Student</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Student</span>(<span class="params">className, score</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.className = className;</span><br><span class="line">  <span class="built_in">this</span>.score = score;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 在 Person 原型上添加 play 方法</span></span><br><span class="line">Person.prototype.play = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;Person_play&quot;</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 让 Student 继承 Person</span></span><br><span class="line">Student.prototype = <span class="keyword">new</span> Person(<span class="string">&quot;nameA&quot;</span>, <span class="number">20</span>);</span><br><span class="line"><span class="comment">// 实例化一个 Student 对象</span></span><br><span class="line"><span class="keyword">var</span> stu1 = <span class="keyword">new</span> Student(<span class="string">&quot;A&quot;</span>, <span class="number">60</span>);</span><br><span class="line"></span><br><span class="line">stu1.play(); <span class="comment">// Person_play</span></span><br><span class="line"><span class="comment">// Student 实例化后</span></span><br><span class="line"><span class="comment">// 在 Student 对象原型上添加 play 方法</span></span><br><span class="line">Student.prototype.play = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;Student_play&quot;</span>);</span><br><span class="line">&#125;;</span><br><span class="line">stu1.play(); <span class="comment">// Student_play</span></span><br><span class="line"><span class="built_in">console</span>.log(stu1.className); <span class="comment">// A</span></span><br><span class="line"><span class="built_in">console</span>.log(stu1.score); <span class="comment">// 60</span></span><br><span class="line"><span class="built_in">console</span>.log(stu1.name); <span class="comment">// nameA</span></span><br><span class="line"><span class="built_in">console</span>.log(stu1.age); <span class="comment">// 20</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 通过原型继承，子类本身构造函数中的属性和方法以及子类原型中的属性和方法都可以获取到，并且父类构造函数中的属性和方法以及父类原型中的属性和方法也可以获取到</span></span><br></pre></td></tr></table></figure>
@@ -2514,19 +2527,6 @@ echartsDraggable();
         <tag>javascript</tag>
         <tag>面向对象</tag>
         <tag>继承</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用 Js 找出最长的单词并排序</title>
-    <url>/2021/06/15/js/js-find-longest-word-and-sort/</url>
-    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 找出最长的单词并输出每个单词的长度</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;My name is Tom , I love jerry !&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> maxLength = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> maxLengthWord = [];</span><br><span class="line"><span class="keyword">var</span> strList = str.split(<span class="string">&quot; &quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; strList.length; i++) &#123;</span><br><span class="line">  <span class="keyword">if</span> (i + <span class="number">1</span> &lt;= strList.length - <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">// 如果后者长度大于前者长度 且 后者长度大于或等于已知的最大长度，就存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">      strList[i].length &lt; strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i + <span class="number">1</span>].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i + <span class="number">1</span>]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i + <span class="number">1</span>]);</span><br><span class="line">        maxLength = strList[i + <span class="number">1</span>].length;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果后者长度等于前者长度 且 长度大于或等于已知的最大长度，就将两者都存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (</span><br><span class="line">      strList.length == strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i]);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i + <span class="number">1</span>]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i + <span class="number">1</span>]);</span><br><span class="line">      &#125;</span><br><span class="line">      maxLength = strList[i].length;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 后者长度小于前者长度 且 前者长度大于已知的最大长度，就存于 maxLengthWord 数组</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (</span><br><span class="line">      strList[i].length &gt; strList[i + <span class="number">1</span>].length &amp;&amp;</span><br><span class="line">      strList[i].length &gt;= maxLength</span><br><span class="line">    ) &#123;</span><br><span class="line">      <span class="comment">// 避免重复</span></span><br><span class="line">      <span class="comment">// 如果不存在就 push</span></span><br><span class="line">      <span class="keyword">if</span> (maxLengthWord.indexOf(strList[i]) == -<span class="number">1</span>) &#123;</span><br><span class="line">        maxLengthWord.push(strList[i]);</span><br><span class="line">        maxLength = strList[i].length;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;&quot; &#x27;</span> + str + <span class="string">&#x27; &quot;&#x27;</span>);</span><br><span class="line"></span><br><span class="line">maxLengthWord.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;最长单词为: &quot;</span> + value + <span class="string">&quot; ,单词长度为&quot;</span> + value.length);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -2989,6 +2989,27 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>Linux安装node环境以及cnpm</title>
+    <url>/2020/02/28/linux/linux-node/</url>
+    <content><![CDATA[<h3 id="其实我老早以前就发现-node-版本太高也不行"><a href="#其实我老早以前就发现-node-版本太高也不行" class="headerlink" title="其实我老早以前就发现 node 版本太高也不行"></a>其实我老早以前就发现 node 版本太高也不行</h3><h4 id="以往的版本下载地址-https-nodejs-org-zh-cn-download-releases"><a href="#以往的版本下载地址-https-nodejs-org-zh-cn-download-releases" class="headerlink" title="以往的版本下载地址: https://nodejs.org/zh-cn/download/releases/"></a>以往的版本下载地址: <a href="https://nodejs.org/zh-cn/download/releases/">https://nodejs.org/zh-cn/download/releases/</a></h4><h1 id="下载并解压到-usr-local-下"><a href="#下载并解压到-usr-local-下" class="headerlink" title="下载并解压到 /usr/local/ 下"></a>下载并解压到 <code>/usr/local/</code> 下</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/node.png" alt="node"></p>
+<h1 id="设置全局"><a href="#设置全局" class="headerlink" title="设置全局"></a>设置全局</h1><h3 id="直接链接过-记得版本对应改一下"><a href="#直接链接过-记得版本对应改一下" class="headerlink" title="直接链接过,记得版本对应改一下"></a>直接链接过,记得版本对应改一下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># node</span></span><br><span class="line"></span><br><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/node /usr/<span class="built_in">local</span>/bin/node</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="comment"># npm</span></span><br><span class="line"></span><br><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/npm /usr/<span class="built_in">local</span>/bin/npm</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装-taobao-的-cnpm-更快"><a href="#安装-taobao-的-cnpm-更快" class="headerlink" title="安装 taobao 的 cnpm (更快)"></a>安装 taobao 的 cnpm (更快)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加到全局"><a href="#添加到全局" class="headerlink" title="添加到全局"></a>添加到全局</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/cnpm /usr/<span class="built_in">local</span>/bin/cnpm</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/version.png" alt="version"></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+        <tag>cnpm</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Js 基础总结及案例</title>
     <url>/2021/05/13/js/js/</url>
     <content><![CDATA[<h1 id="一-JavaScript-介绍"><a href="#一-JavaScript-介绍" class="headerlink" title="一. JavaScript 介绍"></a>一. JavaScript 介绍</h1><h2 id="1-、JavaScript-是什么"><a href="#1-、JavaScript-是什么" class="headerlink" title="(1) 、JavaScript 是什么"></a>(1) 、JavaScript 是什么</h2><h3 id="1-JavaScript-的历史"><a href="#1-JavaScript-的历史" class="headerlink" title="1. JavaScript 的历史"></a>1. JavaScript 的历史</h3><p>Netscape（网景）在最初将其脚本语言命名为 LiveScript，是布兰登.艾克发明的。后来 Netscape 在与 Sun 合作之后将其改名为 JavaScript。JavaScript 最初受 Java 启发而开始设计的，目的之一就是“看上去像 Java”，因此语法上有类似之处，一些名称和命名规范也借自 Java。JavaScript 与 Java 名称上的近似，是当时 Netscape 为了营销考虑与 Sun 微系统达成协议的结果。</p>
@@ -3319,27 +3340,6 @@ echartsDraggable();
         <tag>js</tag>
         <tag>javascript</tag>
         <tag>基础总结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux安装node环境以及cnpm</title>
-    <url>/2020/02/28/linux/linux-node/</url>
-    <content><![CDATA[<h3 id="其实我老早以前就发现-node-版本太高也不行"><a href="#其实我老早以前就发现-node-版本太高也不行" class="headerlink" title="其实我老早以前就发现 node 版本太高也不行"></a>其实我老早以前就发现 node 版本太高也不行</h3><h4 id="以往的版本下载地址-https-nodejs-org-zh-cn-download-releases"><a href="#以往的版本下载地址-https-nodejs-org-zh-cn-download-releases" class="headerlink" title="以往的版本下载地址: https://nodejs.org/zh-cn/download/releases/"></a>以往的版本下载地址: <a href="https://nodejs.org/zh-cn/download/releases/">https://nodejs.org/zh-cn/download/releases/</a></h4><h1 id="下载并解压到-usr-local-下"><a href="#下载并解压到-usr-local-下" class="headerlink" title="下载并解压到 /usr/local/ 下"></a>下载并解压到 <code>/usr/local/</code> 下</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/node.png" alt="node"></p>
-<h1 id="设置全局"><a href="#设置全局" class="headerlink" title="设置全局"></a>设置全局</h1><h3 id="直接链接过-记得版本对应改一下"><a href="#直接链接过-记得版本对应改一下" class="headerlink" title="直接链接过,记得版本对应改一下"></a>直接链接过,记得版本对应改一下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># node</span></span><br><span class="line"></span><br><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/node /usr/<span class="built_in">local</span>/bin/node</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="comment"># npm</span></span><br><span class="line"></span><br><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/npm /usr/<span class="built_in">local</span>/bin/npm</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装-taobao-的-cnpm-更快"><a href="#安装-taobao-的-cnpm-更快" class="headerlink" title="安装 taobao 的 cnpm (更快)"></a>安装 taobao 的 cnpm (更快)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<h3 id="添加到全局"><a href="#添加到全局" class="headerlink" title="添加到全局"></a>添加到全局</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/cnpm /usr/<span class="built_in">local</span>/bin/cnpm</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/version.png" alt="version"></p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>node</category>
-      </categories>
-      <tags>
-        <tag>node</tag>
-        <tag>cnpm</tag>
-        <tag>npm</tag>
       </tags>
   </entry>
   <entry>
@@ -4462,6 +4462,46 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>Webpack 打包初体验</title>
+    <url>/2021/09/17/webpack/webpack-first/</url>
+    <content><![CDATA[<h1 id="安装-Webpack"><a href="#安装-Webpack" class="headerlink" title="安装 Webpack"></a>安装 Webpack</h1><p>直接全局安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install webpack webpack-cli -g</span><br></pre></td></tr></table></figure>
+
+<h1 id="初始化-package-json"><a href="#初始化-package-json" class="headerlink" title="初始化 package.json"></a>初始化 package.json</h1><p><code>-y</code> 参数就是 <code>yes</code> , 省得一路回车</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm init -y</span><br></pre></td></tr></table></figure>
+
+<h1 id="试着打包几个文件"><a href="#试着打包几个文件" class="headerlink" title="试着打包几个文件"></a>试着打包几个文件</h1><p>比如按照 <code>Vue</code> 框架的目录 , 创建一个 <code>src</code> 的子文件夹 , 在 <code>src</code> 里面创建一个 <code>index.js</code> 和 <code>data.json</code> 的文件 , <strong>把 <code>index.js</code> 但当作入口文件</strong></p>
+<h2 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h2><ul>
+<li>project<ul>
+<li>src<ul>
+<li>index.js</li>
+<li>data.json</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="文件内容"><a href="#文件内容" class="headerlink" title="文件内容"></a>文件内容</h2><p>随便写点东西</p>
+<h3 id="data-json"><a href="#data-json" class="headerlink" title="data.json"></a>data.json</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;job&quot;</span>: <span class="string">&quot;Coding every day&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="index-js"><a href="#index-js" class="headerlink" title="index.js"></a>index.js</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 引入 data.json</span></span><br><span class="line"><span class="keyword">import</span> data <span class="keyword">from</span> <span class="string">&quot;./date.json&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;这是 index.js&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(data);</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装-Webpack-依赖"><a href="#安装-Webpack-依赖" class="headerlink" title="安装 Webpack 依赖"></a>安装 Webpack 依赖</h1><p><code>-S</code> 就是 <code>--save</code> , 用于生产环境 , <code>-D</code> 就是 <code>--dev</code> , 用户开发环境</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install webpack webpack-cli -S -D</span><br></pre></td></tr></table></figure>
+
+<h1 id="打包为开发环境"><a href="#打包为开发环境" class="headerlink" title="打包为开发环境"></a>打包为开发环境</h1><p>不同版本的 <code>webpack</code> 打包命还不太一样</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">webpack --entry ./src/index.js --mode development</span><br></pre></td></tr></table></figure>
+
+<p><code>--entry</code> 为入口文件 , <code>-o</code> 可以指定输出路径, <code>--mode</code> 指定打包模式 , <code>development</code> 为开发环境模式 , <code>production</code> 为生产环境模式 , 也就是上线用的 ( 压缩的 )</p>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1>]]></content>
+      <categories>
+        <category>Webpack</category>
+      </categories>
+      <tags>
+        <tag>Webpack</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微信小程序 背景音乐</title>
     <url>/2020/12/03/wxapp/wxapp-ctrlmusic/</url>
     <content><![CDATA[<h1 id="微信小程序背景音乐"><a href="#微信小程序背景音乐" class="headerlink" title="微信小程序背景音乐"></a>微信小程序背景音乐</h1><h2 id="直接上代码"><a href="#直接上代码" class="headerlink" title="直接上代码"></a>直接上代码</h2><h3 id="wxml"><a href="#wxml" class="headerlink" title="wxml"></a>wxml</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- music --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">&quot;music &#123;&#123;isplay?&#x27;playing&#x27;:&#x27;&#x27;&#125;&#125;&quot;</span> <span class="attr">bindtap</span>=<span class="string">&quot;ctrlMusic&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">image</span> <span class="attr">src</span>=<span class="string">&quot;&#123;&#123;musicimg&#125;&#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -4537,6 +4577,25 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>微信小程序滚动条设置</title>
+    <url>/2020/07/21/wxapp/wxapp-scrollbar/</url>
+    <content><![CDATA[<h1 id="隐藏滚动条"><a href="#隐藏滚动条" class="headerlink" title="隐藏滚动条"></a>隐藏滚动条</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">  width: <span class="number">0</span>rpx;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>rpx;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其实设置为宽高为 0 或者背景颜色透明,其中任何一项都可以实现,或者你直接 <code>opacity:0;</code> 也可以,障眼法哈哈哈</p>
+<h1 id="设置滚动条样式"><a href="#设置滚动条样式" class="headerlink" title="设置滚动条样式"></a>设置滚动条样式</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">  width: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置滚动条轨道 内阴影+圆角 */</span></span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">  -webkit-box-shadow: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置滚动条 内阴影+圆角 */</span></span><br><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">  border-radius: <span class="number">10px</span>;</span><br><span class="line">  -webkit-<span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#39b54a</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>微信小程序</category>
+      </categories>
+      <tags>
+        <tag>微信小程序</tag>
+        <tag>滚动条</tag>
+        <tag>scroll</tag>
+        <tag>scrollbar</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微信小程序切换标签改变样式</title>
     <url>/2020/08/10/wxapp/wxapp-swichtab/</url>
     <content><![CDATA[<h1 id="微信小程序切换标签改变样式"><a href="#微信小程序切换标签改变样式" class="headerlink" title="微信小程序切换标签改变样式"></a>微信小程序切换标签改变样式</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/wx/swichtab.gif" alt="swichtab"></p>
@@ -4554,25 +4613,6 @@ echartsDraggable();
         <tag>微信小程序</tag>
         <tag>标签</tag>
         <tag>tab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微信小程序滚动条设置</title>
-    <url>/2020/07/21/wxapp/wxapp-scrollbar/</url>
-    <content><![CDATA[<h1 id="隐藏滚动条"><a href="#隐藏滚动条" class="headerlink" title="隐藏滚动条"></a>隐藏滚动条</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">  width: <span class="number">0</span>rpx;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>rpx;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>其实设置为宽高为 0 或者背景颜色透明,其中任何一项都可以实现,或者你直接 <code>opacity:0;</code> 也可以,障眼法哈哈哈</p>
-<h1 id="设置滚动条样式"><a href="#设置滚动条样式" class="headerlink" title="设置滚动条样式"></a>设置滚动条样式</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">  width: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置滚动条轨道 内阴影+圆角 */</span></span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">  -webkit-box-shadow: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置滚动条 内阴影+圆角 */</span></span><br><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">  border-radius: <span class="number">10px</span>;</span><br><span class="line">  -webkit-<span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#39b54a</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>微信小程序</category>
-      </categories>
-      <tags>
-        <tag>微信小程序</tag>
-        <tag>滚动条</tag>
-        <tag>scroll</tag>
-        <tag>scrollbar</tag>
       </tags>
   </entry>
 </search>

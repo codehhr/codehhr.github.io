@@ -6,7 +6,7 @@
   <link href="https://codehhr.cn/atom.xml" rel="self"/>
   
   <link href="https://codehhr.cn/"/>
-  <updated>2021-09-15T16:18:07.497Z</updated>
+  <updated>2021-09-18T16:28:59.989Z</updated>
   <id>https://codehhr.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Webpack 打包初体验</title>
+    <link href="https://codehhr.cn/2021/09/17/webpack/webpack-first/"/>
+    <id>https://codehhr.cn/2021/09/17/webpack/webpack-first/</id>
+    <published>2021-09-17T14:44:25.000Z</published>
+    <updated>2021-09-18T16:28:59.989Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安装-Webpack"><a href="#安装-Webpack" class="headerlink" title="安装 Webpack"></a>安装 Webpack</h1><p>直接全局安装</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack webpack-cli -g</span><br></pre></td></tr></table></figure><h1 id="初始化-package-json"><a href="#初始化-package-json" class="headerlink" title="初始化 package.json"></a>初始化 package.json</h1><p><code>-y</code> 参数就是 <code>yes</code> , 省得一路回车</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init -y</span><br></pre></td></tr></table></figure><h1 id="试着打包几个文件"><a href="#试着打包几个文件" class="headerlink" title="试着打包几个文件"></a>试着打包几个文件</h1><p>比如按照 <code>Vue</code> 框架的目录 , 创建一个 <code>src</code> 的子文件夹 , 在 <code>src</code> 里面创建一个 <code>index.js</code> 和 <code>data.json</code> 的文件 , <strong>把 <code>index.js</code> 但当作入口文件</strong></p><h2 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h2><ul><li>project<ul><li>src<ul><li>index.js</li><li>data.json</li></ul></li></ul></li></ul><h2 id="文件内容"><a href="#文件内容" class="headerlink" title="文件内容"></a>文件内容</h2><p>随便写点东西</p><h3 id="data-json"><a href="#data-json" class="headerlink" title="data.json"></a>data.json</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;job&quot;</span>: <span class="string">&quot;Coding every day&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="index-js"><a href="#index-js" class="headerlink" title="index.js"></a>index.js</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入 data.json</span></span><br><span class="line"><span class="keyword">import</span> data <span class="keyword">from</span> <span class="string">&quot;./date.json&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;这是 index.js&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(data);</span><br></pre></td></tr></table></figure><h1 id="安装-Webpack-依赖"><a href="#安装-Webpack-依赖" class="headerlink" title="安装 Webpack 依赖"></a>安装 Webpack 依赖</h1><p><code>-S</code> 就是 <code>--save</code> , 用于生产环境 , <code>-D</code> 就是 <code>--dev</code> , 用户开发环境</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack webpack-cli -S -D</span><br></pre></td></tr></table></figure><h1 id="打包为开发环境"><a href="#打包为开发环境" class="headerlink" title="打包为开发环境"></a>打包为开发环境</h1><p>不同版本的 <code>webpack</code> 打包命还不太一样</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webpack --entry ./src/index.js --mode development</span><br></pre></td></tr></table></figure><p><code>--entry</code> 为入口文件 , <code>-o</code> 可以指定输出路径, <code>--mode</code> 指定打包模式 , <code>development</code> 为开发环境模式 , <code>production</code> 为生产环境模式 , 也就是上线用的 ( 压缩的 )</p><h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;安装-Webpack&quot;&gt;&lt;a href=&quot;#安装-Webpack&quot; class=&quot;headerlink&quot; title=&quot;安装 Webpack&quot;&gt;&lt;/a&gt;安装 Webpack&lt;/h1&gt;&lt;p&gt;直接全局安装&lt;/p&gt;
+&lt;figure class=&quot;highlight ba</summary>
+      
+    
+    
+    
+    <category term="Webpack" scheme="https://codehhr.cn/categories/Webpack/"/>
+    
+    
+    <category term="Webpack" scheme="https://codehhr.cn/tags/Webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>TypeScript 环境安装</title>
@@ -541,27 +566,6 @@
     <category term="fs" scheme="https://codehhr.cn/tags/fs/"/>
     
     <category term="http" scheme="https://codehhr.cn/tags/http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bootstrap</title>
-    <link href="https://codehhr.cn/2021/07/11/bootstrap/bootstrap/"/>
-    <id>https://codehhr.cn/2021/07/11/bootstrap/bootstrap/</id>
-    <published>2021-07-11T12:51:51.000Z</published>
-    <updated>2021-07-11T13:51:52.072Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Bootstrap-v3-中文文档"><a href="#Bootstrap-v3-中文文档" class="headerlink" title="Bootstrap v3 中文文档"></a>Bootstrap v3 中文文档</h1><blockquote><h2 id="https-v3-bootcss-com"><a href="#https-v3-bootcss-com" class="headerlink" title="https://v3.bootcss.com/"></a><a href="https://v3.bootcss.com/">https://v3.bootcss.com/</a></h2></blockquote><h1 id="引入使用"><a href="#引入使用" class="headerlink" title="引入使用"></a>引入使用</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p><strong>如果只是用一些样式 , 可以只引入 <code>css</code> 文件</strong></p><h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Bootstrap-v3-中文文档&quot;&gt;&lt;a href=&quot;#Bootstrap-v3-中文文档&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap v3 中文文档&quot;&gt;&lt;/a&gt;Bootstrap v3 中文文档&lt;/h1&gt;&lt;blockquote&gt;
-</summary>
-      
-    
-    
-    
     
   </entry>
   

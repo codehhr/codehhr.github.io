@@ -173,44 +173,43 @@
 
   }
 }
-window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
-  function initValine () {
-    const valine = new Valine(Object.assign({
-      el: '#vcomment',
-      appId: 'YBFcPDqvtWLoXAu0g1SJ2O0B-MdYXbMMI',
-      appKey: 'PryQuSYaaPcbGLYXeaccig3w',
-      placeholder: '可 以 留 言 嗷 ~',
-      avatar: 'monsterid',
-      meta: 'nick,mail,link'.split(','),
-      pageSize: '10',
-      lang: 'zh-CN',
-      recordIP: false,
-      serverURLs: '',
-      emojiCDN: '',
-      emojiMaps: "",
-      enableQQ: true,
-      path: window.location.pathname,
-      requiredFields: ["nick,mail"],
-      visitor: true,
-      master: master,
-      friends: friends,
-      tagMeta: tagMeta,
-      metaPlaceholder: {"nick":"昵称 / QQ号(必填)","mail":"邮箱(会帮您加密)","link":"网址(https://)"}
-    }, ))
-  }
-
-  if (typeof Valine === 'function') initValine() 
-  else getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js').then(initValine)
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+  var from = from
+  var setting = set.split(',').filter(function(item){
+  return from.indexOf(item) > -1
+  });
+  setting = setting.length == 0 ? from :setting;
+  return setting
 }
 
-if ('Valine' === 'Valine' || !true) {
-  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
-  else setTimeout(loadValine, 0)
-} else {
-  function loadOtherComment () {
-    loadValine()
-  }
-}</script></div><script src="/js/artitalk.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start -->
+var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
+var requiredFields = requestSetting(['nick','mail','link'],'nick,mail')
+let friends = 'bdc4d9d4f6581f85a2e95f728acc0667,d33e086a2354ac5d4c6e587be9f9a54b,1d33b40fe1c2fc4b8f2a4ae72e908b41'.split(',')
+let master = '629883fc3cb78d7bd6c67eb30c8efc33'.split(',')
+let tagMeta = '不正经博主,小伙伴,访客'.split(',')
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: 'YBFcPDqvtWLoXAu0g1SJ2O0B-MdYXbMMI',
+  appKey: 'PryQuSYaaPcbGLYXeaccig3w',
+  notify: true,
+  verify: false,
+  placeholder: '可 以 留 言 嗷 ~',
+  avatar: 'monsterid',
+  meta: guestInfo,
+  pageSize: '10',
+  lang: 'zh-CN',
+  recordIP: 'false',
+  serverURLs: '',
+  emojiCDN: '',
+  emojiMaps: "",
+  enableQQ: true,
+  requiredFields: requiredFields,
+  master: master,
+  friends: friends,
+  tagMeta: tagMeta,
+  metaPlaceholder: {"nick":"昵称 / QQ号 (必填)","mail":"邮箱 (根据QQ号自动填写)","link":"网址(https://)"}
+});</script></div><script src="/js/artitalk.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start -->
   <script data-pjax src="https://codehhr.cn/js/hexo_githubcalendar.js"></script>
   <script data-pjax>
         function GithubCalendarConfig(){

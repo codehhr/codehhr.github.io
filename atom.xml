@@ -6,7 +6,7 @@
   <link href="https://codehhr.cn/atom.xml" rel="self"/>
   
   <link href="https://codehhr.cn/"/>
-  <updated>2021-11-11T13:41:31.292Z</updated>
+  <updated>2021-11-11T13:44:12.204Z</updated>
   <id>https://codehhr.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://codehhr.cn/2021/11/09/linux/linux-proxy/"/>
     <id>https://codehhr.cn/2021/11/09/linux/linux-proxy/</id>
     <published>2021-11-09T12:29:42.000Z</published>
-    <updated>2021-11-11T13:41:31.292Z</updated>
+    <updated>2021-11-11T13:44:12.204Z</updated>
     
     <content type="html"><![CDATA[<!-- <div class="note info flat"><p><strong>可以吧代理设置写入当前终端环境的 <code>rc</code> 文件或者在当前终端执行 ( 只作用在当前终端, 比较推荐 )</strong></p></div> --><h1 id="在当前终端执行"><a href="#在当前终端执行" class="headerlink" title="在当前终端执行"></a>在当前终端执行</h1><p>假设端口是 <code>2000</code>, 且是 <code>socks5</code> 协议</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> ALL_PROXY=socks5://127.0.0.1:2000</span><br></pre></td></tr></table></figure>]]></content>
     

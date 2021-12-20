@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo 报错 use_date_for_updated is deprecated...</title>
+    <url>/2020/11/08/blog/blog-hexousedateforupd/</url>
+    <content><![CDATA[<h1 id="hexo-报错-use-date-for-updated-is-deprecated…"><a href="#hexo-报错-use-date-for-updated-is-deprecated…" class="headerlink" title="hexo 报错 use_date_for_updated is deprecated…"></a>hexo 报错 use_date_for_updated is deprecated…</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">WARN  Deprecated config detected: &quot;use_date_for_updated&quot; is deprecated, please use &quot;updated_option&quot; instead. See https://hexo.io/docs/configuration for more details.</span><br></pre></td></tr></table></figure>
+
+<h2 id="如图"><a href="#如图" class="headerlink" title="如图:"></a>如图:</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/hexo/usedateforupd.png" alt="usedateforupd"></p>
+<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>编辑根目录的 <code>_config.yml</code> 文件 , 把 <code>use_date_for_updated</code> 值改为 <code>updated_option</code></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>博客</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo butterfly 的标签功能</title>
     <url>/2021/07/18/blog/blog-hexo-butterfly-tag-plugins/</url>
     <content><![CDATA[<blockquote>
@@ -325,23 +342,6 @@
 
 <h1 id="5-常用命令总结"><a href="#5-常用命令总结" class="headerlink" title="5 . 常用命令总结 :"></a>5 . 常用命令总结 :</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">创建一篇新文章</span><br><span class="line">hexo n example</span><br><span class="line">---</span><br><span class="line">清理旧的数据</span><br><span class="line">hexo clean</span><br><span class="line">---</span><br><span class="line">重新生成一下</span><br><span class="line">hexo g</span><br><span class="line">---</span><br><span class="line">部署到远端</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>博客</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo 报错 use_date_for_updated is deprecated...</title>
-    <url>/2020/11/08/blog/blog-hexousedateforupd/</url>
-    <content><![CDATA[<h1 id="hexo-报错-use-date-for-updated-is-deprecated…"><a href="#hexo-报错-use-date-for-updated-is-deprecated…" class="headerlink" title="hexo 报错 use_date_for_updated is deprecated…"></a>hexo 报错 use_date_for_updated is deprecated…</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">WARN  Deprecated config detected: &quot;use_date_for_updated&quot; is deprecated, please use &quot;updated_option&quot; instead. See https://hexo.io/docs/configuration for more details.</span><br></pre></td></tr></table></figure>
-
-<h2 id="如图"><a href="#如图" class="headerlink" title="如图:"></a>如图:</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/hexo/usedateforupd.png" alt="usedateforupd"></p>
-<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>编辑根目录的 <code>_config.yml</code> 文件 , 把 <code>use_date_for_updated</code> 值改为 <code>updated_option</code></p>
 <h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
       <categories>
         <category>博客</category>
@@ -688,20 +688,6 @@
       </tags>
   </entry>
   <entry>
-    <title>用 Js 封装优先级队列</title>
-    <url>/2021/10/12/data-structure/ds-priorityQueue/</url>
-    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> 优先级队列</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 封装一个类来实现: 优先级队列</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">PriorityQueue</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 封装属性</span></span><br><span class="line">  <span class="built_in">this</span>.list = [];</span><br><span class="line">  <span class="comment">// 封装一个类来承载带优先级的数据</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">Element</span>(<span class="params">data, priority</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.data = data;</span><br><span class="line">    <span class="built_in">this</span>.priority = priority;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  PriorityQueue.prototype.add = <span class="function"><span class="keyword">function</span> (<span class="params">data, priority</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> element = <span class="keyword">new</span> Element(data, priority);</span><br><span class="line">    <span class="comment">// 判断优先级并将元素加入队列</span></span><br><span class="line">    <span class="comment">// 如果队列长度为 0,直接加入队列</span></span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">this</span>.list.length) &#123;</span><br><span class="line">      <span class="built_in">this</span>.list.push(element);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="comment">// 立一个 flag,当 element 加入 list 了就把 added 改为 true</span></span><br><span class="line">      <span class="keyword">let</span> added = <span class="literal">false</span>;</span><br><span class="line">      <span class="comment">// 遍历 list,比较优先级</span></span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="built_in">this</span>.list.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (element.priority &lt; <span class="built_in">this</span>.list[i].priority) &#123;</span><br><span class="line">          <span class="built_in">this</span>.list.splice(i, <span class="number">0</span>, element);</span><br><span class="line">          added = <span class="literal">true</span>;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// 如果遍历完 list 都没有找到合适的位置,就直接加到后面</span></span><br><span class="line">      <span class="keyword">if</span> (!added) &#123;</span><br><span class="line">        <span class="built_in">this</span>.list.push(element);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>.list;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建一个优先级队列实例</span></span><br><span class="line"><span class="keyword">let</span> priorityQueue = <span class="keyword">new</span> PriorityQueue();</span><br><span class="line"><span class="comment">// 试着添加元素</span></span><br><span class="line">priorityQueue.add(<span class="string">&quot;A&quot;</span>, <span class="number">10</span>);</span><br><span class="line">priorityQueue.add(<span class="string">&quot;B&quot;</span>, <span class="number">40</span>);</span><br><span class="line">priorityQueue.add(<span class="string">&quot;C&quot;</span>, <span class="number">20</span>);</span><br><span class="line">priorityQueue.add(<span class="string">&quot;D&quot;</span>, <span class="number">100</span>);</span><br><span class="line">priorityQueue.add(<span class="string">&quot;E&quot;</span>, <span class="number">60</span>);</span><br><span class="line"><span class="built_in">console</span>.log(priorityQueue);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-        <category>队列结构</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>队列</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>express 起步 - HelloWorld</title>
     <url>/2021/10/12/express/express-helloworld/</url>
     <content><![CDATA[<h1 id="初始化-package-json"><a href="#初始化-package-json" class="headerlink" title="初始化 package.json"></a>初始化 package.json</h1><p>随便找个目录 , 使用 <code>npm</code> 初始化 <code>package.json</code></p>
@@ -720,6 +706,20 @@
       </categories>
       <tags>
         <tag>express</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用 Js 封装优先级队列</title>
+    <url>/2021/10/12/data-structure/ds-priorityQueue/</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> 优先级队列</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 封装一个类来实现: 优先级队列</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">PriorityQueue</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 封装属性</span></span><br><span class="line">  <span class="built_in">this</span>.list = [];</span><br><span class="line">  <span class="comment">// 封装一个类来承载带优先级的数据</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">Element</span>(<span class="params">data, priority</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.data = data;</span><br><span class="line">    <span class="built_in">this</span>.priority = priority;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  PriorityQueue.prototype.add = <span class="function"><span class="keyword">function</span> (<span class="params">data, priority</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> element = <span class="keyword">new</span> Element(data, priority);</span><br><span class="line">    <span class="comment">// 判断优先级并将元素加入队列</span></span><br><span class="line">    <span class="comment">// 如果队列长度为 0,直接加入队列</span></span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">this</span>.list.length) &#123;</span><br><span class="line">      <span class="built_in">this</span>.list.push(element);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="comment">// 立一个 flag,当 element 加入 list 了就把 added 改为 true</span></span><br><span class="line">      <span class="keyword">let</span> added = <span class="literal">false</span>;</span><br><span class="line">      <span class="comment">// 遍历 list,比较优先级</span></span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="built_in">this</span>.list.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (element.priority &lt; <span class="built_in">this</span>.list[i].priority) &#123;</span><br><span class="line">          <span class="built_in">this</span>.list.splice(i, <span class="number">0</span>, element);</span><br><span class="line">          added = <span class="literal">true</span>;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// 如果遍历完 list 都没有找到合适的位置,就直接加到后面</span></span><br><span class="line">      <span class="keyword">if</span> (!added) &#123;</span><br><span class="line">        <span class="built_in">this</span>.list.push(element);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>.list;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建一个优先级队列实例</span></span><br><span class="line"><span class="keyword">let</span> priorityQueue = <span class="keyword">new</span> PriorityQueue();</span><br><span class="line"><span class="comment">// 试着添加元素</span></span><br><span class="line">priorityQueue.add(<span class="string">&quot;A&quot;</span>, <span class="number">10</span>);</span><br><span class="line">priorityQueue.add(<span class="string">&quot;B&quot;</span>, <span class="number">40</span>);</span><br><span class="line">priorityQueue.add(<span class="string">&quot;C&quot;</span>, <span class="number">20</span>);</span><br><span class="line">priorityQueue.add(<span class="string">&quot;D&quot;</span>, <span class="number">100</span>);</span><br><span class="line">priorityQueue.add(<span class="string">&quot;E&quot;</span>, <span class="number">60</span>);</span><br><span class="line"><span class="built_in">console</span>.log(priorityQueue);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+        <category>队列结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>队列</tag>
       </tags>
   </entry>
   <entry>
@@ -1405,6 +1405,22 @@
       </tags>
   </entry>
   <entry>
+    <title>jQuery Ajax 模板</title>
+    <url>/2021/07/01/js/jquery-ajax/</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">  <span class="attr">url</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">  <span class="attr">type</span>: <span class="string">&quot;POST&quot;</span>, <span class="comment">//GET</span></span><br><span class="line">  <span class="attr">async</span>: <span class="literal">true</span>, <span class="comment">//或 false,是否异步</span></span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;llc&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">22</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">timeout</span>: <span class="number">5000</span>, <span class="comment">//超时时间</span></span><br><span class="line">  <span class="attr">dataType</span>: <span class="string">&quot;json&quot;</span>, <span class="comment">//返回的数据格式：json/xml/html/script/jsonp/text</span></span><br><span class="line">  <span class="attr">beforeSend</span>: <span class="function"><span class="keyword">function</span> (<span class="params">xhr</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(xhr);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;发送前&quot;</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">success</span>: <span class="function"><span class="keyword">function</span> (<span class="params">data, textStatus, jqXHR</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">error</span>: <span class="function"><span class="keyword">function</span> (<span class="params">xhr, textStatus</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(xhr.responseText);</span><br><span class="line">    <span class="built_in">console</span>.log(xhr);</span><br><span class="line">    <span class="built_in">console</span>.log(textStatus);</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>js</category>
+        <category>jQuery</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>javascript</tag>
+        <tag>jQuery</tag>
+        <tag>Ajax</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ES7 中的 Async/await</title>
     <url>/2021/06/25/js/es7-async-await/</url>
     <content><![CDATA[<h1 id="Async-await"><a href="#Async-await" class="headerlink" title="Async/await"></a>Async/await</h1><h2 id="为什么要有-Async-await"><a href="#为什么要有-Async-await" class="headerlink" title="为什么要有 Async/await ?"></a>为什么要有 Async/await ?</h2><p><code>Promise</code> 虽然跳出了异步嵌套的怪圈 , 解决了回调地狱的问题 , 用链式表达更加清晰 , 但是我们也发现如果有大量的异步请求的时候 , 流程复杂的情况下 , 会发现充满了屏幕的 <code>then</code> , 看起来非常吃力 , 而 <code>ES7</code> 的 <code>Async/Await</code> 的出现就是为了解决这种复杂的情况</p>
@@ -1424,22 +1440,6 @@
         <tag>ES6</tag>
         <tag>async</tag>
         <tag>await</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jQuery Ajax 模板</title>
-    <url>/2021/07/01/js/jquery-ajax/</url>
-    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">  <span class="attr">url</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">  <span class="attr">type</span>: <span class="string">&quot;POST&quot;</span>, <span class="comment">//GET</span></span><br><span class="line">  <span class="attr">async</span>: <span class="literal">true</span>, <span class="comment">//或 false,是否异步</span></span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;llc&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">22</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">timeout</span>: <span class="number">5000</span>, <span class="comment">//超时时间</span></span><br><span class="line">  <span class="attr">dataType</span>: <span class="string">&quot;json&quot;</span>, <span class="comment">//返回的数据格式：json/xml/html/script/jsonp/text</span></span><br><span class="line">  <span class="attr">beforeSend</span>: <span class="function"><span class="keyword">function</span> (<span class="params">xhr</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(xhr);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;发送前&quot;</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">success</span>: <span class="function"><span class="keyword">function</span> (<span class="params">data, textStatus, jqXHR</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">error</span>: <span class="function"><span class="keyword">function</span> (<span class="params">xhr, textStatus</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(xhr.responseText);</span><br><span class="line">    <span class="built_in">console</span>.log(xhr);</span><br><span class="line">    <span class="built_in">console</span>.log(textStatus);</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>js</category>
-        <category>jQuery</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>javascript</tag>
-        <tag>jQuery</tag>
-        <tag>Ajax</tag>
       </tags>
   </entry>
   <entry>
@@ -2654,6 +2654,21 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>Js 实现递归深拷贝</title>
+    <url>/2021/06/19/js/js-deepclone/</url>
+    <content><![CDATA[<h1 id="利用循环和递归的方式实现深拷贝"><a href="#利用循环和递归的方式实现深拷贝" class="headerlink" title="利用循环和递归的方式实现深拷贝"></a>利用循环和递归的方式实现深拷贝</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepClone</span>(<span class="params">obj, newObj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> newObj = newObj || &#123;&#125;;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> obj[key] == <span class="string">&quot;object&quot;</span>) &#123;</span><br><span class="line">      newObj[key] = obj[key].constructor === <span class="built_in">Array</span> ? [] : &#123;&#125;;</span><br><span class="line">      deepClone(obj[key], newObj[key]);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      newObj[key] = obj[key];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newObj;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>deepClone</tag>
+        <tag>递归</tag>
+        <tag>深拷贝</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于 commonjs &amp; requirejs</title>
     <url>/2021/11/29/js/js-common-require/</url>
     <content><![CDATA[<!-- <div class="note info flat"><p>info 提示块标籤</p>
@@ -2683,21 +2698,6 @@ echartsDraggable();
         <tag>js</tag>
         <tag>commonjs</tag>
         <tag>requirejs</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Js 实现递归深拷贝</title>
-    <url>/2021/06/19/js/js-deepclone/</url>
-    <content><![CDATA[<h1 id="利用循环和递归的方式实现深拷贝"><a href="#利用循环和递归的方式实现深拷贝" class="headerlink" title="利用循环和递归的方式实现深拷贝"></a>利用循环和递归的方式实现深拷贝</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepClone</span>(<span class="params">obj, newObj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> newObj = newObj || &#123;&#125;;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> obj[key] == <span class="string">&quot;object&quot;</span>) &#123;</span><br><span class="line">      newObj[key] = obj[key].constructor === <span class="built_in">Array</span> ? [] : &#123;&#125;;</span><br><span class="line">      deepClone(obj[key], newObj[key]);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      newObj[key] = obj[key];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newObj;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>deepClone</tag>
-        <tag>递归</tag>
-        <tag>深拷贝</tag>
       </tags>
   </entry>
   <entry>
@@ -2761,6 +2761,20 @@ echartsDraggable();
         <tag>javascript</tag>
         <tag>继承</tag>
         <tag>面向对象</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实现 promiseAll 方法</title>
+    <url>/2021/10/12/js/js-promiseAll/</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> p1 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    resolve(<span class="string">&quot;I&#x27;m p1&quot;</span>);</span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> p2 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    resolve(<span class="string">&quot;I&#x27;m p2&quot;</span>);</span><br><span class="line">  &#125;, <span class="number">2000</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dealPromiseAll</span>(<span class="params">list</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> promiseArr = [];</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    list.forEach(<span class="function">(<span class="params">item, index</span>) =&gt;</span> &#123;</span><br><span class="line">      item.then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">        promiseArr.push(res);</span><br><span class="line">        <span class="keyword">if</span> (index == list.length - <span class="number">1</span>) &#123;</span><br><span class="line">          resolve(promiseArr);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">dealPromiseAll([p1, p2]).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res); <span class="comment">// [ &quot;I&#x27;m p1&quot;, &quot;I&#x27;m p2&quot; ]</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>javascript</tag>
+        <tag>promiseAll</tag>
       </tags>
   </entry>
   <entry>
@@ -2828,20 +2842,6 @@ echartsDraggable();
         <tag>js</tag>
         <tag>javascript</tag>
         <tag>面向对象</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实现 promiseAll 方法</title>
-    <url>/2021/10/12/js/js-promiseAll/</url>
-    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> p1 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    resolve(<span class="string">&quot;I&#x27;m p1&quot;</span>);</span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> p2 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    resolve(<span class="string">&quot;I&#x27;m p2&quot;</span>);</span><br><span class="line">  &#125;, <span class="number">2000</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dealPromiseAll</span>(<span class="params">list</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> promiseArr = [];</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    list.forEach(<span class="function">(<span class="params">item, index</span>) =&gt;</span> &#123;</span><br><span class="line">      item.then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">        promiseArr.push(res);</span><br><span class="line">        <span class="keyword">if</span> (index == list.length - <span class="number">1</span>) &#123;</span><br><span class="line">          resolve(promiseArr);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">dealPromiseAll([p1, p2]).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res); <span class="comment">// [ &quot;I&#x27;m p1&quot;, &quot;I&#x27;m p2&quot; ]</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>javascript</tag>
-        <tag>promiseAll</tag>
       </tags>
   </entry>
   <entry>
@@ -3719,6 +3719,34 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>node 连接 MySQL</title>
+    <url>/2021/07/16/node/node-mysql/</url>
+    <content><![CDATA[<a class="btn-beautify button--animated green larger" href="https://github.com/codehhr/Message-board/" 
+  title="留言版案例"><i class="far fa-hand-point-right"></i><span>留言版案例</span></a>
+<h1 id="安装-mysql-驱动"><a href="#安装-mysql-驱动" class="headerlink" title="安装 mysql 驱动"></a>安装 mysql 驱动</h1><p>可以用淘宝镜像的 <code>cnpm</code> 安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install mysql --save</span><br></pre></td></tr></table></figure>
+
+<h1 id="引入-mysql-模块"><a href="#引入-mysql-模块" class="headerlink" title="引入 mysql 模块"></a>引入 mysql 模块</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h1 id="链接-MySQL"><a href="#链接-MySQL" class="headerlink" title="链接 MySQL"></a>链接 MySQL</h1><p>相应的修改<code>主机名</code> , <code>用户名</code> , <code>密码</code> 和 <code>数据库名</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> connection = mysql.createConnection(&#123;</span><br><span class="line">  <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">  <span class="attr">user</span>: <span class="string">&quot;root&quot;</span>,</span><br><span class="line">  <span class="attr">password</span>: <span class="string">&quot;12345678&quot;</span>,</span><br><span class="line">  <span class="attr">database</span>: <span class="string">&quot;test&quot;</span>,</span><br><span class="line">&#125;);</span><br><span class="line">connection.connect();</span><br><span class="line">connection.query(</span><br><span class="line">  <span class="string">&quot;SELECT * from comment_list&quot;</span>,</span><br><span class="line">  <span class="function"><span class="keyword">function</span> (<span class="params">error, results, fields</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (error) <span class="keyword">throw</span> error;</span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h2 id="把这几个步骤封装成函数"><a href="#把这几个步骤封装成函数" class="headerlink" title="把这几个步骤封装成函数"></a>把这几个步骤封装成函数</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    sql: 要执行的 sql 语句</span></span><br><span class="line"><span class="comment">    fun: 拿到数据库返回的 results 后执行的函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">interactingWithDatabase</span>(<span class="params">sql, fun</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> connection = mysql.createConnection(&#123;</span><br><span class="line">    <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">    <span class="attr">user</span>: <span class="string">&quot;root&quot;</span>,</span><br><span class="line">    <span class="attr">password</span>: <span class="string">&quot;12345678&quot;</span>,</span><br><span class="line">    <span class="attr">database</span>: <span class="string">&quot;comment_list&quot;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  connection.connect();</span><br><span class="line">  connection.query(sql, <span class="function"><span class="keyword">function</span> (<span class="params">err, results</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      <span class="keyword">throw</span> err;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      fun(results);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">  connection.end();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="简单的数据库操作-CURD"><a href="#简单的数据库操作-CURD" class="headerlink" title="简单的数据库操作 ( CURD )"></a>简单的数据库操作 ( CURD )</h1><h2 id="sql-语句"><a href="#sql-语句" class="headerlink" title="sql 语句"></a>sql 语句</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">增 : <span class="keyword">insert</span> <span class="keyword">into</span> 表名 ( 字段 , 字段 ) <span class="keyword">values</span> ( 值 , 值 )</span><br><span class="line">删 : <span class="keyword">delete</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> 条件</span><br><span class="line">改 : update 表名 <span class="keyword">set</span> 字段 <span class="operator">=</span> 值 <span class="keyword">where</span> 条件</span><br><span class="line">查 : <span class="keyword">select</span> 字段 <span class="keyword">from</span> 表名 (<span class="keyword">where</span> 条件)</span><br></pre></td></tr></table></figure>
+
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">增 : <span class="keyword">INSERT</span> <span class="keyword">INTO</span> comment_list (name , comment) <span class="keyword">VALUES</span> (<span class="string">&#x27;name&#x27;</span> ,<span class="string">&#x27;comment&#x27;</span>)</span><br><span class="line">删 : <span class="keyword">DELETE</span> <span class="keyword">FROM</span> comment_list <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="string">&#x27;userid&#x27;</span></span><br><span class="line">改 : UPDATE comment_list <span class="keyword">SET</span> comment <span class="operator">=</span> &quot;newcomment&quot; <span class="keyword">WHERE</span> id <span class="operator">=</span> &quot;userid&quot;</span><br><span class="line">查 : <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> comment_list <span class="keyword">WHERE</span> comment <span class="keyword">LIKE</span> <span class="string">&#x27;%value%&#x27;</span> <span class="keyword">or</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;%value%&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Node</title>
     <url>/2021/07/12/node/node-fs-http/</url>
     <content><![CDATA[<h1 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/nodeall.png" alt="node"></p>
@@ -3835,34 +3863,6 @@ echartsDraggable();
         <tag>node</tag>
         <tag>fs</tag>
         <tag>http</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>node 连接 MySQL</title>
-    <url>/2021/07/16/node/node-mysql/</url>
-    <content><![CDATA[<a class="btn-beautify button--animated green larger" href="https://github.com/codehhr/Message-board/" 
-  title="留言版案例"><i class="far fa-hand-point-right"></i><span>留言版案例</span></a>
-<h1 id="安装-mysql-驱动"><a href="#安装-mysql-驱动" class="headerlink" title="安装 mysql 驱动"></a>安装 mysql 驱动</h1><p>可以用淘宝镜像的 <code>cnpm</code> 安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install mysql --save</span><br></pre></td></tr></table></figure>
-
-<h1 id="引入-mysql-模块"><a href="#引入-mysql-模块" class="headerlink" title="引入 mysql 模块"></a>引入 mysql 模块</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<h1 id="链接-MySQL"><a href="#链接-MySQL" class="headerlink" title="链接 MySQL"></a>链接 MySQL</h1><p>相应的修改<code>主机名</code> , <code>用户名</code> , <code>密码</code> 和 <code>数据库名</code></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> connection = mysql.createConnection(&#123;</span><br><span class="line">  <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">  <span class="attr">user</span>: <span class="string">&quot;root&quot;</span>,</span><br><span class="line">  <span class="attr">password</span>: <span class="string">&quot;12345678&quot;</span>,</span><br><span class="line">  <span class="attr">database</span>: <span class="string">&quot;test&quot;</span>,</span><br><span class="line">&#125;);</span><br><span class="line">connection.connect();</span><br><span class="line">connection.query(</span><br><span class="line">  <span class="string">&quot;SELECT * from comment_list&quot;</span>,</span><br><span class="line">  <span class="function"><span class="keyword">function</span> (<span class="params">error, results, fields</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (error) <span class="keyword">throw</span> error;</span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-
-<h2 id="把这几个步骤封装成函数"><a href="#把这几个步骤封装成函数" class="headerlink" title="把这几个步骤封装成函数"></a>把这几个步骤封装成函数</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    sql: 要执行的 sql 语句</span></span><br><span class="line"><span class="comment">    fun: 拿到数据库返回的 results 后执行的函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">interactingWithDatabase</span>(<span class="params">sql, fun</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> connection = mysql.createConnection(&#123;</span><br><span class="line">    <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">    <span class="attr">user</span>: <span class="string">&quot;root&quot;</span>,</span><br><span class="line">    <span class="attr">password</span>: <span class="string">&quot;12345678&quot;</span>,</span><br><span class="line">    <span class="attr">database</span>: <span class="string">&quot;comment_list&quot;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  connection.connect();</span><br><span class="line">  connection.query(sql, <span class="function"><span class="keyword">function</span> (<span class="params">err, results</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      <span class="keyword">throw</span> err;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      fun(results);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">  connection.end();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="简单的数据库操作-CURD"><a href="#简单的数据库操作-CURD" class="headerlink" title="简单的数据库操作 ( CURD )"></a>简单的数据库操作 ( CURD )</h1><h2 id="sql-语句"><a href="#sql-语句" class="headerlink" title="sql 语句"></a>sql 语句</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">增 : <span class="keyword">insert</span> <span class="keyword">into</span> 表名 ( 字段 , 字段 ) <span class="keyword">values</span> ( 值 , 值 )</span><br><span class="line">删 : <span class="keyword">delete</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> 条件</span><br><span class="line">改 : update 表名 <span class="keyword">set</span> 字段 <span class="operator">=</span> 值 <span class="keyword">where</span> 条件</span><br><span class="line">查 : <span class="keyword">select</span> 字段 <span class="keyword">from</span> 表名 (<span class="keyword">where</span> 条件)</span><br></pre></td></tr></table></figure>
-
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">增 : <span class="keyword">INSERT</span> <span class="keyword">INTO</span> comment_list (name , comment) <span class="keyword">VALUES</span> (<span class="string">&#x27;name&#x27;</span> ,<span class="string">&#x27;comment&#x27;</span>)</span><br><span class="line">删 : <span class="keyword">DELETE</span> <span class="keyword">FROM</span> comment_list <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="string">&#x27;userid&#x27;</span></span><br><span class="line">改 : UPDATE comment_list <span class="keyword">SET</span> comment <span class="operator">=</span> &quot;newcomment&quot; <span class="keyword">WHERE</span> id <span class="operator">=</span> &quot;userid&quot;</span><br><span class="line">查 : <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> comment_list <span class="keyword">WHERE</span> comment <span class="keyword">LIKE</span> <span class="string">&#x27;%value%&#x27;</span> <span class="keyword">or</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;%value%&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>node</category>
-      </categories>
-      <tags>
-        <tag>node</tag>
-        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -4185,45 +4185,6 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>Vue 路由守卫</title>
-    <url>/2021/07/31/vue/vue-beforeEach/</url>
-    <content><![CDATA[<h1 id="全局前置守卫"><a href="#全局前置守卫" class="headerlink" title="全局前置守卫"></a>全局前置守卫</h1><p>你可以使用 <code>router.beforeEach</code> 注册一个全局前置守卫</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123; ... &#125;)</span><br><span class="line"></span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>当一个导航触发时 , 全局前置守卫按照创建顺序调用,守卫是异步解析执行 , 此时导航在所有守卫 <code>resolve</code> 完之前一直处于 等待中</p>
-<p><strong>每个守卫方法接收三个参数 :</strong></p>
-<ul>
-<li><code>to: Route</code>: 即将要进入的目标 <code>路由对象</code></li>
-<li><code>from: Route</code>: 当前导航正要离开的路由</li>
-<li><code>next: Function</code>: 一定要调用该方法来 <code>resolve</code> 这个钩子,执行效果依赖 <code>next</code> 方法的调用参数</li>
-<li><code>next()</code>: 进行管道中的下一个钩子,如果全部钩子执行完了 , 则导航的状态就是 <code>confirmed</code> (确认的)<ul>
-<li><code>next(false)</code>: 中断当前的导航,如果浏览器的 <code>URL</code> 改变了 (可能是用户手动或者浏览器后退按钮) , 那么 <code>URL</code> 地址会重置到 <code>from</code> 路由对应的地址</li>
-<li><code>next(&#39;/&#39;)</code> 或者 <code>next(&#123; path: &#39;/&#39; &#125;)</code>: 跳转到一个不同的地址,当前的导航被中断 , 然后进行一个新的导航,你可以向 <code>next</code> 传递任意位置对象 , 且允许设置诸如 <code>replace: true</code>、<code>name: &#39;home&#39;</code> 之类的选项以及任何用在 <code>router-link</code> 的 <code>to</code> <code>prop</code> 或 <code>router.push</code> 中的选项</li>
-<li><code>next(error)</code>: <code>(2.4.0+)</code> 如果传入 <code>next</code> 的参数是一个 <code>Error</code> 实例 , 则导航会被终止且该错误会被传递给 <code>router.onError()</code> 注册过的回调</li>
-</ul>
-</li>
-</ul>
-<p><strong>确保 <code>next</code> 函数在任何给定的导航守卫中都被严格调用一次 , 它可以出现多于一次 , 但是只能在所有的逻辑路径都不重叠的情况下，否则钩子永远都不会被解析或报错</strong> , 这里用一个在用户未能验证身份时重定向到 <code>/login</code> 的示例</p>
-<p><strong>错误示范</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 错误示范</span></span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (to.name !== <span class="string">&quot;Login&quot;</span> &amp;&amp; !isAuthenticated) next(&#123; <span class="attr">name</span>: <span class="string">&quot;Login&quot;</span> &#125;);</span><br><span class="line">  <span class="comment">// 如果用户未能验证身份,则 next 会被调用两次,这是不对的</span></span><br><span class="line">  next();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p><strong>正确示范</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确示范</span></span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (to.name !== <span class="string">&quot;Login&quot;</span> &amp;&amp; !isAuthenticated) &#123;</span><br><span class="line">    next(&#123; <span class="attr">name</span>: <span class="string">&quot;Login&quot;</span> &#125;);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    next();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h1 id="路由独享的守卫"><a href="#路由独享的守卫" class="headerlink" title="路由独享的守卫"></a>路由独享的守卫</h1><p>你可以在路由配置上直接定义 <code>beforeEnter</code> 守卫 :<br>这些守卫与全局前置守卫的方法参数是一样的</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  <span class="attr">routes</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">path</span>: <span class="string">&quot;/foo&quot;</span>,</span><br><span class="line">      <span class="attr">component</span>: Foo,</span><br><span class="line">      <span class="attr">beforeEnter</span>: <span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">  ],</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Vue</category>
-        <category>Vue 基础</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Vue-router</tag>
-        <tag>beforeEach</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue 打包优化</title>
     <url>/2021/11/18/vue/vue-build-optimization/</url>
     <content><![CDATA[<h1 id="生成打包页面"><a href="#生成打包页面" class="headerlink" title="生成打包页面"></a>生成打包页面</h1><p>在 <code>package.json</code> 文件里的 <code>build</code> 命令后面添加 <code>--report</code></p>
@@ -4260,6 +4221,45 @@ echartsDraggable();
       <tags>
         <tag>Vue</tag>
         <tag>vue优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue 路由守卫</title>
+    <url>/2021/07/31/vue/vue-beforeEach/</url>
+    <content><![CDATA[<h1 id="全局前置守卫"><a href="#全局前置守卫" class="headerlink" title="全局前置守卫"></a>全局前置守卫</h1><p>你可以使用 <code>router.beforeEach</code> 注册一个全局前置守卫</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123; ... &#125;)</span><br><span class="line"></span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>当一个导航触发时 , 全局前置守卫按照创建顺序调用,守卫是异步解析执行 , 此时导航在所有守卫 <code>resolve</code> 完之前一直处于 等待中</p>
+<p><strong>每个守卫方法接收三个参数 :</strong></p>
+<ul>
+<li><code>to: Route</code>: 即将要进入的目标 <code>路由对象</code></li>
+<li><code>from: Route</code>: 当前导航正要离开的路由</li>
+<li><code>next: Function</code>: 一定要调用该方法来 <code>resolve</code> 这个钩子,执行效果依赖 <code>next</code> 方法的调用参数</li>
+<li><code>next()</code>: 进行管道中的下一个钩子,如果全部钩子执行完了 , 则导航的状态就是 <code>confirmed</code> (确认的)<ul>
+<li><code>next(false)</code>: 中断当前的导航,如果浏览器的 <code>URL</code> 改变了 (可能是用户手动或者浏览器后退按钮) , 那么 <code>URL</code> 地址会重置到 <code>from</code> 路由对应的地址</li>
+<li><code>next(&#39;/&#39;)</code> 或者 <code>next(&#123; path: &#39;/&#39; &#125;)</code>: 跳转到一个不同的地址,当前的导航被中断 , 然后进行一个新的导航,你可以向 <code>next</code> 传递任意位置对象 , 且允许设置诸如 <code>replace: true</code>、<code>name: &#39;home&#39;</code> 之类的选项以及任何用在 <code>router-link</code> 的 <code>to</code> <code>prop</code> 或 <code>router.push</code> 中的选项</li>
+<li><code>next(error)</code>: <code>(2.4.0+)</code> 如果传入 <code>next</code> 的参数是一个 <code>Error</code> 实例 , 则导航会被终止且该错误会被传递给 <code>router.onError()</code> 注册过的回调</li>
+</ul>
+</li>
+</ul>
+<p><strong>确保 <code>next</code> 函数在任何给定的导航守卫中都被严格调用一次 , 它可以出现多于一次 , 但是只能在所有的逻辑路径都不重叠的情况下，否则钩子永远都不会被解析或报错</strong> , 这里用一个在用户未能验证身份时重定向到 <code>/login</code> 的示例</p>
+<p><strong>错误示范</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 错误示范</span></span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (to.name !== <span class="string">&quot;Login&quot;</span> &amp;&amp; !isAuthenticated) next(&#123; <span class="attr">name</span>: <span class="string">&quot;Login&quot;</span> &#125;);</span><br><span class="line">  <span class="comment">// 如果用户未能验证身份,则 next 会被调用两次,这是不对的</span></span><br><span class="line">  next();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>正确示范</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确示范</span></span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (to.name !== <span class="string">&quot;Login&quot;</span> &amp;&amp; !isAuthenticated) &#123;</span><br><span class="line">    next(&#123; <span class="attr">name</span>: <span class="string">&quot;Login&quot;</span> &#125;);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    next();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h1 id="路由独享的守卫"><a href="#路由独享的守卫" class="headerlink" title="路由独享的守卫"></a>路由独享的守卫</h1><p>你可以在路由配置上直接定义 <code>beforeEnter</code> 守卫 :<br>这些守卫与全局前置守卫的方法参数是一样的</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  <span class="attr">routes</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">path</span>: <span class="string">&quot;/foo&quot;</span>,</span><br><span class="line">      <span class="attr">component</span>: Foo,</span><br><span class="line">      <span class="attr">beforeEnter</span>: <span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">  ],</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Vue</category>
+        <category>Vue 基础</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Vue-router</tag>
+        <tag>beforeEach</tag>
       </tags>
   </entry>
   <entry>

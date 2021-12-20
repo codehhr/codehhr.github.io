@@ -458,6 +458,64 @@
 <h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
   </entry>
   <entry>
+    <title>几种常见css布局</title>
+    <url>/2020/06/05/css/css-Layout/</url>
+    <content><![CDATA[<h1 id="单列布局"><a href="#单列布局" class="headerlink" title="单列布局"></a>单列布局</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/csslayouts/danlie.jpg" alt="danlie"></p>
+<h3 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h3><p>给定宽度，margin:auto 即可实现</p>
+<h3 id="html"><a href="#html" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;header&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;footer&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.content</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h3><h3 id="html-1"><a href="#html-1" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;header&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;nav&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;footer&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css-1"><a href="#css-1" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.nav</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: darkgray;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.content</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: aquamarine;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: aqua;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="等高布局"><a href="#等高布局" class="headerlink" title="等高布局"></a>等高布局</h1><p>当有内容填充一侧时,另一侧高度跟左侧保持相等</p>
+<h3 id="html-2"><a href="#html-2" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;parent&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box2&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css-2"><a href="#css-2" class="headerlink" title="css"></a>css</h3><p>通过设定 margin-bottom 和 padding-bottom，然后让父容器溢出隐藏，就能达到等高的效果</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">69</span>, <span class="number">209</span>, <span class="number">228</span>);</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">230</span>, <span class="number">56</span>, <span class="number">56</span>);</span><br><span class="line">  <span class="attribute">margin-bottom</span>: -<span class="number">2000px</span>;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="number">2000px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: right;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">67</span>, <span class="number">67</span>, <span class="number">221</span>);</span><br><span class="line">  <span class="attribute">margin-bottom</span>: -<span class="number">2000px</span>;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="number">2000px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/csslayouts/sameheight.png" alt="example"></p>
+<hr>
+<h1 id="三列布局-双飞翼-圣杯"><a href="#三列布局-双飞翼-圣杯" class="headerlink" title="三列布局(双飞翼,圣杯)"></a>三列布局(双飞翼,圣杯)</h1><p>左侧固定，右侧固定，中间自适应的三列布局</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">实现方式有很多：</span><br><span class="line">    1.BFC</span><br><span class="line">    2.定位</span><br><span class="line">    3.浮动</span><br><span class="line">    4.flex弹性</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<h3 id="html-3"><a href="#html-3" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>center<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;left&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Left<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Right<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css-3"><a href="#css-3" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">padding-left</span>: <span class="number">220px</span>;</span><br><span class="line">  <span class="attribute">padding-right</span>: <span class="number">220px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">left</span>: -<span class="number">220px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">500px</span>;</span><br><span class="line">  <span class="attribute">background</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">background</span>: blue;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">right</span>: -<span class="number">220px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="实例：-1"><a href="#实例：-1" class="headerlink" title="实例："></a>实例：</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/csslayouts/shuangfeiyi.png" alt="example"></p>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css布局</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>css3自动换行排列</title>
+    <url>/2020/07/22/css/css-flex/</url>
+    <content><![CDATA[<h1 id="如果一行放不下就会自动换行"><a href="#如果一行放不下就会自动换行" class="headerlink" title="如果一行放不下就会自动换行"></a>如果一行放不下就会自动换行</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">display</span>: flex;</span><br><span class="line"><span class="attribute">flex-wrap</span>: wrap;</span><br></pre></td></tr></table></figure>
+
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例 :"></a>示例 :</h2><h3 id="html"><a href="#html" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: wrap; <span class="comment">/*换行*/</span></span><br><span class="line">  <span class="comment">/* flex-wrap: wrap-reverse; //反方向换行 */</span></span><br><span class="line">  <span class="attribute">align-content</span>: flex-start; <span class="comment">/*紧揍排列,解决换行出现空行*/</span></span><br><span class="line">  <span class="attribute">justify-content</span>: space-between; <span class="comment">/*左右布局,平分间隙*/</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">520px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">181</span>, <span class="number">235</span>, <span class="number">235</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">6px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">223</span>, <span class="number">155</span>, <span class="number">155</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="如图"><a href="#如图" class="headerlink" title="如图 :"></a>如图 :</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/css3flex/flexwrap.png" alt="flex-wrap"></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css布局</tag>
+        <tag>flex</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>css常用居中方式</title>
     <url>/2020/07/27/css/css-center/</url>
     <content><![CDATA[<div class="tabs" id="center"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#center-1">水平居中</button></li><li class="tab"><button type="button" data-href="#center-2">垂直居中</button></li><li class="tab"><button type="button" data-href="#center-3">水平和垂直居中</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="center-1"><h1 id="一、水平居中"><a href="#一、水平居中" class="headerlink" title="一、水平居中"></a>一、水平居中</h1><h2 id="内联元素"><a href="#内联元素" class="headerlink" title="内联元素"></a>内联元素</h2><p>父级元素加 <code>text-align: center</code> 即可</p>
@@ -518,64 +576,6 @@
       </categories>
       <tags>
         <tag>css布局</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>几种常见css布局</title>
-    <url>/2020/06/05/css/css-Layout/</url>
-    <content><![CDATA[<h1 id="单列布局"><a href="#单列布局" class="headerlink" title="单列布局"></a>单列布局</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/csslayouts/danlie.jpg" alt="danlie"></p>
-<h3 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h3><p>给定宽度，margin:auto 即可实现</p>
-<h3 id="html"><a href="#html" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;header&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;footer&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.content</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h3><h3 id="html-1"><a href="#html-1" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;header&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;nav&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;footer&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="css-1"><a href="#css-1" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.nav</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: darkgray;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.content</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: aquamarine;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: aqua;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="等高布局"><a href="#等高布局" class="headerlink" title="等高布局"></a>等高布局</h1><p>当有内容填充一侧时,另一侧高度跟左侧保持相等</p>
-<h3 id="html-2"><a href="#html-2" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;parent&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box2&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="css-2"><a href="#css-2" class="headerlink" title="css"></a>css</h3><p>通过设定 margin-bottom 和 padding-bottom，然后让父容器溢出隐藏，就能达到等高的效果</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">69</span>, <span class="number">209</span>, <span class="number">228</span>);</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">230</span>, <span class="number">56</span>, <span class="number">56</span>);</span><br><span class="line">  <span class="attribute">margin-bottom</span>: -<span class="number">2000px</span>;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="number">2000px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: right;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">67</span>, <span class="number">67</span>, <span class="number">221</span>);</span><br><span class="line">  <span class="attribute">margin-bottom</span>: -<span class="number">2000px</span>;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="number">2000px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/csslayouts/sameheight.png" alt="example"></p>
-<hr>
-<h1 id="三列布局-双飞翼-圣杯"><a href="#三列布局-双飞翼-圣杯" class="headerlink" title="三列布局(双飞翼,圣杯)"></a>三列布局(双飞翼,圣杯)</h1><p>左侧固定，右侧固定，中间自适应的三列布局</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">实现方式有很多：</span><br><span class="line">    1.BFC</span><br><span class="line">    2.定位</span><br><span class="line">    3.浮动</span><br><span class="line">    4.flex弹性</span><br></pre></td></tr></table></figure>
-
-<p>示例：</p>
-<h3 id="html-3"><a href="#html-3" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>center<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;left&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Left<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;right&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Right<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="css-3"><a href="#css-3" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">padding-left</span>: <span class="number">220px</span>;</span><br><span class="line">  <span class="attribute">padding-right</span>: <span class="number">220px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">left</span>: -<span class="number">220px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">500px</span>;</span><br><span class="line">  <span class="attribute">background</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">background</span>: blue;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">right</span>: -<span class="number">220px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="实例：-1"><a href="#实例：-1" class="headerlink" title="实例："></a>实例：</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/csslayouts/shuangfeiyi.png" alt="example"></p>
-<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
-      <categories>
-        <category>css</category>
-      </categories>
-      <tags>
-        <tag>css布局</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>css3自动换行排列</title>
-    <url>/2020/07/22/css/css-flex/</url>
-    <content><![CDATA[<h1 id="如果一行放不下就会自动换行"><a href="#如果一行放不下就会自动换行" class="headerlink" title="如果一行放不下就会自动换行"></a>如果一行放不下就会自动换行</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">display</span>: flex;</span><br><span class="line"><span class="attribute">flex-wrap</span>: wrap;</span><br></pre></td></tr></table></figure>
-
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例 :"></a>示例 :</h2><h3 id="html"><a href="#html" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: wrap; <span class="comment">/*换行*/</span></span><br><span class="line">  <span class="comment">/* flex-wrap: wrap-reverse; //反方向换行 */</span></span><br><span class="line">  <span class="attribute">align-content</span>: flex-start; <span class="comment">/*紧揍排列,解决换行出现空行*/</span></span><br><span class="line">  <span class="attribute">justify-content</span>: space-between; <span class="comment">/*左右布局,平分间隙*/</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">520px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">181</span>, <span class="number">235</span>, <span class="number">235</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">6px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">223</span>, <span class="number">155</span>, <span class="number">155</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="如图"><a href="#如图" class="headerlink" title="如图 :"></a>如图 :</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/css3flex/flexwrap.png" alt="flex-wrap"></p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>css</category>
-      </categories>
-      <tags>
-        <tag>css布局</tag>
-        <tag>flex</tag>
       </tags>
   </entry>
   <entry>
@@ -1274,48 +1274,6 @@
       </tags>
   </entry>
   <entry>
-    <title>var 与 ES6 中的 let const 的区别</title>
-    <url>/2021/06/29/js/es6-var-let-const/</url>
-    <content><![CDATA[<h1 id="let-const-var-定义变量的区别是什么"><a href="#let-const-var-定义变量的区别是什么" class="headerlink" title="let const var 定义变量的区别是什么"></a>let const var 定义变量的区别是什么</h1><ul>
-<li><p><code>let</code></p>
-<ul>
-<li>块作用域</li>
-<li>没有变量提升</li>
-<li>不能重复声明</li>
-</ul>
-</li>
-<li><p><code>const</code></p>
-<ul>
-<li>声明常量，不能修改</li>
-<li>必须初始化</li>
-<li>块作用域</li>
-<li>没有变量提升</li>
-<li>不能重复声明</li>
-</ul>
-</li>
-<li><p><code>var</code></p>
-<ul>
-<li>没有块的概念</li>
-<li>可以跨块访问，但是不能跨函数访问</li>
-<li>会进行变量提升</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>js</category>
-        <category>ES6</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>ES6</tag>
-        <tag>let</tag>
-        <tag>var</tag>
-        <tag>const</tag>
-        <tag>jsvascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ES6 新增用法 ( 六 )</title>
     <url>/2021/06/25/js/es6-day06/</url>
     <content><![CDATA[<h1 id="类基本用法"><a href="#类基本用法" class="headerlink" title="类基本用法"></a>类基本用法</h1><h2 id="类的属性和方法"><a href="#类的属性和方法" class="headerlink" title="类的属性和方法"></a>类的属性和方法</h2><p>声明一个类的写法 :</p>
@@ -1402,6 +1360,48 @@
         <tag>import</tag>
         <tag>module</tag>
         <tag>extends</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>var 与 ES6 中的 let const 的区别</title>
+    <url>/2021/06/29/js/es6-var-let-const/</url>
+    <content><![CDATA[<h1 id="let-const-var-定义变量的区别是什么"><a href="#let-const-var-定义变量的区别是什么" class="headerlink" title="let const var 定义变量的区别是什么"></a>let const var 定义变量的区别是什么</h1><ul>
+<li><p><code>let</code></p>
+<ul>
+<li>块作用域</li>
+<li>没有变量提升</li>
+<li>不能重复声明</li>
+</ul>
+</li>
+<li><p><code>const</code></p>
+<ul>
+<li>声明常量，不能修改</li>
+<li>必须初始化</li>
+<li>块作用域</li>
+<li>没有变量提升</li>
+<li>不能重复声明</li>
+</ul>
+</li>
+<li><p><code>var</code></p>
+<ul>
+<li>没有块的概念</li>
+<li>可以跨块访问，但是不能跨函数访问</li>
+<li>会进行变量提升</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>js</category>
+        <category>ES6</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>ES6</tag>
+        <tag>let</tag>
+        <tag>var</tag>
+        <tag>const</tag>
+        <tag>jsvascript</tag>
       </tags>
   </entry>
   <entry>
@@ -3135,49 +3135,6 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>Kali 下用 swaks 发送邮件</title>
-    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
-    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
-
-<p>拿我的 QQ 举例</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
-
-<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
-<hr>
-<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
-<p>记住 smtp 的密码</p>
-<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
-
-<p>参数说明：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
-
-<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
-<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<p>收件箱收到的是 email.txt 里的内容</p>
-<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>kali</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>kali</tag>
-        <tag>swaks</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Js 基础总结及案例</title>
     <url>/2021/05/13/js/js/</url>
     <content><![CDATA[<h1 id="一-JavaScript-介绍"><a href="#一-JavaScript-介绍" class="headerlink" title="一. JavaScript 介绍"></a>一. JavaScript 介绍</h1><h2 id="1-、JavaScript-是什么"><a href="#1-、JavaScript-是什么" class="headerlink" title="(1) 、JavaScript 是什么"></a>(1) 、JavaScript 是什么</h2><h3 id="1-JavaScript-的历史"><a href="#1-JavaScript-的历史" class="headerlink" title="1. JavaScript 的历史"></a>1. JavaScript 的历史</h3><p>Netscape（网景）在最初将其脚本语言命名为 LiveScript，是布兰登.艾克发明的。后来 Netscape 在与 Sun 合作之后将其改名为 JavaScript。JavaScript 最初受 Java 启发而开始设计的，目的之一就是“看上去像 Java”，因此语法上有类似之处，一些名称和命名规范也借自 Java。JavaScript 与 Java 名称上的近似，是当时 Netscape 为了营销考虑与 Sun 微系统达成协议的结果。</p>
@@ -3508,6 +3465,49 @@ echartsDraggable();
         <tag>js</tag>
         <tag>javascript</tag>
         <tag>基础总结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Kali 下用 swaks 发送邮件</title>
+    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
+    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
+
+<p>拿我的 QQ 举例</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
+
+<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
+<hr>
+<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
+<p>记住 smtp 的密码</p>
+<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
+
+<p>参数说明：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
+
+<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
+<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<p>收件箱收到的是 email.txt 里的内容</p>
+<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>kali</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>kali</tag>
+        <tag>swaks</tag>
       </tags>
   </entry>
   <entry>

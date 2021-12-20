@@ -448,6 +448,16 @@
       </tags>
   </entry>
   <entry>
+    <title>Bootstrap</title>
+    <url>/2021/07/11/bootstrap/bootstrap/</url>
+    <content><![CDATA[<h1 id="Bootstrap-v3-中文文档"><a href="#Bootstrap-v3-中文文档" class="headerlink" title="Bootstrap v3 中文文档"></a>Bootstrap v3 中文文档</h1><blockquote>
+<h2 id="https-v3-bootcss-com"><a href="#https-v3-bootcss-com" class="headerlink" title="https://v3.bootcss.com/"></a><a href="https://v3.bootcss.com/">https://v3.bootcss.com/</a></h2></blockquote>
+<h1 id="引入使用"><a href="#引入使用" class="headerlink" title="引入使用"></a>引入使用</h1><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>如果只是用一些样式 , 可以只引入 <code>css</code> 文件</strong></p>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
+  </entry>
+  <entry>
     <title>几种常见css布局</title>
     <url>/2020/06/05/css/css-Layout/</url>
     <content><![CDATA[<h1 id="单列布局"><a href="#单列布局" class="headerlink" title="单列布局"></a>单列布局</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/csslayouts/danlie.jpg" alt="danlie"></p>
@@ -485,16 +495,6 @@
       <tags>
         <tag>css布局</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Bootstrap</title>
-    <url>/2021/07/11/bootstrap/bootstrap/</url>
-    <content><![CDATA[<h1 id="Bootstrap-v3-中文文档"><a href="#Bootstrap-v3-中文文档" class="headerlink" title="Bootstrap v3 中文文档"></a>Bootstrap v3 中文文档</h1><blockquote>
-<h2 id="https-v3-bootcss-com"><a href="#https-v3-bootcss-com" class="headerlink" title="https://v3.bootcss.com/"></a><a href="https://v3.bootcss.com/">https://v3.bootcss.com/</a></h2></blockquote>
-<h1 id="引入使用"><a href="#引入使用" class="headerlink" title="引入使用"></a>引入使用</h1><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>如果只是用一些样式 , 可以只引入 <code>css</code> 文件</strong></p>
-<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
   </entry>
   <entry>
     <title>css常用居中方式</title>
@@ -3083,30 +3083,55 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>Nodejs EventEmitter</title>
-    <url>/2021/09/08/node/node-EventEmitter/</url>
-    <content><![CDATA[<div class="note info flat"><p><strong>Node.js EventEmitter</strong><br><code>Node.js</code> 所有的异步 <code>I/O</code> 操作在完成时都会发送一个事件到事件队列<br><code>Node.js</code> 里面的许多对象都会分发事件 : 一个 <code>net.Server</code> 对象会在每次有新连接时触发一个事件 , 一个 <code>fs.readStream</code> 对象会在文件被打开的时候触发一个事件 , 所有这些产生事件的对象都是 <code>events.EventEmitter</code> 的实例</p>
-</div>
+    <title>VMware 安装 CentOS7 后的简单配置</title>
+    <url>/2020/10/06/linux/linux-centos/</url>
+    <content><![CDATA[<h1 id="1-连网"><a href="#1-连网" class="headerlink" title="1.连网"></a>1.连网</h1><p>如果能连网,跳过此步<br>试着 ping 一下百度</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping baidu.com</span><br></pre></td></tr></table></figure>
 
-<h1 id="EventEmitter-类"><a href="#EventEmitter-类" class="headerlink" title="EventEmitter 类"></a>EventEmitter 类</h1><p><code>events</code> 模块只提供了一个对象： <code>events.EventEmitter</code> , <code>EventEmitter</code> 的核心就是事件触发与事件监听器功能的封装</p>
-<p>可以通过 <code>require(&quot;events&quot;)</code> 来访问该模块</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 引入 events 模块</span></span><br><span class="line"><span class="keyword">let</span> events = <span class="built_in">require</span>(<span class="string">&quot;events&quot;</span>);</span><br><span class="line"><span class="comment">// 创建 eventEmitter 对象</span></span><br><span class="line"><span class="keyword">let</span> eventEmitter = <span class="keyword">new</span> events.EventEmitter();</span><br></pre></td></tr></table></figure>
+<h2 id="动态分配-IP"><a href="#动态分配-IP" class="headerlink" title="动态分配 IP"></a>动态分配 IP</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure>
 
-<h1 id="EventEmitter-的事件监听和触发"><a href="#EventEmitter-的事件监听和触发" class="headerlink" title="EventEmitter 的事件监听和触发"></a>EventEmitter 的事件监听和触发</h1><p><code>EventEmitter</code> 的每个事件由一个<code>事件名</code>和<code>若干个参数</code>组成 , 事件名是一个自定义的字符串 , 通常表达一定的语义 , 对于每个事件 , <code>EventEmitter</code> 支持若干个事件监听器<br>当事件触发时 , 注册到这个事件的事件监听器被依次调用 , 事件参数作为回调函数参数传递</p>
-<p>让我们以下面的例子解释这个过程 :</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 引入 events 模块</span></span><br><span class="line"><span class="keyword">let</span> events = <span class="built_in">require</span>(<span class="string">&quot;events&quot;</span>);</span><br><span class="line"><span class="comment">// 创建 eventEmitter 对象</span></span><br><span class="line"><span class="keyword">let</span> eventEmitter = <span class="keyword">new</span> events.EventEmitter();</span><br><span class="line">eventEmitter.on(<span class="string">&quot;someEvent&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">arg1, arg2</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;listener1&quot;</span>, arg1, arg2);</span><br><span class="line">&#125;);</span><br><span class="line">eventEmitter.on(<span class="string">&quot;someEvent&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">arg1, arg2</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;listener2&quot;</span>, arg1, arg2);</span><br><span class="line">&#125;);</span><br><span class="line">eventEmitter.emit(<span class="string">&quot;someEvent&quot;</span>, <span class="string">&quot;参数 1&quot;</span>, <span class="string">&quot;参数 2&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>记得前面加上 <code>sudo</code> ,其实你不加根本编辑不了,哈哈哈哈哈哈 !<br>后面的 <code>ens33</code> 可能不太一样,是网卡名,输入的时候按 <code>Tab</code> 补全就行了</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/dhcp.png" alt="dhcp"></p>
+<p>如上图所示需要改动两个地方</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">BOOTPROTO=dhcp</span><br><span class="line">ONBOOT=yes</span><br></pre></td></tr></table></figure>
 
-<p>执行结果 :</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">listener1 参数 1 参数 2</span><br><span class="line">listener2 参数 1 参数 2</span><br></pre></td></tr></table></figure>
+<p>顺便说一下<code>vim</code>这个编辑器,按<code>i</code>,<code>o</code>,<code>I</code>,<code>A</code>都可以进入插入模式，退出保存先按<code>esc</code>,然后按 <code>ZZ</code> (大写的) 就可以了,或者按 <code>esc</code> 后输入<code>:wq</code>再按回车</p>
+<p>然后重启网络服务</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart network</span><br></pre></td></tr></table></figure>
 
-<p>以上例子中 , <code>eventEmitter</code> 为事件 <code>someEvent</code> 注册了两个事件监听器 , 然后触发了 <code>someEvent</code> 事件<br>运行结果中可以看到两个事件监听器回调函数被先后调用 , 这就是 <code>EventEmitter</code> 最简单的用法<br><strong><code>EventEmitter</code> 提供了多个属性 , 如 <code>on</code> 和 <code>emit</code> , <code>on</code> 函数用于绑定事件函数 , <code>emit</code> 属性用于触发一个事件</strong></p>
-]]></content>
+<p>输入<code>ip addr</code>可以查看 ip,试着 ping 一下 baidu ,已经有网了</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/ipaddr.png" alt="ipaddr"></p>
+<h1 id="2-换为国内软件源-方便快速下载-其实有好几种方式"><a href="#2-换为国内软件源-方便快速下载-其实有好几种方式" class="headerlink" title="2.换为国内软件源,方便快速下载(其实有好几种方式)"></a>2.换为国内软件源,方便快速下载(其实有好几种方式)</h1><blockquote>
+<h2 id="作为参考-https-mirrors-cnnic-cn-help-centos"><a href="#作为参考-https-mirrors-cnnic-cn-help-centos" class="headerlink" title="作为参考: https://mirrors.cnnic.cn/help/centos/"></a>作为参考: <a href="https://mirrors.cnnic.cn/help/centos/">https://mirrors.cnnic.cn/help/centos/</a></h2></blockquote>
+<h2 id="可以先把原来的源文件备份一下"><a href="#可以先把原来的源文件备份一下" class="headerlink" title="可以先把原来的源文件备份一下"></a>可以先把原来的源文件备份一下</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</span><br></pre></td></tr></table></figure>
+
+<h2 id="下载阿里和网易的-CentOS-Base-repo"><a href="#下载阿里和网易的-CentOS-Base-repo" class="headerlink" title="下载阿里和网易的 CentOS-Base.repo"></a>下载阿里和网易的 CentOS-Base.repo</h2><h3 id="我用的-CentOS-7"><a href="#我用的-CentOS-7" class="headerlink" title="我用的 CentOS-7"></a>我用的 CentOS-7</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line">或者</span><br><span class="line">sudo curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.<span class="built_in">help</span>/CentOS7-Base-163.repo</span><br></pre></td></tr></table></figure>
+
+<h2 id="清除-yum-缓存并生成新的-yum-缓存"><a href="#清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="清除 yum 缓存并生成新的 yum 缓存"></a>清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-epel-源"><a href="#安装-epel-源" class="headerlink" title="安装 epel 源"></a>安装 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum list | grep epel-release</span><br><span class="line">sudo yum install -y epel-release</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用阿里镜像提供的-epel-源"><a href="#使用阿里镜像提供的-epel-源" class="headerlink" title="使用阿里镜像提供的 epel 源"></a>使用阿里镜像提供的 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/epel-7.repo http://mirrors.aliyun.com/repo/epel-7.repo</span><br></pre></td></tr></table></figure>
+
+<h2 id="重新清除-yum-缓存并生成新的-yum-缓存"><a href="#重新清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="重新清除 yum 缓存并生成新的 yum 缓存"></a>重新清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
+
+<h2 id="系统升级"><a href="#系统升级" class="headerlink" title="系统升级"></a>系统升级</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y update</span><br></pre></td></tr></table></figure>
+
+<p>会更新所有软件<br><code>-y</code>可选,加上会同意所有项,即默认 <code>yes</code></p>
+<h1 id="3-安装-卸载软件"><a href="#3-安装-卸载软件" class="headerlink" title="3.安装,卸载软件"></a>3.安装,卸载软件</h1><p>比如安装<code>git</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y install git</span><br></pre></td></tr></table></figure>
+
+<p>卸载 <code>git</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y remove git</span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
       <categories>
-        <category>node</category>
+        <category>linux</category>
+        <category>CentOS</category>
       </categories>
       <tags>
-        <tag>node</tag>
-        <tag>EventEmitter</tag>
+        <tag>linux</tag>
+        <tag>CentOS</tag>
       </tags>
   </entry>
   <entry>
@@ -3443,205 +3468,6 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>Node</title>
-    <url>/2021/07/12/node/node-fs-http/</url>
-    <content><![CDATA[<h1 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/nodeall.png" alt="node"></p>
-<h1 id="Node-js-介绍"><a href="#Node-js-介绍" class="headerlink" title="Node.js 介绍"></a>Node.js 介绍</h1><p><code>Node.js</code> 不是一门语言 , 不是库或者框架 , <code>Node.js</code> 是一个 <code>JavaScript</code> 运行时的环境 , <code>Node.js</code> 可以解析和执行 <code>JavaScript</code> 代码</p>
-<h2 id="浏览器中-JavaScript-由什么组成"><a href="#浏览器中-JavaScript-由什么组成" class="headerlink" title="浏览器中 JavaScript 由什么组成"></a>浏览器中 JavaScript 由什么组成</h2><ul>
-<li><code>EcmaScript</code> : 基本语法 , <code>if</code> , <code>var</code> , <code>function</code> , <code>Object</code> , <code>Array</code></li>
-<li><code>DOM</code></li>
-<li><code>BOM</code></li>
-</ul>
-<h2 id="Node-js-中的-JavaScript"><a href="#Node-js-中的-JavaScript" class="headerlink" title="Node.js 中的 JavaScript"></a>Node.js 中的 JavaScript</h2><ul>
-<li><strong>没有 <code>BOM</code> 和 <code>DOM</code> , 只有 <code>EcmaScript</code></strong></li>
-<li>在 <code>Node.js</code> 这个 <code>JavaScript</code> 执行环境中为 <code>JavaScript</code> 提供了一些服务器级别的操作 <code>API</code> , 例如 : 文件读写 , 网络服务构建 , 网络请求与响应等 , 其实 <code>node</code> 学习相当于在学习后台服务处理开发 , 只不过后台服务编程使用的是 <code>JavaScript</code> 语言而已</li>
-<li><strong>特性 : 事件驱动 , 非阻塞 <code>I/O</code> 模型 ( 简单说就是异步操作 ) , 轻量高效 , 随着学习的深入大家会明白这些特性的</strong></li>
-<li><code>npm</code> 是世界上最大的 <code>Node.js</code> 开源库生态系统 , 用来管理 <code>JavaScript</code> 相关的包 , 这样的目的是为了更方便的让开发人员使用它</li>
-</ul>
-<h3 id="使用-npm-安装相关包的命令-以-jquery-为例-先了解即可"><a href="#使用-npm-安装相关包的命令-以-jquery-为例-先了解即可" class="headerlink" title="使用 npm 安装相关包的命令 ( 以 jquery 为例 , 先了解即可 ) :"></a>使用 <code>npm</code> 安装相关包的命令 ( 以 <code>jquery</code> 为例 , 先了解即可 ) :</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install jquery</span><br></pre></td></tr></table></figure>
-
-<p><strong>包名后面加 <code>@</code> 可指定版本号</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install jquery@2</span><br></pre></td></tr></table></figure>
-
-<h2 id="Node-js-能够做什么"><a href="#Node-js-能够做什么" class="headerlink" title="Node.js 能够做什么"></a>Node.js 能够做什么</h2><ul>
-<li><code>Web</code> 服务器后台</li>
-<li>命令行工具 , 例如 : <code>npm</code> , <code>git</code> , <code>webpack</code> 等</li>
-<li>前端工程师接触 <code>node</code> 最多的是命令行工具 , 一般很少自己写 , 主要使用别人写好的第三方包</li>
-</ul>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><ul>
-<li><code>B/S</code> 编程模型<ul>
-<li><code>Browser - Server</code></li>
-<li><code>back-end</code> ( 后台开发 )</li>
-<li>任何服务端技术这种 <code>BS</code> 编程模型都一样 , 与语言无关</li>
-<li><code>Node</code> 只是我们学习 <code>BS</code> 编程模型的一个工具而已</li>
-</ul>
-</li>
-<li>模块化编程<br><strong>模块化</strong>就是将不同功能的函数封装起来 , 并提供使用接口 , 他们彼此之间互不影响<ul>
-<li><code>RequireJS</code></li>
-<li><code>SeaJs</code></li>
-<li>简单的来说 , 以前在我们 <code>JavaScript</code> 中只能通过<code>&lt;script&gt;</code>标签来引入 <code>js</code> 脚本文件 , 在 <code>node</code> 中可以更多方式来引入加载 <code>JavaScript</code> 脚本</li>
-</ul>
-</li>
-<li><code>Node</code> 常用 <code>API</code></li>
-</ul>
-<h1 id="Node-起步"><a href="#Node-起步" class="headerlink" title="Node 起步"></a>Node 起步</h1><h2 id="安装-Node-环境"><a href="#安装-Node-环境" class="headerlink" title="安装 Node 环境"></a>安装 Node 环境</h2><p>安装依赖 : <code>npm install 依赖名字</code> , <code>install</code> 可简写为 <code>i</code><br>后面加 <code>@</code> 可指定版本号 , 比如</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i jquery@2.2</span><br></pre></td></tr></table></figure>
-
-<p><strong>参数 :</strong></p>
-<ul>
-<li><code>-g</code> 表示全局安装</li>
-<li><code>--save</code> 表示生产环境 , 简写是 <code>-S</code></li>
-<li><code>-dev</code> 是开发环境 , 简写是 <code>-D</code></li>
-</ul>
-<p><strong>国内 npm 比较慢 , 可安装淘宝镜像版的 cnpm</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><ul>
-<li>第一步 : 创建编写 <code>JavaScript</code> 脚本文件</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;Hello World&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>第二步 : 打开终端 , 定位到脚本文件所属目录</li>
-<li>第三步 : 输入 <code>node 文件名</code> 执行对应的文件</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node HelloWorld.js</span><br></pre></td></tr></table></figure>
-
-<h2 id="读写文件"><a href="#读写文件" class="headerlink" title="读写文件"></a>读写文件</h2><p>浏览器中 <code>JavaScript</code> 是没有文件操作能力的 , 但是 <code>Node</code> 中的 <code>JavaScript</code> 具有文件操作的能力 , <code>Node</code> 中有一个 <code>fs</code> 模块 , <code>fs</code> 是 <code>file-system</code> 的简写 , 就是文件系统的意思 , 在 <code>Node</code> 中如果想要进行文件操作 , 就必须引入 <code>fs</code> 这个核心模块</p>
-<ul>
-<li>引入 <code>fs</code> 核心模块</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">&quot;fs&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>用来读取文件的方法</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">fs.readFile();</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>用来写文件的方法</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">fs.writeFile();</span><br></pre></td></tr></table></figure>
-
-<h2 id="http-服务"><a href="#http-服务" class="headerlink" title="http 服务"></a>http 服务</h2><p>服务器是干嘛的 ?</p>
-<ul>
-<li>提供服务：对数据的服务</li>
-<li>发请求</li>
-<li>接收请求</li>
-<li>处理请求</li>
-<li>给个响应</li>
-</ul>
-<p>我们可以使用 <code>Node</code> 非常轻松的构建一个 <code>Web</code> 服务器 , 在 <code>Node</code> 中 , <code>专门有个核心模块：http</code><br>思路 :</p>
-<ul>
-<li>加载 <code>http</code> 核心模块</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 1. 加载 http 核心模块</span></span><br><span class="line"><span class="keyword">let</span> http = <span class="built_in">require</span>(<span class="string">&quot;http&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>创建一个 <code>Web</code> 服务器</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 2.使用 http.createServer() 方法创建一个Web服务器 , 返回一个 Server 实例</span></span><br><span class="line"><span class="keyword">let</span> server = http.createServer();</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>注册 <code>request</code> 请求事件</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 3. 注册 request 请求事件</span></span><br><span class="line"><span class="comment">// 还记得刚才说的 node.js 的特性 : 事件驱动么 , 就是这种用法</span></span><br><span class="line"><span class="comment">// 还记得刚才说的 node.js 的特性 : 回调函数么 , 就是第二个参数的用法</span></span><br><span class="line"></span><br><span class="line">server.on(<span class="string">&quot;request&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;收到客户端的请求了啊&quot;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>绑定端口号 , 启动服务器</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 4. 绑定端口号 , 启动服务器</span></span><br><span class="line">server.listen(<span class="number">3000</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(</span><br><span class="line">    <span class="string">&quot;服务器启动成功了 , 可以通过浏览器访问http:localhost:3000发请求了&quot;</span></span><br><span class="line">  );</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>node</category>
-      </categories>
-      <tags>
-        <tag>node</tag>
-        <tag>fs</tag>
-        <tag>http</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>node 连接 MySQL</title>
-    <url>/2021/07/16/node/node-mysql/</url>
-    <content><![CDATA[<a class="btn-beautify button--animated green larger" href="https://github.com/codehhr/Message-board/" 
-  title="留言版案例"><i class="far fa-hand-point-right"></i><span>留言版案例</span></a>
-<h1 id="安装-mysql-驱动"><a href="#安装-mysql-驱动" class="headerlink" title="安装 mysql 驱动"></a>安装 mysql 驱动</h1><p>可以用淘宝镜像的 <code>cnpm</code> 安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install mysql --save</span><br></pre></td></tr></table></figure>
-
-<h1 id="引入-mysql-模块"><a href="#引入-mysql-模块" class="headerlink" title="引入 mysql 模块"></a>引入 mysql 模块</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<h1 id="链接-MySQL"><a href="#链接-MySQL" class="headerlink" title="链接 MySQL"></a>链接 MySQL</h1><p>相应的修改<code>主机名</code> , <code>用户名</code> , <code>密码</code> 和 <code>数据库名</code></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> connection = mysql.createConnection(&#123;</span><br><span class="line">  <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">  <span class="attr">user</span>: <span class="string">&quot;root&quot;</span>,</span><br><span class="line">  <span class="attr">password</span>: <span class="string">&quot;12345678&quot;</span>,</span><br><span class="line">  <span class="attr">database</span>: <span class="string">&quot;test&quot;</span>,</span><br><span class="line">&#125;);</span><br><span class="line">connection.connect();</span><br><span class="line">connection.query(</span><br><span class="line">  <span class="string">&quot;SELECT * from comment_list&quot;</span>,</span><br><span class="line">  <span class="function"><span class="keyword">function</span> (<span class="params">error, results, fields</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (error) <span class="keyword">throw</span> error;</span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-
-<h2 id="把这几个步骤封装成函数"><a href="#把这几个步骤封装成函数" class="headerlink" title="把这几个步骤封装成函数"></a>把这几个步骤封装成函数</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    sql: 要执行的 sql 语句</span></span><br><span class="line"><span class="comment">    fun: 拿到数据库返回的 results 后执行的函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">interactingWithDatabase</span>(<span class="params">sql, fun</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> connection = mysql.createConnection(&#123;</span><br><span class="line">    <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">    <span class="attr">user</span>: <span class="string">&quot;root&quot;</span>,</span><br><span class="line">    <span class="attr">password</span>: <span class="string">&quot;12345678&quot;</span>,</span><br><span class="line">    <span class="attr">database</span>: <span class="string">&quot;comment_list&quot;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  connection.connect();</span><br><span class="line">  connection.query(sql, <span class="function"><span class="keyword">function</span> (<span class="params">err, results</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      <span class="keyword">throw</span> err;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      fun(results);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">  connection.end();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="简单的数据库操作-CURD"><a href="#简单的数据库操作-CURD" class="headerlink" title="简单的数据库操作 ( CURD )"></a>简单的数据库操作 ( CURD )</h1><h2 id="sql-语句"><a href="#sql-语句" class="headerlink" title="sql 语句"></a>sql 语句</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">增 : <span class="keyword">insert</span> <span class="keyword">into</span> 表名 ( 字段 , 字段 ) <span class="keyword">values</span> ( 值 , 值 )</span><br><span class="line">删 : <span class="keyword">delete</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> 条件</span><br><span class="line">改 : update 表名 <span class="keyword">set</span> 字段 <span class="operator">=</span> 值 <span class="keyword">where</span> 条件</span><br><span class="line">查 : <span class="keyword">select</span> 字段 <span class="keyword">from</span> 表名 (<span class="keyword">where</span> 条件)</span><br></pre></td></tr></table></figure>
-
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">增 : <span class="keyword">INSERT</span> <span class="keyword">INTO</span> comment_list (name , comment) <span class="keyword">VALUES</span> (<span class="string">&#x27;name&#x27;</span> ,<span class="string">&#x27;comment&#x27;</span>)</span><br><span class="line">删 : <span class="keyword">DELETE</span> <span class="keyword">FROM</span> comment_list <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="string">&#x27;userid&#x27;</span></span><br><span class="line">改 : UPDATE comment_list <span class="keyword">SET</span> comment <span class="operator">=</span> &quot;newcomment&quot; <span class="keyword">WHERE</span> id <span class="operator">=</span> &quot;userid&quot;</span><br><span class="line">查 : <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> comment_list <span class="keyword">WHERE</span> comment <span class="keyword">LIKE</span> <span class="string">&#x27;%value%&#x27;</span> <span class="keyword">or</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;%value%&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>node</category>
-      </categories>
-      <tags>
-        <tag>node</tag>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VMware 安装 CentOS7 后的简单配置</title>
-    <url>/2020/10/06/linux/linux-centos/</url>
-    <content><![CDATA[<h1 id="1-连网"><a href="#1-连网" class="headerlink" title="1.连网"></a>1.连网</h1><p>如果能连网,跳过此步<br>试着 ping 一下百度</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping baidu.com</span><br></pre></td></tr></table></figure>
-
-<h2 id="动态分配-IP"><a href="#动态分配-IP" class="headerlink" title="动态分配 IP"></a>动态分配 IP</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure>
-
-<p>记得前面加上 <code>sudo</code> ,其实你不加根本编辑不了,哈哈哈哈哈哈 !<br>后面的 <code>ens33</code> 可能不太一样,是网卡名,输入的时候按 <code>Tab</code> 补全就行了</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/dhcp.png" alt="dhcp"></p>
-<p>如上图所示需要改动两个地方</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">BOOTPROTO=dhcp</span><br><span class="line">ONBOOT=yes</span><br></pre></td></tr></table></figure>
-
-<p>顺便说一下<code>vim</code>这个编辑器,按<code>i</code>,<code>o</code>,<code>I</code>,<code>A</code>都可以进入插入模式，退出保存先按<code>esc</code>,然后按 <code>ZZ</code> (大写的) 就可以了,或者按 <code>esc</code> 后输入<code>:wq</code>再按回车</p>
-<p>然后重启网络服务</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart network</span><br></pre></td></tr></table></figure>
-
-<p>输入<code>ip addr</code>可以查看 ip,试着 ping 一下 baidu ,已经有网了</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/ipaddr.png" alt="ipaddr"></p>
-<h1 id="2-换为国内软件源-方便快速下载-其实有好几种方式"><a href="#2-换为国内软件源-方便快速下载-其实有好几种方式" class="headerlink" title="2.换为国内软件源,方便快速下载(其实有好几种方式)"></a>2.换为国内软件源,方便快速下载(其实有好几种方式)</h1><blockquote>
-<h2 id="作为参考-https-mirrors-cnnic-cn-help-centos"><a href="#作为参考-https-mirrors-cnnic-cn-help-centos" class="headerlink" title="作为参考: https://mirrors.cnnic.cn/help/centos/"></a>作为参考: <a href="https://mirrors.cnnic.cn/help/centos/">https://mirrors.cnnic.cn/help/centos/</a></h2></blockquote>
-<h2 id="可以先把原来的源文件备份一下"><a href="#可以先把原来的源文件备份一下" class="headerlink" title="可以先把原来的源文件备份一下"></a>可以先把原来的源文件备份一下</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</span><br></pre></td></tr></table></figure>
-
-<h2 id="下载阿里和网易的-CentOS-Base-repo"><a href="#下载阿里和网易的-CentOS-Base-repo" class="headerlink" title="下载阿里和网易的 CentOS-Base.repo"></a>下载阿里和网易的 CentOS-Base.repo</h2><h3 id="我用的-CentOS-7"><a href="#我用的-CentOS-7" class="headerlink" title="我用的 CentOS-7"></a>我用的 CentOS-7</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line">或者</span><br><span class="line">sudo curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.<span class="built_in">help</span>/CentOS7-Base-163.repo</span><br></pre></td></tr></table></figure>
-
-<h2 id="清除-yum-缓存并生成新的-yum-缓存"><a href="#清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="清除 yum 缓存并生成新的 yum 缓存"></a>清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装-epel-源"><a href="#安装-epel-源" class="headerlink" title="安装 epel 源"></a>安装 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum list | grep epel-release</span><br><span class="line">sudo yum install -y epel-release</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用阿里镜像提供的-epel-源"><a href="#使用阿里镜像提供的-epel-源" class="headerlink" title="使用阿里镜像提供的 epel 源"></a>使用阿里镜像提供的 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/epel-7.repo http://mirrors.aliyun.com/repo/epel-7.repo</span><br></pre></td></tr></table></figure>
-
-<h2 id="重新清除-yum-缓存并生成新的-yum-缓存"><a href="#重新清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="重新清除 yum 缓存并生成新的 yum 缓存"></a>重新清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
-
-<h2 id="系统升级"><a href="#系统升级" class="headerlink" title="系统升级"></a>系统升级</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y update</span><br></pre></td></tr></table></figure>
-
-<p>会更新所有软件<br><code>-y</code>可选,加上会同意所有项,即默认 <code>yes</code></p>
-<h1 id="3-安装-卸载软件"><a href="#3-安装-卸载软件" class="headerlink" title="3.安装,卸载软件"></a>3.安装,卸载软件</h1><p>比如安装<code>git</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y install git</span><br></pre></td></tr></table></figure>
-
-<p>卸载 <code>git</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y remove git</span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>CentOS</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>CentOS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Kali 下用 swaks 发送邮件</title>
     <url>/2019/06/01/linux/linux-kaliSwaks/</url>
     <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
@@ -3863,6 +3689,180 @@ echartsDraggable();
       <tags>
         <tag>linux</tag>
         <tag>grub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nodejs EventEmitter</title>
+    <url>/2021/09/08/node/node-EventEmitter/</url>
+    <content><![CDATA[<div class="note info flat"><p><strong>Node.js EventEmitter</strong><br><code>Node.js</code> 所有的异步 <code>I/O</code> 操作在完成时都会发送一个事件到事件队列<br><code>Node.js</code> 里面的许多对象都会分发事件 : 一个 <code>net.Server</code> 对象会在每次有新连接时触发一个事件 , 一个 <code>fs.readStream</code> 对象会在文件被打开的时候触发一个事件 , 所有这些产生事件的对象都是 <code>events.EventEmitter</code> 的实例</p>
+</div>
+
+<h1 id="EventEmitter-类"><a href="#EventEmitter-类" class="headerlink" title="EventEmitter 类"></a>EventEmitter 类</h1><p><code>events</code> 模块只提供了一个对象： <code>events.EventEmitter</code> , <code>EventEmitter</code> 的核心就是事件触发与事件监听器功能的封装</p>
+<p>可以通过 <code>require(&quot;events&quot;)</code> 来访问该模块</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 引入 events 模块</span></span><br><span class="line"><span class="keyword">let</span> events = <span class="built_in">require</span>(<span class="string">&quot;events&quot;</span>);</span><br><span class="line"><span class="comment">// 创建 eventEmitter 对象</span></span><br><span class="line"><span class="keyword">let</span> eventEmitter = <span class="keyword">new</span> events.EventEmitter();</span><br></pre></td></tr></table></figure>
+
+<h1 id="EventEmitter-的事件监听和触发"><a href="#EventEmitter-的事件监听和触发" class="headerlink" title="EventEmitter 的事件监听和触发"></a>EventEmitter 的事件监听和触发</h1><p><code>EventEmitter</code> 的每个事件由一个<code>事件名</code>和<code>若干个参数</code>组成 , 事件名是一个自定义的字符串 , 通常表达一定的语义 , 对于每个事件 , <code>EventEmitter</code> 支持若干个事件监听器<br>当事件触发时 , 注册到这个事件的事件监听器被依次调用 , 事件参数作为回调函数参数传递</p>
+<p>让我们以下面的例子解释这个过程 :</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 引入 events 模块</span></span><br><span class="line"><span class="keyword">let</span> events = <span class="built_in">require</span>(<span class="string">&quot;events&quot;</span>);</span><br><span class="line"><span class="comment">// 创建 eventEmitter 对象</span></span><br><span class="line"><span class="keyword">let</span> eventEmitter = <span class="keyword">new</span> events.EventEmitter();</span><br><span class="line">eventEmitter.on(<span class="string">&quot;someEvent&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">arg1, arg2</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;listener1&quot;</span>, arg1, arg2);</span><br><span class="line">&#125;);</span><br><span class="line">eventEmitter.on(<span class="string">&quot;someEvent&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">arg1, arg2</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;listener2&quot;</span>, arg1, arg2);</span><br><span class="line">&#125;);</span><br><span class="line">eventEmitter.emit(<span class="string">&quot;someEvent&quot;</span>, <span class="string">&quot;参数 1&quot;</span>, <span class="string">&quot;参数 2&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>执行结果 :</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">listener1 参数 1 参数 2</span><br><span class="line">listener2 参数 1 参数 2</span><br></pre></td></tr></table></figure>
+
+<p>以上例子中 , <code>eventEmitter</code> 为事件 <code>someEvent</code> 注册了两个事件监听器 , 然后触发了 <code>someEvent</code> 事件<br>运行结果中可以看到两个事件监听器回调函数被先后调用 , 这就是 <code>EventEmitter</code> 最简单的用法<br><strong><code>EventEmitter</code> 提供了多个属性 , 如 <code>on</code> 和 <code>emit</code> , <code>on</code> 函数用于绑定事件函数 , <code>emit</code> 属性用于触发一个事件</strong></p>
+]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+        <tag>EventEmitter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Node</title>
+    <url>/2021/07/12/node/node-fs-http/</url>
+    <content><![CDATA[<h1 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/nodeall.png" alt="node"></p>
+<h1 id="Node-js-介绍"><a href="#Node-js-介绍" class="headerlink" title="Node.js 介绍"></a>Node.js 介绍</h1><p><code>Node.js</code> 不是一门语言 , 不是库或者框架 , <code>Node.js</code> 是一个 <code>JavaScript</code> 运行时的环境 , <code>Node.js</code> 可以解析和执行 <code>JavaScript</code> 代码</p>
+<h2 id="浏览器中-JavaScript-由什么组成"><a href="#浏览器中-JavaScript-由什么组成" class="headerlink" title="浏览器中 JavaScript 由什么组成"></a>浏览器中 JavaScript 由什么组成</h2><ul>
+<li><code>EcmaScript</code> : 基本语法 , <code>if</code> , <code>var</code> , <code>function</code> , <code>Object</code> , <code>Array</code></li>
+<li><code>DOM</code></li>
+<li><code>BOM</code></li>
+</ul>
+<h2 id="Node-js-中的-JavaScript"><a href="#Node-js-中的-JavaScript" class="headerlink" title="Node.js 中的 JavaScript"></a>Node.js 中的 JavaScript</h2><ul>
+<li><strong>没有 <code>BOM</code> 和 <code>DOM</code> , 只有 <code>EcmaScript</code></strong></li>
+<li>在 <code>Node.js</code> 这个 <code>JavaScript</code> 执行环境中为 <code>JavaScript</code> 提供了一些服务器级别的操作 <code>API</code> , 例如 : 文件读写 , 网络服务构建 , 网络请求与响应等 , 其实 <code>node</code> 学习相当于在学习后台服务处理开发 , 只不过后台服务编程使用的是 <code>JavaScript</code> 语言而已</li>
+<li><strong>特性 : 事件驱动 , 非阻塞 <code>I/O</code> 模型 ( 简单说就是异步操作 ) , 轻量高效 , 随着学习的深入大家会明白这些特性的</strong></li>
+<li><code>npm</code> 是世界上最大的 <code>Node.js</code> 开源库生态系统 , 用来管理 <code>JavaScript</code> 相关的包 , 这样的目的是为了更方便的让开发人员使用它</li>
+</ul>
+<h3 id="使用-npm-安装相关包的命令-以-jquery-为例-先了解即可"><a href="#使用-npm-安装相关包的命令-以-jquery-为例-先了解即可" class="headerlink" title="使用 npm 安装相关包的命令 ( 以 jquery 为例 , 先了解即可 ) :"></a>使用 <code>npm</code> 安装相关包的命令 ( 以 <code>jquery</code> 为例 , 先了解即可 ) :</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install jquery</span><br></pre></td></tr></table></figure>
+
+<p><strong>包名后面加 <code>@</code> 可指定版本号</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install jquery@2</span><br></pre></td></tr></table></figure>
+
+<h2 id="Node-js-能够做什么"><a href="#Node-js-能够做什么" class="headerlink" title="Node.js 能够做什么"></a>Node.js 能够做什么</h2><ul>
+<li><code>Web</code> 服务器后台</li>
+<li>命令行工具 , 例如 : <code>npm</code> , <code>git</code> , <code>webpack</code> 等</li>
+<li>前端工程师接触 <code>node</code> 最多的是命令行工具 , 一般很少自己写 , 主要使用别人写好的第三方包</li>
+</ul>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><ul>
+<li><code>B/S</code> 编程模型<ul>
+<li><code>Browser - Server</code></li>
+<li><code>back-end</code> ( 后台开发 )</li>
+<li>任何服务端技术这种 <code>BS</code> 编程模型都一样 , 与语言无关</li>
+<li><code>Node</code> 只是我们学习 <code>BS</code> 编程模型的一个工具而已</li>
+</ul>
+</li>
+<li>模块化编程<br><strong>模块化</strong>就是将不同功能的函数封装起来 , 并提供使用接口 , 他们彼此之间互不影响<ul>
+<li><code>RequireJS</code></li>
+<li><code>SeaJs</code></li>
+<li>简单的来说 , 以前在我们 <code>JavaScript</code> 中只能通过<code>&lt;script&gt;</code>标签来引入 <code>js</code> 脚本文件 , 在 <code>node</code> 中可以更多方式来引入加载 <code>JavaScript</code> 脚本</li>
+</ul>
+</li>
+<li><code>Node</code> 常用 <code>API</code></li>
+</ul>
+<h1 id="Node-起步"><a href="#Node-起步" class="headerlink" title="Node 起步"></a>Node 起步</h1><h2 id="安装-Node-环境"><a href="#安装-Node-环境" class="headerlink" title="安装 Node 环境"></a>安装 Node 环境</h2><p>安装依赖 : <code>npm install 依赖名字</code> , <code>install</code> 可简写为 <code>i</code><br>后面加 <code>@</code> 可指定版本号 , 比如</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i jquery@2.2</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数 :</strong></p>
+<ul>
+<li><code>-g</code> 表示全局安装</li>
+<li><code>--save</code> 表示生产环境 , 简写是 <code>-S</code></li>
+<li><code>-dev</code> 是开发环境 , 简写是 <code>-D</code></li>
+</ul>
+<p><strong>国内 npm 比较慢 , 可安装淘宝镜像版的 cnpm</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><ul>
+<li>第一步 : 创建编写 <code>JavaScript</code> 脚本文件</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;Hello World&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>第二步 : 打开终端 , 定位到脚本文件所属目录</li>
+<li>第三步 : 输入 <code>node 文件名</code> 执行对应的文件</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node HelloWorld.js</span><br></pre></td></tr></table></figure>
+
+<h2 id="读写文件"><a href="#读写文件" class="headerlink" title="读写文件"></a>读写文件</h2><p>浏览器中 <code>JavaScript</code> 是没有文件操作能力的 , 但是 <code>Node</code> 中的 <code>JavaScript</code> 具有文件操作的能力 , <code>Node</code> 中有一个 <code>fs</code> 模块 , <code>fs</code> 是 <code>file-system</code> 的简写 , 就是文件系统的意思 , 在 <code>Node</code> 中如果想要进行文件操作 , 就必须引入 <code>fs</code> 这个核心模块</p>
+<ul>
+<li>引入 <code>fs</code> 核心模块</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">&quot;fs&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>用来读取文件的方法</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">fs.readFile();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>用来写文件的方法</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">fs.writeFile();</span><br></pre></td></tr></table></figure>
+
+<h2 id="http-服务"><a href="#http-服务" class="headerlink" title="http 服务"></a>http 服务</h2><p>服务器是干嘛的 ?</p>
+<ul>
+<li>提供服务：对数据的服务</li>
+<li>发请求</li>
+<li>接收请求</li>
+<li>处理请求</li>
+<li>给个响应</li>
+</ul>
+<p>我们可以使用 <code>Node</code> 非常轻松的构建一个 <code>Web</code> 服务器 , 在 <code>Node</code> 中 , <code>专门有个核心模块：http</code><br>思路 :</p>
+<ul>
+<li>加载 <code>http</code> 核心模块</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 1. 加载 http 核心模块</span></span><br><span class="line"><span class="keyword">let</span> http = <span class="built_in">require</span>(<span class="string">&quot;http&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>创建一个 <code>Web</code> 服务器</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 2.使用 http.createServer() 方法创建一个Web服务器 , 返回一个 Server 实例</span></span><br><span class="line"><span class="keyword">let</span> server = http.createServer();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>注册 <code>request</code> 请求事件</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 3. 注册 request 请求事件</span></span><br><span class="line"><span class="comment">// 还记得刚才说的 node.js 的特性 : 事件驱动么 , 就是这种用法</span></span><br><span class="line"><span class="comment">// 还记得刚才说的 node.js 的特性 : 回调函数么 , 就是第二个参数的用法</span></span><br><span class="line"></span><br><span class="line">server.on(<span class="string">&quot;request&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;收到客户端的请求了啊&quot;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>绑定端口号 , 启动服务器</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 4. 绑定端口号 , 启动服务器</span></span><br><span class="line">server.listen(<span class="number">3000</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(</span><br><span class="line">    <span class="string">&quot;服务器启动成功了 , 可以通过浏览器访问http:localhost:3000发请求了&quot;</span></span><br><span class="line">  );</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+        <tag>fs</tag>
+        <tag>http</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node 连接 MySQL</title>
+    <url>/2021/07/16/node/node-mysql/</url>
+    <content><![CDATA[<a class="btn-beautify button--animated green larger" href="https://github.com/codehhr/Message-board/" 
+  title="留言版案例"><i class="far fa-hand-point-right"></i><span>留言版案例</span></a>
+<h1 id="安装-mysql-驱动"><a href="#安装-mysql-驱动" class="headerlink" title="安装 mysql 驱动"></a>安装 mysql 驱动</h1><p>可以用淘宝镜像的 <code>cnpm</code> 安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install mysql --save</span><br></pre></td></tr></table></figure>
+
+<h1 id="引入-mysql-模块"><a href="#引入-mysql-模块" class="headerlink" title="引入 mysql 模块"></a>引入 mysql 模块</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h1 id="链接-MySQL"><a href="#链接-MySQL" class="headerlink" title="链接 MySQL"></a>链接 MySQL</h1><p>相应的修改<code>主机名</code> , <code>用户名</code> , <code>密码</code> 和 <code>数据库名</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> connection = mysql.createConnection(&#123;</span><br><span class="line">  <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">  <span class="attr">user</span>: <span class="string">&quot;root&quot;</span>,</span><br><span class="line">  <span class="attr">password</span>: <span class="string">&quot;12345678&quot;</span>,</span><br><span class="line">  <span class="attr">database</span>: <span class="string">&quot;test&quot;</span>,</span><br><span class="line">&#125;);</span><br><span class="line">connection.connect();</span><br><span class="line">connection.query(</span><br><span class="line">  <span class="string">&quot;SELECT * from comment_list&quot;</span>,</span><br><span class="line">  <span class="function"><span class="keyword">function</span> (<span class="params">error, results, fields</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (error) <span class="keyword">throw</span> error;</span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h2 id="把这几个步骤封装成函数"><a href="#把这几个步骤封装成函数" class="headerlink" title="把这几个步骤封装成函数"></a>把这几个步骤封装成函数</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    sql: 要执行的 sql 语句</span></span><br><span class="line"><span class="comment">    fun: 拿到数据库返回的 results 后执行的函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">interactingWithDatabase</span>(<span class="params">sql, fun</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> connection = mysql.createConnection(&#123;</span><br><span class="line">    <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">    <span class="attr">user</span>: <span class="string">&quot;root&quot;</span>,</span><br><span class="line">    <span class="attr">password</span>: <span class="string">&quot;12345678&quot;</span>,</span><br><span class="line">    <span class="attr">database</span>: <span class="string">&quot;comment_list&quot;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  connection.connect();</span><br><span class="line">  connection.query(sql, <span class="function"><span class="keyword">function</span> (<span class="params">err, results</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      <span class="keyword">throw</span> err;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      fun(results);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">  connection.end();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="简单的数据库操作-CURD"><a href="#简单的数据库操作-CURD" class="headerlink" title="简单的数据库操作 ( CURD )"></a>简单的数据库操作 ( CURD )</h1><h2 id="sql-语句"><a href="#sql-语句" class="headerlink" title="sql 语句"></a>sql 语句</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">增 : <span class="keyword">insert</span> <span class="keyword">into</span> 表名 ( 字段 , 字段 ) <span class="keyword">values</span> ( 值 , 值 )</span><br><span class="line">删 : <span class="keyword">delete</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> 条件</span><br><span class="line">改 : update 表名 <span class="keyword">set</span> 字段 <span class="operator">=</span> 值 <span class="keyword">where</span> 条件</span><br><span class="line">查 : <span class="keyword">select</span> 字段 <span class="keyword">from</span> 表名 (<span class="keyword">where</span> 条件)</span><br></pre></td></tr></table></figure>
+
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">增 : <span class="keyword">INSERT</span> <span class="keyword">INTO</span> comment_list (name , comment) <span class="keyword">VALUES</span> (<span class="string">&#x27;name&#x27;</span> ,<span class="string">&#x27;comment&#x27;</span>)</span><br><span class="line">删 : <span class="keyword">DELETE</span> <span class="keyword">FROM</span> comment_list <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="string">&#x27;userid&#x27;</span></span><br><span class="line">改 : UPDATE comment_list <span class="keyword">SET</span> comment <span class="operator">=</span> &quot;newcomment&quot; <span class="keyword">WHERE</span> id <span class="operator">=</span> &quot;userid&quot;</span><br><span class="line">查 : <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> comment_list <span class="keyword">WHERE</span> comment <span class="keyword">LIKE</span> <span class="string">&#x27;%value%&#x27;</span> <span class="keyword">or</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;%value%&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>

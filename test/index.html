@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input name="q" value="" id="key_words" />
+    </form>
+    <button id="search">Search</button>
+
+    <div class="contant">
+      <div class="item">
+        <h3></h3>
+      </div>
+    </div>
+    <script>
+      document.querySelector("#search").addEventListener("click", () => {
+        handleSearch();
+      });
+
+      function handleSearch() {
+        $.ajax({
+          url: "http://119.29.7.157:7755/ssszz.php?top=10&dect=0",
+          type: "GET", //GET
+          async: true, //或 false,是否异步
+          data: {
+            q: document.querySelector("#key_words").value.trim(),
+          },
+          timeout: 5000, //超时时间
+          dataType: "json", //返回的数据格式：json/xml/html/script/jsonp/text
+          success: (data, textStatus, jqXHR) => {
+            console.log(data);
+          },
+          error: (xhr, textStatus) => {
+            console.log("error");
+            // console.log(xhr.responseText);
+            // console.log(xhr);
+            // console.log(textStatus);
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

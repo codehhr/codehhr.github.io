@@ -256,23 +256,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo 报错 use_date_for_updated is deprecated...</title>
-    <url>/2020/11/08/blog/blog-hexousedateforupd/</url>
-    <content><![CDATA[<h1 id="hexo-报错-use-date-for-updated-is-deprecated…"><a href="#hexo-报错-use-date-for-updated-is-deprecated…" class="headerlink" title="hexo 报错 use_date_for_updated is deprecated…"></a>hexo 报错 use_date_for_updated is deprecated…</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">WARN  Deprecated config detected: &quot;use_date_for_updated&quot; is deprecated, please use &quot;updated_option&quot; instead. See https://hexo.io/docs/configuration for more details.</span><br></pre></td></tr></table></figure>
-
-<h2 id="如图"><a href="#如图" class="headerlink" title="如图:"></a>如图:</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/hexo/usedateforupd.png" alt="usedateforupd"></p>
-<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>编辑根目录的 <code>_config.yml</code> 文件 , 把 <code>use_date_for_updated</code> 值改为 <code>updated_option</code></p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>博客</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>用 Hexo 快速搭建博客</title>
     <url>/2020/02/01/blog/blog-hexo/</url>
     <content><![CDATA[<h1 id="如何做到一毛不拔的搭建网站"><a href="#如何做到一毛不拔的搭建网站" class="headerlink" title="如何做到一毛不拔的搭建网站"></a>如何做到一毛不拔的搭建网站</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/emoji/s.png" alt="s"></p>
@@ -342,6 +325,23 @@
 
 <h1 id="5-常用命令总结"><a href="#5-常用命令总结" class="headerlink" title="5 . 常用命令总结 :"></a>5 . 常用命令总结 :</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">创建一篇新文章</span><br><span class="line">hexo n example</span><br><span class="line">---</span><br><span class="line">清理旧的数据</span><br><span class="line">hexo clean</span><br><span class="line">---</span><br><span class="line">重新生成一下</span><br><span class="line">hexo g</span><br><span class="line">---</span><br><span class="line">部署到远端</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>博客</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo 报错 use_date_for_updated is deprecated...</title>
+    <url>/2020/11/08/blog/blog-hexousedateforupd/</url>
+    <content><![CDATA[<h1 id="hexo-报错-use-date-for-updated-is-deprecated…"><a href="#hexo-报错-use-date-for-updated-is-deprecated…" class="headerlink" title="hexo 报错 use_date_for_updated is deprecated…"></a>hexo 报错 use_date_for_updated is deprecated…</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">WARN  Deprecated config detected: &quot;use_date_for_updated&quot; is deprecated, please use &quot;updated_option&quot; instead. See https://hexo.io/docs/configuration for more details.</span><br></pre></td></tr></table></figure>
+
+<h2 id="如图"><a href="#如图" class="headerlink" title="如图:"></a>如图:</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/hexo/usedateforupd.png" alt="usedateforupd"></p>
+<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>编辑根目录的 <code>_config.yml</code> 文件 , 把 <code>use_date_for_updated</code> 值改为 <code>updated_option</code></p>
 <h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
       <categories>
         <category>博客</category>
@@ -497,25 +497,6 @@
       </tags>
   </entry>
   <entry>
-    <title>css3自动换行排列</title>
-    <url>/2020/07/22/css/css-flex/</url>
-    <content><![CDATA[<h1 id="如果一行放不下就会自动换行"><a href="#如果一行放不下就会自动换行" class="headerlink" title="如果一行放不下就会自动换行"></a>如果一行放不下就会自动换行</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">display</span>: flex;</span><br><span class="line"><span class="attribute">flex-wrap</span>: wrap;</span><br></pre></td></tr></table></figure>
-
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例 :"></a>示例 :</h2><h3 id="html"><a href="#html" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: wrap; <span class="comment">/*换行*/</span></span><br><span class="line">  <span class="comment">/* flex-wrap: wrap-reverse; //反方向换行 */</span></span><br><span class="line">  <span class="attribute">align-content</span>: flex-start; <span class="comment">/*紧揍排列,解决换行出现空行*/</span></span><br><span class="line">  <span class="attribute">justify-content</span>: space-between; <span class="comment">/*左右布局,平分间隙*/</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">520px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">181</span>, <span class="number">235</span>, <span class="number">235</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">6px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">223</span>, <span class="number">155</span>, <span class="number">155</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="如图"><a href="#如图" class="headerlink" title="如图 :"></a>如图 :</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/css3flex/flexwrap.png" alt="flex-wrap"></p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>css</category>
-      </categories>
-      <tags>
-        <tag>css布局</tag>
-        <tag>flex</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>css常用居中方式</title>
     <url>/2020/07/27/css/css-center/</url>
     <content><![CDATA[<div class="tabs" id="center"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#center-1">水平居中</button></li><li class="tab"><button type="button" data-href="#center-2">垂直居中</button></li><li class="tab"><button type="button" data-href="#center-3">水平和垂直居中</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="center-1"><h1 id="一、水平居中"><a href="#一、水平居中" class="headerlink" title="一、水平居中"></a>一、水平居中</h1><h2 id="内联元素"><a href="#内联元素" class="headerlink" title="内联元素"></a>内联元素</h2><p>父级元素加 <code>text-align: center</code> 即可</p>
@@ -576,6 +557,25 @@
       </categories>
       <tags>
         <tag>css布局</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>css3自动换行排列</title>
+    <url>/2020/07/22/css/css-flex/</url>
+    <content><![CDATA[<h1 id="如果一行放不下就会自动换行"><a href="#如果一行放不下就会自动换行" class="headerlink" title="如果一行放不下就会自动换行"></a>如果一行放不下就会自动换行</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">display</span>: flex;</span><br><span class="line"><span class="attribute">flex-wrap</span>: wrap;</span><br></pre></td></tr></table></figure>
+
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例 :"></a>示例 :</h2><h3 id="html"><a href="#html" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: wrap; <span class="comment">/*换行*/</span></span><br><span class="line">  <span class="comment">/* flex-wrap: wrap-reverse; //反方向换行 */</span></span><br><span class="line">  <span class="attribute">align-content</span>: flex-start; <span class="comment">/*紧揍排列,解决换行出现空行*/</span></span><br><span class="line">  <span class="attribute">justify-content</span>: space-between; <span class="comment">/*左右布局,平分间隙*/</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">520px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">181</span>, <span class="number">235</span>, <span class="number">235</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">6px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">223</span>, <span class="number">155</span>, <span class="number">155</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="如图"><a href="#如图" class="headerlink" title="如图 :"></a>如图 :</h2><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/css3flex/flexwrap.png" alt="flex-wrap"></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css布局</tag>
+        <tag>flex</tag>
       </tags>
   </entry>
   <entry>
@@ -2537,23 +2537,6 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>Js 数组去重并排序</title>
-    <url>/2021/06/15/js/js-array-sort/</url>
-    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 数组去重并从大到小排序</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">7</span>, <span class="number">8</span>, <span class="number">8</span>, <span class="number">1</span>, <span class="number">6</span>, <span class="number">10</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">9</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">7</span>, <span class="number">2</span>, <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getNewArr</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> newArr = [];</span><br><span class="line">  <span class="comment">// 去重</span></span><br><span class="line">  arr.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (newArr.indexOf(value) == -<span class="number">1</span>) &#123;</span><br><span class="line">      newArr.push(value);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 从大到小排序</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 遍历 n-1 次</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; newArr.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">    <span class="comment">// 每次排序次数从 n-1 开始递减 (下标 n-2)</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = newArr.length - <span class="number">2</span>; j &gt;= <span class="number">0</span>; j--) &#123;</span><br><span class="line">      <span class="keyword">if</span> (j + <span class="number">1</span> &lt;= newArr.length - <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (newArr[j] &lt; newArr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">          <span class="comment">// 两者交换</span></span><br><span class="line">          <span class="keyword">let</span> temp = newArr[j];</span><br><span class="line">          newArr[j] = newArr[j + <span class="number">1</span>];</span><br><span class="line">          newArr[j + <span class="number">1</span>] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newArr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(getNewArr(arr));</span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>javascript</tag>
-        <tag>数组去重</tag>
-        <tag>数组排序</tag>
-        <tag>sort</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Js 函数内置对象 arguments</title>
     <url>/2021/06/18/js/js-arguments/</url>
     <content><![CDATA[<h1 id="js-函数中有个内置的对象-arguments"><a href="#js-函数中有个内置的对象-arguments" class="headerlink" title="js 函数中有个内置的对象 arguments"></a>js 函数中有个内置的对象 arguments</h1><p>任何一个函数都有内置对象 <code>arguments</code> , <code>arguments</code> 前几个元素都是实参。<br><code>length</code> : 实参的个数<br><code>callee.length</code> : 形参的个数<br><code>callee.name</code> : 函数名<br><code>函数名.caller</code> : 函数的调用者</p>
@@ -2568,6 +2551,23 @@ echartsDraggable();
         <tag>js</tag>
         <tag>javascript</tag>
         <tag>arguments</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Js 数组去重并排序</title>
+    <url>/2021/06/15/js/js-array-sort/</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 数组去重并从大到小排序</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">7</span>, <span class="number">8</span>, <span class="number">8</span>, <span class="number">1</span>, <span class="number">6</span>, <span class="number">10</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">9</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">7</span>, <span class="number">2</span>, <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getNewArr</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> newArr = [];</span><br><span class="line">  <span class="comment">// 去重</span></span><br><span class="line">  arr.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (newArr.indexOf(value) == -<span class="number">1</span>) &#123;</span><br><span class="line">      newArr.push(value);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 从大到小排序</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 遍历 n-1 次</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; newArr.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">    <span class="comment">// 每次排序次数从 n-1 开始递减 (下标 n-2)</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = newArr.length - <span class="number">2</span>; j &gt;= <span class="number">0</span>; j--) &#123;</span><br><span class="line">      <span class="keyword">if</span> (j + <span class="number">1</span> &lt;= newArr.length - <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (newArr[j] &lt; newArr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">          <span class="comment">// 两者交换</span></span><br><span class="line">          <span class="keyword">let</span> temp = newArr[j];</span><br><span class="line">          newArr[j] = newArr[j + <span class="number">1</span>];</span><br><span class="line">          newArr[j + <span class="number">1</span>] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newArr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(getNewArr(arr));</span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>javascript</tag>
+        <tag>数组去重</tag>
+        <tag>数组排序</tag>
+        <tag>sort</tag>
       </tags>
   </entry>
   <entry>
@@ -2627,6 +2627,33 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>Js 闭包</title>
+    <url>/2021/06/19/js/js-closure/</url>
+    <content><![CDATA[<h1 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义"></a>1. 定义</h1><p>闭包就是能够读取其他函数内部变量的函数，由于在 <code>Javascript</code> 语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成 “ 定义在一个函数内部的函数 “。所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。</p>
+<p><code>JavaScript</code> 变量可以是局部变量或全局变量。<br>私有变量可以用到闭包。</p>
+<p><strong>闭包的用途 :</strong></p>
+<p>可以在函数外部读取函数内部成员<br>让函数内成员始终存活在内存中</p>
+<p><strong>案例 1</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>按钮<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;button&quot;</span>).onclick = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> num = <span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(++num);</span></span><br><span class="line"><span class="javascript">    &#125;;</span></span><br><span class="line"><span class="javascript">  &#125;)();</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>案例 2</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;this window&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> obj1 = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;this object&quot;</span>,</span><br><span class="line">  <span class="attr">getName</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> name = <span class="string">&quot;this func1&quot;</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); <span class="comment">// this object (obj1调用它，this 指向 obj1)</span></span><br><span class="line">    <span class="built_in">console</span>.log(name); <span class="comment">// this func1 ( 作用域由内指向外 )</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="comment">// 闭包函数</span></span><br><span class="line">      <span class="built_in">console</span>.log(name); <span class="comment">//this func1 ( 作用域由内指向外 )</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); <span class="comment">// this window ( this 指向 windows )</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); <span class="comment">// retuen 后面的语句不会再执行</span></span><br><span class="line">    <span class="built_in">console</span>.log(name); <span class="comment">// 同上</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line">obj1.getName()();</span><br></pre></td></tr></table></figure>
+
+<p><strong>案例 3</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRandom</span>(<span class="params">min, max</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> num = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (max - min + <span class="number">1</span>)) + min;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;num:&quot;</span> + num); <span class="comment">// 19行 getRandom 被调用,打印随机数</span></span><br><span class="line">  <span class="comment">// 闭包</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> result = getRandom(<span class="number">1</span>, <span class="number">10</span>); <span class="comment">// getRandom 被调用, 执行13行打印随机数,返回 function()&#123;&#125; 赋给 result</span></span><br><span class="line">result(); <span class="comment">// 相当于 ( function()&#123;console.log(num)&#125; )() , 打印 num , 作用域由内指向外, 打印 12行的生成的随机数</span></span><br><span class="line">result(); <span class="comment">// result 没变 , 同上</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>javascript</tag>
+        <tag>closure</tag>
+        <tag>闭包</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于 commonjs &amp; requirejs</title>
     <url>/2021/11/29/js/js-common-require/</url>
     <content><![CDATA[<!-- <div class="note info flat"><p>info 提示块标籤</p>
@@ -2671,33 +2698,6 @@ echartsDraggable();
         <tag>deepClone</tag>
         <tag>递归</tag>
         <tag>深拷贝</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Js 闭包</title>
-    <url>/2021/06/19/js/js-closure/</url>
-    <content><![CDATA[<h1 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义"></a>1. 定义</h1><p>闭包就是能够读取其他函数内部变量的函数，由于在 <code>Javascript</code> 语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成 “ 定义在一个函数内部的函数 “。所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。</p>
-<p><code>JavaScript</code> 变量可以是局部变量或全局变量。<br>私有变量可以用到闭包。</p>
-<p><strong>闭包的用途 :</strong></p>
-<p>可以在函数外部读取函数内部成员<br>让函数内成员始终存活在内存中</p>
-<p><strong>案例 1</strong></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>按钮<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;button&quot;</span>).onclick = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> num = <span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(++num);</span></span><br><span class="line"><span class="javascript">    &#125;;</span></span><br><span class="line"><span class="javascript">  &#125;)();</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>案例 2</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;this window&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> obj1 = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;this object&quot;</span>,</span><br><span class="line">  <span class="attr">getName</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> name = <span class="string">&quot;this func1&quot;</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); <span class="comment">// this object (obj1调用它，this 指向 obj1)</span></span><br><span class="line">    <span class="built_in">console</span>.log(name); <span class="comment">// this func1 ( 作用域由内指向外 )</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="comment">// 闭包函数</span></span><br><span class="line">      <span class="built_in">console</span>.log(name); <span class="comment">//this func1 ( 作用域由内指向外 )</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); <span class="comment">// this window ( this 指向 windows )</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); <span class="comment">// retuen 后面的语句不会再执行</span></span><br><span class="line">    <span class="built_in">console</span>.log(name); <span class="comment">// 同上</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line">obj1.getName()();</span><br></pre></td></tr></table></figure>
-
-<p><strong>案例 3</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRandom</span>(<span class="params">min, max</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> num = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (max - min + <span class="number">1</span>)) + min;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;num:&quot;</span> + num); <span class="comment">// 19行 getRandom 被调用,打印随机数</span></span><br><span class="line">  <span class="comment">// 闭包</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> result = getRandom(<span class="number">1</span>, <span class="number">10</span>); <span class="comment">// getRandom 被调用, 执行13行打印随机数,返回 function()&#123;&#125; 赋给 result</span></span><br><span class="line">result(); <span class="comment">// 相当于 ( function()&#123;console.log(num)&#125; )() , 打印 num , 作用域由内指向外, 打印 12行的生成的随机数</span></span><br><span class="line">result(); <span class="comment">// result 没变 , 同上</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>javascript</tag>
-        <tag>closure</tag>
-        <tag>闭包</tag>
       </tags>
   </entry>
   <entry>
@@ -3135,6 +3135,49 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>Kali 下用 swaks 发送邮件</title>
+    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
+    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
+
+<p>拿我的 QQ 举例</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
+
+<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
+<hr>
+<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
+<p>记住 smtp 的密码</p>
+<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
+
+<p>参数说明：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
+
+<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
+<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<p>收件箱收到的是 email.txt 里的内容</p>
+<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>kali</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>kali</tag>
+        <tag>swaks</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Js 基础总结及案例</title>
     <url>/2021/05/13/js/js/</url>
     <content><![CDATA[<h1 id="一-JavaScript-介绍"><a href="#一-JavaScript-介绍" class="headerlink" title="一. JavaScript 介绍"></a>一. JavaScript 介绍</h1><h2 id="1-、JavaScript-是什么"><a href="#1-、JavaScript-是什么" class="headerlink" title="(1) 、JavaScript 是什么"></a>(1) 、JavaScript 是什么</h2><h3 id="1-JavaScript-的历史"><a href="#1-JavaScript-的历史" class="headerlink" title="1. JavaScript 的历史"></a>1. JavaScript 的历史</h3><p>Netscape（网景）在最初将其脚本语言命名为 LiveScript，是布兰登.艾克发明的。后来 Netscape 在与 Sun 合作之后将其改名为 JavaScript。JavaScript 最初受 Java 启发而开始设计的，目的之一就是“看上去像 Java”，因此语法上有类似之处，一些名称和命名规范也借自 Java。JavaScript 与 Java 名称上的近似，是当时 Netscape 为了营销考虑与 Sun 微系统达成协议的结果。</p>
@@ -3465,49 +3508,6 @@ echartsDraggable();
         <tag>js</tag>
         <tag>javascript</tag>
         <tag>基础总结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Kali 下用 swaks 发送邮件</title>
-    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
-    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
-
-<p>拿我的 QQ 举例</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
-
-<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
-<hr>
-<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
-<p>记住 smtp 的密码</p>
-<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
-
-<p>参数说明：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
-
-<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
-<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<p>收件箱收到的是 email.txt 里的内容</p>
-<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>kali</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>kali</tag>
-        <tag>swaks</tag>
       </tags>
   </entry>
   <entry>

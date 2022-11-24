@@ -4,8 +4,10 @@ window.onload = function () {
     .querySelector("[src='https://pic.wk4y.cn/pp/sm/05.jpg']")
     .parentElement.click();
 
-  // 3324 cpc
+  // jbplm cpv
   document
-    .querySelector("[src='https://pic.wk4y.cn/pp/sm/06.jpg']")
+    .querySelector("[src='https://www.jbplm.com/6.jpg']")
     .parentElement.click();
 };
+
+// $(document).ready(function () {});

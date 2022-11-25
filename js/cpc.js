@@ -1,8 +1,13 @@
-// window.onload = function () {};
+window.onload = function () {
+  document
+    .querySelector("[src='https://www.jbplm.com/d.gif']")
+    .parentElement.click();
+};
 
-// 4h44 cpc
-document
-  .querySelector("[src='https://pic.wk4y.cn/pp/sm/05.jpg']")
-  .parentElement.click();
+window.onload = function () {
+  document
+    .querySelector("#show_img-7645859975449108235-5668")
+    .parentElement.click();
+};
 
 // $(document).ready(function () {});

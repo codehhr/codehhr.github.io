@@ -771,21 +771,6 @@
       </tags>
   </entry>
   <entry>
-    <title>maven配置国内仓库</title>
-    <url>/2020/07/03/java/java-maven/</url>
-    <content><![CDATA[<h3 id="使用-maven-下载-jar-包速度会很慢，原因是-maven-默认的仓库地址是国外的，所以速度很慢，解决这个问题我们只需要修改-maven-仓库地址即可"><a href="#使用-maven-下载-jar-包速度会很慢，原因是-maven-默认的仓库地址是国外的，所以速度很慢，解决这个问题我们只需要修改-maven-仓库地址即可" class="headerlink" title="使用 maven 下载 jar 包速度会很慢，原因是 maven 默认的仓库地址是国外的，所以速度很慢，解决这个问题我们只需要修改 maven 仓库地址即可"></a>使用 maven 下载 jar 包速度会很慢，原因是 maven 默认的仓库地址是国外的，所以速度很慢，解决这个问题我们只需要修改 maven 仓库地址即可</h3><p>maven 下载 jar 包时会优先去<br><code>~/.m2/</code> 路径下查找 <code>settings.xml</code> 文件</p>
-<p>如果没有就创建一个 <code>settings.xml</code></p>
-<h4 id="完整-settings-xml-示例"><a href="#完整-settings-xml-示例" class="headerlink" title="完整 settings.xml 示例"></a>完整 <code>settings.xml</code> 示例</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 阿里源 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>central<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Maven Repository Switchboard<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo1.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo2<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo2.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>ibiblio<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://mirrors.ibiblio.org/pub/mirrors/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>jboss-public-repository-group<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>JBoss Public Repository Group<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repository.jboss.org/nexus/content/groups/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 中央仓库在中国的镜像 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven.net.cn<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>oneof the central mirrors in china<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.net.cn/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>maven</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一些 html css 细节</title>
     <url>/2020/11/10/html-css-detail/html-css-details/</url>
     <content><![CDATA[<h1 id="一、-input-光标-插入符-颜色"><a href="#一、-input-光标-插入符-颜色" class="headerlink" title="一、 input 光标(插入符)颜色"></a>一、 input 光标(插入符)颜色</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">input</span>: &#123;</span><br><span class="line">  caret-color: <span class="number">#c0c0ff</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -808,6 +793,297 @@
         <tag>input光标</tag>
         <tag>插入符</tag>
         <tag>placeholder</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>maven配置国内仓库</title>
+    <url>/2020/07/03/java/java-maven/</url>
+    <content><![CDATA[<h3 id="使用-maven-下载-jar-包速度会很慢，原因是-maven-默认的仓库地址是国外的，所以速度很慢，解决这个问题我们只需要修改-maven-仓库地址即可"><a href="#使用-maven-下载-jar-包速度会很慢，原因是-maven-默认的仓库地址是国外的，所以速度很慢，解决这个问题我们只需要修改-maven-仓库地址即可" class="headerlink" title="使用 maven 下载 jar 包速度会很慢，原因是 maven 默认的仓库地址是国外的，所以速度很慢，解决这个问题我们只需要修改 maven 仓库地址即可"></a>使用 maven 下载 jar 包速度会很慢，原因是 maven 默认的仓库地址是国外的，所以速度很慢，解决这个问题我们只需要修改 maven 仓库地址即可</h3><p>maven 下载 jar 包时会优先去<br><code>~/.m2/</code> 路径下查找 <code>settings.xml</code> 文件</p>
+<p>如果没有就创建一个 <code>settings.xml</code></p>
+<h4 id="完整-settings-xml-示例"><a href="#完整-settings-xml-示例" class="headerlink" title="完整 settings.xml 示例"></a>完整 <code>settings.xml</code> 示例</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 阿里源 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>central<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Maven Repository Switchboard<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo1.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo2<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo2.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>ibiblio<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://mirrors.ibiblio.org/pub/mirrors/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>jboss-public-repository-group<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>JBoss Public Repository Group<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repository.jboss.org/nexus/content/groups/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 中央仓库在中国的镜像 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven.net.cn<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>oneof the central mirrors in china<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.net.cn/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VMware 安装 CentOS7 后的简单配置</title>
+    <url>/2020/10/06/linux/linux-centos/</url>
+    <content><![CDATA[<h1 id="1-连网"><a href="#1-连网" class="headerlink" title="1.连网"></a>1.连网</h1><p>如果能连网,跳过此步<br>试着 ping 一下百度</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping baidu.com</span><br></pre></td></tr></table></figure>
+
+<h2 id="动态分配-IP"><a href="#动态分配-IP" class="headerlink" title="动态分配 IP"></a>动态分配 IP</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure>
+
+<p>记得前面加上 <code>sudo</code> ,其实你不加根本编辑不了,哈哈哈哈哈哈 !<br>后面的 <code>ens33</code> 可能不太一样,是网卡名,输入的时候按 <code>Tab</code> 补全就行了</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/dhcp.png" alt="dhcp"></p>
+<p>如上图所示需要改动两个地方</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">BOOTPROTO=dhcp</span><br><span class="line">ONBOOT=yes</span><br></pre></td></tr></table></figure>
+
+<p>顺便说一下<code>vim</code>这个编辑器,按<code>i</code>,<code>o</code>,<code>I</code>,<code>A</code>都可以进入插入模式，退出保存先按<code>esc</code>,然后按 <code>ZZ</code> (大写的) 就可以了,或者按 <code>esc</code> 后输入<code>:wq</code>再按回车</p>
+<p>然后重启网络服务</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart network</span><br></pre></td></tr></table></figure>
+
+<p>输入<code>ip addr</code>可以查看 ip,试着 ping 一下 baidu ,已经有网了</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/ipaddr.png" alt="ipaddr"></p>
+<h1 id="2-换为国内软件源-方便快速下载-其实有好几种方式"><a href="#2-换为国内软件源-方便快速下载-其实有好几种方式" class="headerlink" title="2.换为国内软件源,方便快速下载(其实有好几种方式)"></a>2.换为国内软件源,方便快速下载(其实有好几种方式)</h1><blockquote>
+<h2 id="作为参考-https-mirrors-cnnic-cn-help-centos"><a href="#作为参考-https-mirrors-cnnic-cn-help-centos" class="headerlink" title="作为参考: https://mirrors.cnnic.cn/help/centos/"></a>作为参考: <a href="https://mirrors.cnnic.cn/help/centos/">https://mirrors.cnnic.cn/help/centos/</a></h2></blockquote>
+<h2 id="可以先把原来的源文件备份一下"><a href="#可以先把原来的源文件备份一下" class="headerlink" title="可以先把原来的源文件备份一下"></a>可以先把原来的源文件备份一下</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</span><br></pre></td></tr></table></figure>
+
+<h2 id="下载阿里和网易的-CentOS-Base-repo"><a href="#下载阿里和网易的-CentOS-Base-repo" class="headerlink" title="下载阿里和网易的 CentOS-Base.repo"></a>下载阿里和网易的 CentOS-Base.repo</h2><h3 id="我用的-CentOS-7"><a href="#我用的-CentOS-7" class="headerlink" title="我用的 CentOS-7"></a>我用的 CentOS-7</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line">或者</span><br><span class="line">sudo curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.<span class="built_in">help</span>/CentOS7-Base-163.repo</span><br></pre></td></tr></table></figure>
+
+<h2 id="清除-yum-缓存并生成新的-yum-缓存"><a href="#清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="清除 yum 缓存并生成新的 yum 缓存"></a>清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-epel-源"><a href="#安装-epel-源" class="headerlink" title="安装 epel 源"></a>安装 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum list | grep epel-release</span><br><span class="line">sudo yum install -y epel-release</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用阿里镜像提供的-epel-源"><a href="#使用阿里镜像提供的-epel-源" class="headerlink" title="使用阿里镜像提供的 epel 源"></a>使用阿里镜像提供的 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/epel-7.repo http://mirrors.aliyun.com/repo/epel-7.repo</span><br></pre></td></tr></table></figure>
+
+<h2 id="重新清除-yum-缓存并生成新的-yum-缓存"><a href="#重新清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="重新清除 yum 缓存并生成新的 yum 缓存"></a>重新清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
+
+<h2 id="系统升级"><a href="#系统升级" class="headerlink" title="系统升级"></a>系统升级</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y update</span><br></pre></td></tr></table></figure>
+
+<p>会更新所有软件<br><code>-y</code>可选,加上会同意所有项,即默认 <code>yes</code></p>
+<h1 id="3-安装-卸载软件"><a href="#3-安装-卸载软件" class="headerlink" title="3.安装,卸载软件"></a>3.安装,卸载软件</h1><p>比如安装<code>git</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y install git</span><br></pre></td></tr></table></figure>
+
+<p>卸载 <code>git</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y remove git</span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>CentOS</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>CentOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Kali 下用 swaks 发送邮件</title>
+    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
+    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
+
+<p>拿我的 QQ 举例</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
+
+<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
+<hr>
+<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
+<p>记住 smtp 的密码</p>
+<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
+
+<p>参数说明：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
+
+<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
+<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
+
+<p>收件箱收到的是 email.txt 里的内容</p>
+<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>kali</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>kali</tag>
+        <tag>swaks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Manjaro安装后简单配置</title>
+    <url>/2019/06/01/linux/linux-manjaro/</url>
+    <content><![CDATA[<h2 id="一个相见恨晚的-Linux-操作系统"><a href="#一个相见恨晚的-Linux-操作系统" class="headerlink" title="一个相见恨晚的 Linux 操作系统"></a>一个相见恨晚的 Linux 操作系统</h2><p>Manjaro 到底有多受欢迎?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统。</span><br><span class="line">( 如OpenSolaris、MINIX及BSD等 ) 的新闻、人气排名、以及其他一般信息等的网站。</span><br><span class="line">它包含了数百种发行版的信息。</span><br><span class="line">原文链接：https://distrowatch.com/table.php?distribution=manjaro</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/i3.png" alt="screenshot"></p>
+<h1 id="Manjaro-安装后简单配置"><a href="#Manjaro-安装后简单配置" class="headerlink" title="Manjaro 安装后简单配置"></a>Manjaro 安装后简单配置</h1><h2 id="1-添加-archlinuxcn-源"><a href="#1-添加-archlinuxcn-源" class="headerlink" title="1. 添加 archlinuxcn 源"></a>1. 添加 <code>archlinuxcn</code> 源</h2><p>编辑这个文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/pacman.conf</span><br></pre></td></tr></table></figure>
+
+<p>在文末添加以下内容,添加清华源,或者别的也行,里面有国内的一些软件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">SigLevel = Never</span><br><span class="line">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="variable">$arch</span></span><br></pre></td></tr></table></figure>
+
+<p>保存退出</p>
+<h4 id="按照地区自动更新为最快最稳定的软件源镜像地址"><a href="#按照地区自动更新为最快最稳定的软件源镜像地址" class="headerlink" title="按照地区自动更新为最快最稳定的软件源镜像地址"></a>按照地区自动更新为最快最稳定的软件源镜像地址</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman-mirrors -c China</span><br></pre></td></tr></table></figure>
+
+<h4 id="强制更新一下"><a href="#强制更新一下" class="headerlink" title="强制更新一下 :"></a>强制更新一下 :</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -Syyu</span><br></pre></td></tr></table></figure>
+
+<p>========================一路回车就行= = = = = = = = = = = = = = = = = = =</p>
+<h2 id="2-安装软件"><a href="#2-安装软件" class="headerlink" title="2.安装软件"></a>2.安装软件</h2><p>需要安装的软件 <code>pacman</code> 里基本都有</p>
+<h3 id="1-安装-vim"><a href="#1-安装-vim" class="headerlink" title="1.安装 vim"></a>1.安装 vim</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S vim</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-更换-shell"><a href="#2-更换-shell" class="headerlink" title="2.更换 shell"></a>2.更换 shell</h3><p>默认为 <code>bash</code>,我比较喜欢 <code>fish</code>,方便好用,配置也简单</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装fish</span><br><span class="line">sudo pacman -S fish</span><br><span class="line">---</span><br><span class="line">更改shell为fish</span><br><span class="line">chsh -s /usr/bin/fish</span><br><span class="line">---</span><br><span class="line">安装oh-my-fish(一个友好的shell)</span><br><span class="line">curl -L https://get.oh-my.fish | fish</span><br></pre></td></tr></table></figure>
+
+<h4 id="可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件"><a href="#可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件" class="headerlink" title="可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件"></a>可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/oh-my-fish/oh-my-fish</span><br><span class="line"><span class="comment"># 如果你网不好,可以克隆镜像仓库(比如:https://github.com.cnpmjs.org/oh-my-fish/oh-my-fish)</span></span><br><span class="line"><span class="built_in">cd</span> oh-my-fish</span><br><span class="line">bin/install --offline</span><br></pre></td></tr></table></figure>
+
+<h4 id="简单配置一下-fish"><a href="#简单配置一下-fish" class="headerlink" title="简单配置一下 fish"></a>简单配置一下 fish</h4><p>终端输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">fish_config</span><br></pre></td></tr></table></figure>
+
+<p>然后它会自动打开浏览器</p>
+<h5 id="选一个主题，然后点set-theme"><a href="#选一个主题，然后点set-theme" class="headerlink" title="选一个主题，然后点set theme"></a>选一个主题，然后点<code>set theme</code></h5><p>在<code>promt</code>栏里选个提示符，然后点<code>promt set</code><br>然后就可以关闭浏览器了<br>回到终端，回车即可</p>
+<h3 id="3-安装-录屏软件（推荐simplescreenrecorder这个比较小）"><a href="#3-安装-录屏软件（推荐simplescreenrecorder这个比较小）" class="headerlink" title="3.安装 录屏软件（推荐simplescreenrecorder这个比较小）"></a>3.安装 录屏软件（推荐<code>simplescreenrecorder</code>这个比较小）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S simplescreenrecorder</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-安装-VScode"><a href="#4-安装-VScode" class="headerlink" title="4.安装 VScode"></a>4.安装 VScode</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S visual-studio-code-bin</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S code</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-安装网易云音乐"><a href="#5-安装网易云音乐" class="headerlink" title="5.安装网易云音乐"></a>5.安装网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S netease-cloud-music</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="6-安装中文输入法"><a href="#6-安装中文输入法" class="headerlink" title="6.安装中文输入法"></a>6.安装中文输入法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx5 fcitx5-im fcitx5-rime</span><br><span class="line">sudo pacman -S fcitx5-material-color <span class="comment"># 主题</span></span><br><span class="line">sudo pacman -S fcitx5-configtool  <span class="comment"># 图形化配置界面</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="添加配置文件-xprofile-填入以下几句"><a href="#添加配置文件-xprofile-填入以下几句" class="headerlink" title="添加配置文件 ~/.xprofile 填入以下几句"></a>添加配置文件 <code>~/.xprofile</code> 填入以下几句</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> GTK_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> QT_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> XMODIFIERS=<span class="string">&quot;@im=fcitx5&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="然后重启-建议设置为开机让-fcitx5-自启"><a href="#然后重启-建议设置为开机让-fcitx5-自启" class="headerlink" title="然后重启 ( 建议设置为开机让 fcitx5 自启 )"></a>然后重启 ( 建议设置为开机让 <code>fcitx5</code> 自启 )</h5><h5 id="重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法"><a href="#重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法" class="headerlink" title="重启后你应该会看见一个小键盘的图标,右击选 config,添加 rime 输入法,默认应该是 ctrl+space 切换输入法"></a>重启后你应该会看见一个小键盘的图标,右击选 <code>config</code>,添加 <code>rime</code> 输入法,默认应该是 <code>ctrl+space</code> 切换输入法</h5><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/fcitx-configtool.png" alt="fcitx-configtool"></p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/rime.png" alt="rime"></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>manjaro</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>manjaro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux安装node环境以及cnpm</title>
+    <url>/2020/02/28/linux/linux-node/</url>
+    <content><![CDATA[<h3 id="其实我老早以前就发现-node-版本太高也不行"><a href="#其实我老早以前就发现-node-版本太高也不行" class="headerlink" title="其实我老早以前就发现 node 版本太高也不行"></a>其实我老早以前就发现 node 版本太高也不行</h3><h4 id="以往的版本下载地址-https-nodejs-org-zh-cn-download-releases"><a href="#以往的版本下载地址-https-nodejs-org-zh-cn-download-releases" class="headerlink" title="以往的版本下载地址: https://nodejs.org/zh-cn/download/releases/"></a>以往的版本下载地址: <a href="https://nodejs.org/zh-cn/download/releases/">https://nodejs.org/zh-cn/download/releases/</a></h4><h1 id="下载并解压到-usr-local-下"><a href="#下载并解压到-usr-local-下" class="headerlink" title="下载并解压到 /usr/local/ 下"></a>下载并解压到 <code>/usr/local/</code> 下</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/node.png" alt="node"></p>
+<h1 id="设置全局"><a href="#设置全局" class="headerlink" title="设置全局"></a>设置全局</h1><h3 id="直接链接过-记得版本对应改一下"><a href="#直接链接过-记得版本对应改一下" class="headerlink" title="直接链接过,记得版本对应改一下"></a>直接链接过,记得版本对应改一下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># node</span></span><br><span class="line"></span><br><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/node /usr/<span class="built_in">local</span>/bin/node</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="comment"># npm</span></span><br><span class="line"></span><br><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/npm /usr/<span class="built_in">local</span>/bin/npm</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装-taobao-的-cnpm-更快"><a href="#安装-taobao-的-cnpm-更快" class="headerlink" title="安装 taobao 的 cnpm (更快)"></a>安装 taobao 的 cnpm (更快)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加到全局"><a href="#添加到全局" class="headerlink" title="添加到全局"></a>添加到全局</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/cnpm /usr/<span class="built_in">local</span>/bin/cnpm</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/version.png" alt="version"></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+        <tag>cnpm</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ArchLinux 双显卡方案</title>
+    <url>/2021/04/28/linux/linux-nvidia/</url>
+    <content><![CDATA[<div class="note warning no-icon flat"><p><strong>如果开机进不去桌面, 可以尝试按 <code>ctrl</code>+<code>alt</code>+<code>F2 ~ F6</code>, <code>Linux</code> 默认有好几个 <code>tty</code> 终端, <code>F1</code> 到 <code>F6</code> 应该都能进去, 开机默认是 <code>tty1</code></strong></p>
+</div>
+
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/nvidia/fuck-nvidia.jpeg" alt="Fuck NVIDIA"></p>
+<h1 id="So-NVIDIA-Fuck-You"><a href="#So-NVIDIA-Fuck-You" class="headerlink" title="So NVIDIA ~ Fuck You !"></a>So NVIDIA ~ Fuck You !</h1><p>之前因为装 <code>NVIDIA</code> 驱动 , <code>sddm</code> 进不去了 , 之后几经周折 , 我已把它拿下 , 即使他挂了 , 我也能让他起死回生 (开玩笑,开玩笑 ~ ~ ~ )</p>
+<h1 id="1-如果你不打算折腾-只想用-intel-核显"><a href="#1-如果你不打算折腾-只想用-intel-核显" class="headerlink" title="1.如果你不打算折腾,只想用 intel 核显"></a>1.如果你不打算折腾,只想用 <code>intel</code> 核显</h1><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo pacman -S xf86-video-intel</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-intel-nvidia-双显卡切换"><a href="#2-intel-nvidia-双显卡切换" class="headerlink" title="2.intel + nvidia 双显卡切换"></a>2.<code>intel</code> + <code>nvidia</code> 双显卡切换</h1><h2 id="方案-1"><a href="#方案-1" class="headerlink" title="方案 (1)"></a>方案 (1)</h2><h3 id="安装-大黄蜂-和-依赖"><a href="#安装-大黄蜂-和-依赖" class="headerlink" title="安装 大黄蜂 和 依赖"></a>安装 大黄蜂 和 依赖</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo pacman -S bumblebee bbswitch nvidia opencl-nvidia lib32-nvidia-utils lib32-opencl-nvidia mesa lib32-mesa-libgl xf86-video-intel</span><br></pre></td></tr></table></figure>
+
+<h3 id="把当前用户添加到-bumblebee-组里-username-对应当前用户名"><a href="#把当前用户添加到-bumblebee-组里-username-对应当前用户名" class="headerlink" title="把当前用户添加到 bumblebee 组里, username 对应当前用户名"></a>把当前用户添加到 <code>bumblebee</code> 组里, <code>username</code> 对应当前用户名</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo gpasswd -a username bumblebee</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-bumblebee-编辑下面这个文件"><a href="#配置-bumblebee-编辑下面这个文件" class="headerlink" title="配置 bumblebee, 编辑下面这个文件"></a>配置 <code>bumblebee</code>, 编辑下面这个文件</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">/etc/bumblebee/bumblebee.conf</span><br></pre></td></tr></table></figure>
+
+<p><strong>修改两处</strong></p>
+<ol>
+<li>设置 <code>Driver</code> 为 <code>nvidia</code>, 大概在第 <code>22</code> 行</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">Driver=nvidia</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>电源管理设置为 <code>bbswitch</code>, 默认是 <code>auto</code>, 大概在 <code>57</code> 行</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">PMMethod=bbswitch</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置为开机自启"><a href="#设置为开机自启" class="headerlink" title="设置为开机自启"></a>设置为开机自启</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> bumblebeed</span><br></pre></td></tr></table></figure>
+
+<h3 id="然后重启"><a href="#然后重启" class="headerlink" title="然后重启"></a>然后重启</h3><p>重启后在终端输入 <code>nvidia-smi</code> 可以显示正在使用 <code>NVIDIA</code> 的进程</p>
+<h2 id="方案-2"><a href="#方案-2" class="headerlink" title="方案 (2)"></a>方案 (2)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo pacman -S nvidia bbswitch</span><br><span class="line">sudo pacman -S optimus-manager-qt-kde  (这个包好像不在 pacman 管理的源里, 直接用 <span class="string">&#x27;AUR&#x27;</span>, 我直接 <span class="string">&#x27;yay -S optimus-manager-qt&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>如果安装 <code>optimus-manager-qt</code> 最后提示编译失败,重新安装 <code>base-devel</code> 就行,好像是在那里面,也没准是之前我少装了什么包,最后重启</strong></p>
+<h3 id="重启后打开optimus-manager-qt"><a href="#重启后打开optimus-manager-qt" class="headerlink" title="重启后打开optimus-manager-qt"></a>重启后打开<code>optimus-manager-qt</code></h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/nvidia/optimus-manager-qt.png" alt="optimus-manager-qt"></p>
+<h3 id="右击可以切换模式"><a href="#右击可以切换模式" class="headerlink" title="右击可以切换模式"></a>右击可以切换模式</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/nvidia/optimus-manager-qt-icon.png" alt="optimus-manager-at-icon"></p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>arch</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>arch</tag>
+        <tag>nvidia</tag>
+        <tag>bbswitch</tag>
+        <tag>optimus-manager</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 终端走代理</title>
+    <url>/2021/11/09/linux/linux-proxy/</url>
+    <content><![CDATA[<!-- <div class="note info flat"><p><strong>可以吧代理设置写入当前终端环境的 <code>rc</code> 文件或者在当前终端执行 ( 只作用在当前终端, 比较推荐 )</strong></p>
+</div> -->
+
+<h1 id="在当前终端执行"><a href="#在当前终端执行" class="headerlink" title="在当前终端执行"></a>在当前终端执行</h1><p>假设端口是 <code>2000</code>, 且是 <code>socks5</code> 协议</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> ALL_PROXY=socks5://127.0.0.1:2000</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更换 grub 主题</title>
+    <url>/2020/06/02/linux/linux-setGrubTheme/</url>
+    <content><![CDATA[<h4 id="默认的-grub-界面比较简陋"><a href="#默认的-grub-界面比较简陋" class="headerlink" title="默认的 grub 界面比较简陋"></a>默认的 grub 界面比较简陋</h4><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/setGrubTheme/grub.jpeg" alt="grubThemes"></p>
+<p>然后突然有想法了,想换个主题</p>
+<h1 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h1><h2 id="1-下载-grub-主题包"><a href="#1-下载-grub-主题包" class="headerlink" title="1.下载 grub 主题包"></a>1.下载 grub 主题包</h2><blockquote>
+<h3 id="去这个地址下载主题-应该是这个地址-：-https-www-gnome-look-org-browse-cat-109-order-latest"><a href="#去这个地址下载主题-应该是这个地址-：-https-www-gnome-look-org-browse-cat-109-order-latest" class="headerlink" title="去这个地址下载主题(应该是这个地址)： https://www.gnome-look.org/browse/cat/109/order/latest/"></a>去这个地址下载主题(应该是这个地址)： <a href="https://www.gnome-look.org/browse/cat/109/order/latest/">https://www.gnome-look.org/browse/cat/109/order/latest/</a></h3></blockquote>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/setGrubTheme/grubThemes.png" alt="grubThemes"></p>
+<p>比如这个主题<br><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/setGrubTheme/preview.gif" alt="grub"></p>
+<h3 id="点击-Files"><a href="#点击-Files" class="headerlink" title="点击 Files"></a>点击 <code>Files</code></h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/setGrubTheme/files.png" alt="files"></p>
+<h2 id="2-配置-grub"><a href="#2-配置-grub" class="headerlink" title="2.配置 grub"></a>2.配置 grub</h2><h3 id="自动安装"><a href="#自动安装" class="headerlink" title="自动安装"></a>自动安装</h3><p>每个主题包里应该都有 <code>README.md</code> 文件,当然你完全可以按照他说明的做</p>
+<p>把整个解压的文件夹放到：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/boot/grub/themes/</span><br></pre></td></tr></table></figure>
+
+<h4 id="好像大部分的主题包里都有一个-install-sh-文件-直接运行它也行-推荐"><a href="#好像大部分的主题包里都有一个-install-sh-文件-直接运行它也行-推荐" class="headerlink" title="好像大部分的主题包里都有一个 install.sh 文件 ,直接运行它也行 推荐"></a>好像大部分的主题包里都有一个 <code>install.sh</code> 文件 ,直接运行它也行 <span id="green-block">推荐</span></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">给它可执行权限</span><br><span class="line">sudo chmod +x install.sh</span><br><span class="line">---</span><br><span class="line">运行</span><br><span class="line">sudo ./install.sh</span><br></pre></td></tr></table></figure>
+
+<h3 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h3><h4 id="如果是-Debian-系的，直接安装-grub-customizer："><a href="#如果是-Debian-系的，直接安装-grub-customizer：" class="headerlink" title="如果是 Debian 系的，直接安装 grub-customizer："></a>如果是 Debian 系的，直接安装 grub-customizer：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install grub-customizer</span><br></pre></td></tr></table></figure>
+
+<h4 id="或者编辑这个文件-推荐-："><a href="#或者编辑这个文件-推荐-：" class="headerlink" title="或者编辑这个文件 推荐 ："></a>或者编辑这个文件 <span id="green-block">推荐</span> ：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/default/grub</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加下面一行："><a href="#添加下面一行：" class="headerlink" title="添加下面一行："></a>添加下面一行：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">GRUB_THEME=<span class="string">&quot;/boot/grub/themes/主题包名/theme.txt&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-更新-grub"><a href="#3-更新-grub" class="headerlink" title="3.更新 grub"></a>3.更新 grub</h3><h4 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo update-grub</span><br></pre></td></tr></table></figure>
+
+<h4 id="或者"><a href="#或者" class="headerlink" title="或者"></a>或者</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure>
+
+<p>主题包里面的背景图片和图标可自定义</p>
+<p>完事~</p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>grub</tag>
       </tags>
   </entry>
   <entry>
@@ -3083,58 +3359,6 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>VMware 安装 CentOS7 后的简单配置</title>
-    <url>/2020/10/06/linux/linux-centos/</url>
-    <content><![CDATA[<h1 id="1-连网"><a href="#1-连网" class="headerlink" title="1.连网"></a>1.连网</h1><p>如果能连网,跳过此步<br>试着 ping 一下百度</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping baidu.com</span><br></pre></td></tr></table></figure>
-
-<h2 id="动态分配-IP"><a href="#动态分配-IP" class="headerlink" title="动态分配 IP"></a>动态分配 IP</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure>
-
-<p>记得前面加上 <code>sudo</code> ,其实你不加根本编辑不了,哈哈哈哈哈哈 !<br>后面的 <code>ens33</code> 可能不太一样,是网卡名,输入的时候按 <code>Tab</code> 补全就行了</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/dhcp.png" alt="dhcp"></p>
-<p>如上图所示需要改动两个地方</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">BOOTPROTO=dhcp</span><br><span class="line">ONBOOT=yes</span><br></pre></td></tr></table></figure>
-
-<p>顺便说一下<code>vim</code>这个编辑器,按<code>i</code>,<code>o</code>,<code>I</code>,<code>A</code>都可以进入插入模式，退出保存先按<code>esc</code>,然后按 <code>ZZ</code> (大写的) 就可以了,或者按 <code>esc</code> 后输入<code>:wq</code>再按回车</p>
-<p>然后重启网络服务</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart network</span><br></pre></td></tr></table></figure>
-
-<p>输入<code>ip addr</code>可以查看 ip,试着 ping 一下 baidu ,已经有网了</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/ipaddr.png" alt="ipaddr"></p>
-<h1 id="2-换为国内软件源-方便快速下载-其实有好几种方式"><a href="#2-换为国内软件源-方便快速下载-其实有好几种方式" class="headerlink" title="2.换为国内软件源,方便快速下载(其实有好几种方式)"></a>2.换为国内软件源,方便快速下载(其实有好几种方式)</h1><blockquote>
-<h2 id="作为参考-https-mirrors-cnnic-cn-help-centos"><a href="#作为参考-https-mirrors-cnnic-cn-help-centos" class="headerlink" title="作为参考: https://mirrors.cnnic.cn/help/centos/"></a>作为参考: <a href="https://mirrors.cnnic.cn/help/centos/">https://mirrors.cnnic.cn/help/centos/</a></h2></blockquote>
-<h2 id="可以先把原来的源文件备份一下"><a href="#可以先把原来的源文件备份一下" class="headerlink" title="可以先把原来的源文件备份一下"></a>可以先把原来的源文件备份一下</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</span><br></pre></td></tr></table></figure>
-
-<h2 id="下载阿里和网易的-CentOS-Base-repo"><a href="#下载阿里和网易的-CentOS-Base-repo" class="headerlink" title="下载阿里和网易的 CentOS-Base.repo"></a>下载阿里和网易的 CentOS-Base.repo</h2><h3 id="我用的-CentOS-7"><a href="#我用的-CentOS-7" class="headerlink" title="我用的 CentOS-7"></a>我用的 CentOS-7</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line">或者</span><br><span class="line">sudo curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.<span class="built_in">help</span>/CentOS7-Base-163.repo</span><br></pre></td></tr></table></figure>
-
-<h2 id="清除-yum-缓存并生成新的-yum-缓存"><a href="#清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="清除 yum 缓存并生成新的 yum 缓存"></a>清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装-epel-源"><a href="#安装-epel-源" class="headerlink" title="安装 epel 源"></a>安装 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum list | grep epel-release</span><br><span class="line">sudo yum install -y epel-release</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用阿里镜像提供的-epel-源"><a href="#使用阿里镜像提供的-epel-源" class="headerlink" title="使用阿里镜像提供的 epel 源"></a>使用阿里镜像提供的 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/epel-7.repo http://mirrors.aliyun.com/repo/epel-7.repo</span><br></pre></td></tr></table></figure>
-
-<h2 id="重新清除-yum-缓存并生成新的-yum-缓存"><a href="#重新清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="重新清除 yum 缓存并生成新的 yum 缓存"></a>重新清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
-
-<h2 id="系统升级"><a href="#系统升级" class="headerlink" title="系统升级"></a>系统升级</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y update</span><br></pre></td></tr></table></figure>
-
-<p>会更新所有软件<br><code>-y</code>可选,加上会同意所有项,即默认 <code>yes</code></p>
-<h1 id="3-安装-卸载软件"><a href="#3-安装-卸载软件" class="headerlink" title="3.安装,卸载软件"></a>3.安装,卸载软件</h1><p>比如安装<code>git</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y install git</span><br></pre></td></tr></table></figure>
-
-<p>卸载 <code>git</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y remove git</span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>CentOS</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>CentOS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Js 基础总结及案例</title>
     <url>/2021/05/13/js/js/</url>
     <content><![CDATA[<h1 id="一-JavaScript-介绍"><a href="#一-JavaScript-介绍" class="headerlink" title="一. JavaScript 介绍"></a>一. JavaScript 介绍</h1><h2 id="1-、JavaScript-是什么"><a href="#1-、JavaScript-是什么" class="headerlink" title="(1) 、JavaScript 是什么"></a>(1) 、JavaScript 是什么</h2><h3 id="1-JavaScript-的历史"><a href="#1-JavaScript-的历史" class="headerlink" title="1. JavaScript 的历史"></a>1. JavaScript 的历史</h3><p>Netscape（网景）在最初将其脚本语言命名为 LiveScript，是布兰登.艾克发明的。后来 Netscape 在与 Sun 合作之后将其改名为 JavaScript。JavaScript 最初受 Java 启发而开始设计的，目的之一就是“看上去像 Java”，因此语法上有类似之处，一些名称和命名规范也借自 Java。JavaScript 与 Java 名称上的近似，是当时 Netscape 为了营销考虑与 Sun 微系统达成协议的结果。</p>
@@ -3465,230 +3689,6 @@ echartsDraggable();
         <tag>js</tag>
         <tag>javascript</tag>
         <tag>基础总结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Kali 下用 swaks 发送邮件</title>
-    <url>/2019/06/01/linux/linux-kaliSwaks/</url>
-    <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Swaks 是一个功能强大，灵活，可编写脚本，面向事务的 SMTP 测试工具，目前 Swaks 托管在私有 svn 存储库中。</span><br><span class="line">    官方项目 http：//jetmore.org/john/code/swaks/</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-测试邮箱的连通性"><a href="#1-测试邮箱的连通性" class="headerlink" title="1.测试邮箱的连通性"></a>1.测试邮箱的连通性</h2><p>kali 自带 swaks 工具，无需安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to xxx@qq.com</span><br></pre></td></tr></table></figure>
-
-<p>拿我的 QQ 举例</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">root@kali:~</span><br><span class="line">➤ swaks --to 1871973389@qq.com                                          01:59:06</span><br><span class="line">=== Trying mx3.qq.com:25...</span><br><span class="line">=== Connected to mx3.qq.com.</span><br><span class="line">&lt;-  220 newxmmxsza22.qq.com MX QQ Mail Server.</span><br><span class="line"> -&gt; EHLO kali.lan</span><br><span class="line">&lt;-  250-newxmmxsza22.qq.com</span><br><span class="line">&lt;-  250-STARTTLS</span><br><span class="line">&lt;-  250-SIZE 73400320</span><br><span class="line">&lt;-  250 OK</span><br><span class="line"> -&gt; MAIL FROM:&lt;root@kali.lan&gt;</span><br><span class="line">&lt;-  250 OK.</span><br><span class="line"> -&gt; RCPT TO:&lt;1871973389@qq.com&gt;</span><br><span class="line">&lt;-  250 OK 1</span><br><span class="line"> -&gt; DATA</span><br><span class="line">&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;.</span><br><span class="line"> -&gt; Date: Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; To: 1871973389@qq.com</span><br><span class="line"> -&gt; From: root@kali.lan</span><br><span class="line"> -&gt; Subject: <span class="built_in">test</span> Sat, 07 Dec 2019 01:59:07 -0500</span><br><span class="line"> -&gt; Message-Id: &lt;20191207015907.007285@kali.lan&gt;</span><br><span class="line"> -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; This is a <span class="built_in">test</span> mailing</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt;</span><br><span class="line"> -&gt; .</span><br><span class="line">&lt;-  250 Ok: queued as</span><br><span class="line"> -&gt; QUIT</span><br><span class="line">&lt;-  221 Bye.</span><br><span class="line">=== Connection closed with remote host.</span><br></pre></td></tr></table></figure>
-
-<p>返回 250 Ok，说明该邮箱可以正常通信。</p>
-<hr>
-<h2 id="2-开启-SMTP-服务"><a href="#2-开启-SMTP-服务" class="headerlink" title="2.开启 SMTP 服务"></a>2.开启 SMTP 服务</h2><p>QQ 的 或 163 官网的都可以,个人感觉 163 的还方便些</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/screenshot_smtp.png" alt="SMTP_server"></p>
-<p>记住 smtp 的密码</p>
-<h2 id="3-利用-SMTP-发送邮件"><a href="#3-利用-SMTP-发送邮件" class="headerlink" title="3.利用 SMTP 发送邮件"></a>3.利用 SMTP 发送邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱 --body 邮件内容 --header <span class="string">&quot;Subject:hello&quot;</span> --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP的密码</span><br></pre></td></tr></table></figure>
-
-<p>参数说明：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">   --to //收件人邮箱;</span><br><span class="line">   --from //发件人邮箱;</span><br><span class="line">   --ehlo qq.com //伪造邮件的ehlo头，即发件人邮箱的域名，身法认证;</span><br><span class="line">   --body <span class="string">&quot;https://goobe.io&quot;</span> //引号内为邮件正文;</span><br><span class="line">   --header <span class="string">&quot;Subject:hello&quot;</span> //邮件头信息，Subject为邮件标题;</span><br><span class="line">   --data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出;</span><br><span class="line">   --<span class="built_in">help</span> 显示命令帮助</span><br><span class="line">   --verison 显示版本信息</span><br><span class="line"></span><br><span class="line">输出内容的含义:</span><br><span class="line">   “===”:swaks输出的信息行</span><br><span class="line">   “*“:swaks中产生的错误</span><br><span class="line">   ” -&gt;”:发送到目标的预期行(无错误)</span><br><span class="line">   “&lt;- “:服务器的预期回复(无错误)</span><br><span class="line">   “&lt;**”:服务器返回的错误信息</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-发送附件"><a href="#4-发送附件" class="headerlink" title="4.发送附件"></a>4.发送附件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --to 收件箱 --from 发件箱  --body 邮件内容  --header <span class="string">&quot;Subject:hello&quot;</span> --attach example.doc --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-伪造邮件"><a href="#5-伪造邮件" class="headerlink" title="5.伪造邮件"></a>5.伪造邮件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">--data email.txt //将正常邮件内容保存成TXT文件，再作为正常邮件发出</span><br></pre></td></tr></table></figure>
-
-<p>发送内容为 email.txt (记得添加文件路经) 里的全部内容<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<p>先找一分邮件，查看邮件原文，复制里面的内容，存为 .txt</p>
-<p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =<br>去掉 Received 和 To 两行 （发送时用 –from 和 –to 代替）<br>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">swaks --data ./email.txt --to 收件箱 --from 发件箱 --server smtp.qq.com -p 25 -au 发件箱 -ap SMTP密码</span><br></pre></td></tr></table></figure>
-
-<p>收件箱收到的是 email.txt 里的内容</p>
-<h3 id="好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数"><a href="#好了-到这就结束了-其实理论上-swaks-可以伪造邮件里的任何一个参数" class="headerlink" title="好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数"></a>好了,到这就结束了,其实理论上 swaks 可以伪造邮件里的任何一个参数</h3><h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>kali</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>kali</tag>
-        <tag>swaks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Manjaro安装后简单配置</title>
-    <url>/2019/06/01/linux/linux-manjaro/</url>
-    <content><![CDATA[<h2 id="一个相见恨晚的-Linux-操作系统"><a href="#一个相见恨晚的-Linux-操作系统" class="headerlink" title="一个相见恨晚的 Linux 操作系统"></a>一个相见恨晚的 Linux 操作系统</h2><p>Manjaro 到底有多受欢迎?</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统。</span><br><span class="line">( 如OpenSolaris、MINIX及BSD等 ) 的新闻、人气排名、以及其他一般信息等的网站。</span><br><span class="line">它包含了数百种发行版的信息。</span><br><span class="line">原文链接：https://distrowatch.com/table.php?distribution=manjaro</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/i3.png" alt="screenshot"></p>
-<h1 id="Manjaro-安装后简单配置"><a href="#Manjaro-安装后简单配置" class="headerlink" title="Manjaro 安装后简单配置"></a>Manjaro 安装后简单配置</h1><h2 id="1-添加-archlinuxcn-源"><a href="#1-添加-archlinuxcn-源" class="headerlink" title="1. 添加 archlinuxcn 源"></a>1. 添加 <code>archlinuxcn</code> 源</h2><p>编辑这个文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/pacman.conf</span><br></pre></td></tr></table></figure>
-
-<p>在文末添加以下内容,添加清华源,或者别的也行,里面有国内的一些软件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">SigLevel = Never</span><br><span class="line">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="variable">$arch</span></span><br></pre></td></tr></table></figure>
-
-<p>保存退出</p>
-<h4 id="按照地区自动更新为最快最稳定的软件源镜像地址"><a href="#按照地区自动更新为最快最稳定的软件源镜像地址" class="headerlink" title="按照地区自动更新为最快最稳定的软件源镜像地址"></a>按照地区自动更新为最快最稳定的软件源镜像地址</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman-mirrors -c China</span><br></pre></td></tr></table></figure>
-
-<h4 id="强制更新一下"><a href="#强制更新一下" class="headerlink" title="强制更新一下 :"></a>强制更新一下 :</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -Syyu</span><br></pre></td></tr></table></figure>
-
-<p>========================一路回车就行= = = = = = = = = = = = = = = = = = =</p>
-<h2 id="2-安装软件"><a href="#2-安装软件" class="headerlink" title="2.安装软件"></a>2.安装软件</h2><p>需要安装的软件 <code>pacman</code> 里基本都有</p>
-<h3 id="1-安装-vim"><a href="#1-安装-vim" class="headerlink" title="1.安装 vim"></a>1.安装 vim</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S vim</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-更换-shell"><a href="#2-更换-shell" class="headerlink" title="2.更换 shell"></a>2.更换 shell</h3><p>默认为 <code>bash</code>,我比较喜欢 <code>fish</code>,方便好用,配置也简单</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装fish</span><br><span class="line">sudo pacman -S fish</span><br><span class="line">---</span><br><span class="line">更改shell为fish</span><br><span class="line">chsh -s /usr/bin/fish</span><br><span class="line">---</span><br><span class="line">安装oh-my-fish(一个友好的shell)</span><br><span class="line">curl -L https://get.oh-my.fish | fish</span><br></pre></td></tr></table></figure>
-
-<h4 id="可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件"><a href="#可能国内原因-raw-githubusercontent-com-访问不了-安装-oh-my-fish-会失败-可以先尝试-clone-到本地再安装-或者添加-raw-githubusercontent-的-ip-到-hosts-文件" class="headerlink" title="可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件"></a>可能国内原因,raw.githubusercontent.com 访问不了,安装 oh-my-fish 会失败,可以先尝试 clone 到本地再安装,或者添加 raw.githubusercontent 的 ip 到 hosts 文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/oh-my-fish/oh-my-fish</span><br><span class="line"><span class="comment"># 如果你网不好,可以克隆镜像仓库(比如:https://github.com.cnpmjs.org/oh-my-fish/oh-my-fish)</span></span><br><span class="line"><span class="built_in">cd</span> oh-my-fish</span><br><span class="line">bin/install --offline</span><br></pre></td></tr></table></figure>
-
-<h4 id="简单配置一下-fish"><a href="#简单配置一下-fish" class="headerlink" title="简单配置一下 fish"></a>简单配置一下 fish</h4><p>终端输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">fish_config</span><br></pre></td></tr></table></figure>
-
-<p>然后它会自动打开浏览器</p>
-<h5 id="选一个主题，然后点set-theme"><a href="#选一个主题，然后点set-theme" class="headerlink" title="选一个主题，然后点set theme"></a>选一个主题，然后点<code>set theme</code></h5><p>在<code>promt</code>栏里选个提示符，然后点<code>promt set</code><br>然后就可以关闭浏览器了<br>回到终端，回车即可</p>
-<h3 id="3-安装-录屏软件（推荐simplescreenrecorder这个比较小）"><a href="#3-安装-录屏软件（推荐simplescreenrecorder这个比较小）" class="headerlink" title="3.安装 录屏软件（推荐simplescreenrecorder这个比较小）"></a>3.安装 录屏软件（推荐<code>simplescreenrecorder</code>这个比较小）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S simplescreenrecorder</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-安装-VScode"><a href="#4-安装-VScode" class="headerlink" title="4.安装 VScode"></a>4.安装 VScode</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S visual-studio-code-bin</span><br></pre></td></tr></table></figure>
-
-<p>或者</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S code</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-安装网易云音乐"><a href="#5-安装网易云音乐" class="headerlink" title="5.安装网易云音乐"></a>5.安装网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S netease-cloud-music</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="6-安装中文输入法"><a href="#6-安装中文输入法" class="headerlink" title="6.安装中文输入法"></a>6.安装中文输入法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx5 fcitx5-im fcitx5-rime</span><br><span class="line">sudo pacman -S fcitx5-material-color <span class="comment"># 主题</span></span><br><span class="line">sudo pacman -S fcitx5-configtool  <span class="comment"># 图形化配置界面</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h5 id="添加配置文件-xprofile-填入以下几句"><a href="#添加配置文件-xprofile-填入以下几句" class="headerlink" title="添加配置文件 ~/.xprofile 填入以下几句"></a>添加配置文件 <code>~/.xprofile</code> 填入以下几句</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> GTK_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> QT_IM_MODULE=fcitx5</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> XMODIFIERS=<span class="string">&quot;@im=fcitx5&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="然后重启-建议设置为开机让-fcitx5-自启"><a href="#然后重启-建议设置为开机让-fcitx5-自启" class="headerlink" title="然后重启 ( 建议设置为开机让 fcitx5 自启 )"></a>然后重启 ( 建议设置为开机让 <code>fcitx5</code> 自启 )</h5><h5 id="重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法"><a href="#重启后你应该会看见一个小键盘的图标-右击选-config-添加-rime-输入法-默认应该是-ctrl-space-切换输入法" class="headerlink" title="重启后你应该会看见一个小键盘的图标,右击选 config,添加 rime 输入法,默认应该是 ctrl+space 切换输入法"></a>重启后你应该会看见一个小键盘的图标,右击选 <code>config</code>,添加 <code>rime</code> 输入法,默认应该是 <code>ctrl+space</code> 切换输入法</h5><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/fcitx-configtool.png" alt="fcitx-configtool"></p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/manjaro/rime.png" alt="rime"></p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>manjaro</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>manjaro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux安装node环境以及cnpm</title>
-    <url>/2020/02/28/linux/linux-node/</url>
-    <content><![CDATA[<h3 id="其实我老早以前就发现-node-版本太高也不行"><a href="#其实我老早以前就发现-node-版本太高也不行" class="headerlink" title="其实我老早以前就发现 node 版本太高也不行"></a>其实我老早以前就发现 node 版本太高也不行</h3><h4 id="以往的版本下载地址-https-nodejs-org-zh-cn-download-releases"><a href="#以往的版本下载地址-https-nodejs-org-zh-cn-download-releases" class="headerlink" title="以往的版本下载地址: https://nodejs.org/zh-cn/download/releases/"></a>以往的版本下载地址: <a href="https://nodejs.org/zh-cn/download/releases/">https://nodejs.org/zh-cn/download/releases/</a></h4><h1 id="下载并解压到-usr-local-下"><a href="#下载并解压到-usr-local-下" class="headerlink" title="下载并解压到 /usr/local/ 下"></a>下载并解压到 <code>/usr/local/</code> 下</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/node.png" alt="node"></p>
-<h1 id="设置全局"><a href="#设置全局" class="headerlink" title="设置全局"></a>设置全局</h1><h3 id="直接链接过-记得版本对应改一下"><a href="#直接链接过-记得版本对应改一下" class="headerlink" title="直接链接过,记得版本对应改一下"></a>直接链接过,记得版本对应改一下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># node</span></span><br><span class="line"></span><br><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/node /usr/<span class="built_in">local</span>/bin/node</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="comment"># npm</span></span><br><span class="line"></span><br><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/npm /usr/<span class="built_in">local</span>/bin/npm</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装-taobao-的-cnpm-更快"><a href="#安装-taobao-的-cnpm-更快" class="headerlink" title="安装 taobao 的 cnpm (更快)"></a>安装 taobao 的 cnpm (更快)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<h3 id="添加到全局"><a href="#添加到全局" class="headerlink" title="添加到全局"></a>添加到全局</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/node-v12.12.0-linux-x64/bin/cnpm /usr/<span class="built_in">local</span>/bin/cnpm</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/node/version.png" alt="version"></p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>node</category>
-      </categories>
-      <tags>
-        <tag>node</tag>
-        <tag>cnpm</tag>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ArchLinux 双显卡方案</title>
-    <url>/2021/04/28/linux/linux-nvidia/</url>
-    <content><![CDATA[<div class="note warning no-icon flat"><p><strong>如果开机进不去桌面, 可以尝试按 <code>ctrl</code>+<code>alt</code>+<code>F2 ~ F6</code>, <code>Linux</code> 默认有好几个 <code>tty</code> 终端, <code>F1</code> 到 <code>F6</code> 应该都能进去, 开机默认是 <code>tty1</code></strong></p>
-</div>
-
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/nvidia/fuck-nvidia.jpeg" alt="Fuck NVIDIA"></p>
-<h1 id="So-NVIDIA-Fuck-You"><a href="#So-NVIDIA-Fuck-You" class="headerlink" title="So NVIDIA ~ Fuck You !"></a>So NVIDIA ~ Fuck You !</h1><p>之前因为装 <code>NVIDIA</code> 驱动 , <code>sddm</code> 进不去了 , 之后几经周折 , 我已把它拿下 , 即使他挂了 , 我也能让他起死回生 (开玩笑,开玩笑 ~ ~ ~ )</p>
-<h1 id="1-如果你不打算折腾-只想用-intel-核显"><a href="#1-如果你不打算折腾-只想用-intel-核显" class="headerlink" title="1.如果你不打算折腾,只想用 intel 核显"></a>1.如果你不打算折腾,只想用 <code>intel</code> 核显</h1><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo pacman -S xf86-video-intel</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-intel-nvidia-双显卡切换"><a href="#2-intel-nvidia-双显卡切换" class="headerlink" title="2.intel + nvidia 双显卡切换"></a>2.<code>intel</code> + <code>nvidia</code> 双显卡切换</h1><h2 id="方案-1"><a href="#方案-1" class="headerlink" title="方案 (1)"></a>方案 (1)</h2><h3 id="安装-大黄蜂-和-依赖"><a href="#安装-大黄蜂-和-依赖" class="headerlink" title="安装 大黄蜂 和 依赖"></a>安装 大黄蜂 和 依赖</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo pacman -S bumblebee bbswitch nvidia opencl-nvidia lib32-nvidia-utils lib32-opencl-nvidia mesa lib32-mesa-libgl xf86-video-intel</span><br></pre></td></tr></table></figure>
-
-<h3 id="把当前用户添加到-bumblebee-组里-username-对应当前用户名"><a href="#把当前用户添加到-bumblebee-组里-username-对应当前用户名" class="headerlink" title="把当前用户添加到 bumblebee 组里, username 对应当前用户名"></a>把当前用户添加到 <code>bumblebee</code> 组里, <code>username</code> 对应当前用户名</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo gpasswd -a username bumblebee</span><br></pre></td></tr></table></figure>
-
-<h3 id="配置-bumblebee-编辑下面这个文件"><a href="#配置-bumblebee-编辑下面这个文件" class="headerlink" title="配置 bumblebee, 编辑下面这个文件"></a>配置 <code>bumblebee</code>, 编辑下面这个文件</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">/etc/bumblebee/bumblebee.conf</span><br></pre></td></tr></table></figure>
-
-<p><strong>修改两处</strong></p>
-<ol>
-<li>设置 <code>Driver</code> 为 <code>nvidia</code>, 大概在第 <code>22</code> 行</li>
-</ol>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">Driver=nvidia</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>电源管理设置为 <code>bbswitch</code>, 默认是 <code>auto</code>, 大概在 <code>57</code> 行</li>
-</ol>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">PMMethod=bbswitch</span><br></pre></td></tr></table></figure>
-
-<h3 id="设置为开机自启"><a href="#设置为开机自启" class="headerlink" title="设置为开机自启"></a>设置为开机自启</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> bumblebeed</span><br></pre></td></tr></table></figure>
-
-<h3 id="然后重启"><a href="#然后重启" class="headerlink" title="然后重启"></a>然后重启</h3><p>重启后在终端输入 <code>nvidia-smi</code> 可以显示正在使用 <code>NVIDIA</code> 的进程</p>
-<h2 id="方案-2"><a href="#方案-2" class="headerlink" title="方案 (2)"></a>方案 (2)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo pacman -S nvidia bbswitch</span><br><span class="line">sudo pacman -S optimus-manager-qt-kde  (这个包好像不在 pacman 管理的源里, 直接用 <span class="string">&#x27;AUR&#x27;</span>, 我直接 <span class="string">&#x27;yay -S optimus-manager-qt&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><strong>如果安装 <code>optimus-manager-qt</code> 最后提示编译失败,重新安装 <code>base-devel</code> 就行,好像是在那里面,也没准是之前我少装了什么包,最后重启</strong></p>
-<h3 id="重启后打开optimus-manager-qt"><a href="#重启后打开optimus-manager-qt" class="headerlink" title="重启后打开optimus-manager-qt"></a>重启后打开<code>optimus-manager-qt</code></h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/nvidia/optimus-manager-qt.png" alt="optimus-manager-qt"></p>
-<h3 id="右击可以切换模式"><a href="#右击可以切换模式" class="headerlink" title="右击可以切换模式"></a>右击可以切换模式</h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/nvidia/optimus-manager-qt-icon.png" alt="optimus-manager-at-icon"></p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>arch</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>arch</tag>
-        <tag>nvidia</tag>
-        <tag>bbswitch</tag>
-        <tag>optimus-manager</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 终端走代理</title>
-    <url>/2021/11/09/linux/linux-proxy/</url>
-    <content><![CDATA[<!-- <div class="note info flat"><p><strong>可以吧代理设置写入当前终端环境的 <code>rc</code> 文件或者在当前终端执行 ( 只作用在当前终端, 比较推荐 )</strong></p>
-</div> -->
-
-<h1 id="在当前终端执行"><a href="#在当前终端执行" class="headerlink" title="在当前终端执行"></a>在当前终端执行</h1><p>假设端口是 <code>2000</code>, 且是 <code>socks5</code> 协议</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> ALL_PROXY=socks5://127.0.0.1:2000</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>更换 grub 主题</title>
-    <url>/2020/06/02/linux/linux-setGrubTheme/</url>
-    <content><![CDATA[<h4 id="默认的-grub-界面比较简陋"><a href="#默认的-grub-界面比较简陋" class="headerlink" title="默认的 grub 界面比较简陋"></a>默认的 grub 界面比较简陋</h4><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/setGrubTheme/grub.jpeg" alt="grubThemes"></p>
-<p>然后突然有想法了,想换个主题</p>
-<h1 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h1><h2 id="1-下载-grub-主题包"><a href="#1-下载-grub-主题包" class="headerlink" title="1.下载 grub 主题包"></a>1.下载 grub 主题包</h2><blockquote>
-<h3 id="去这个地址下载主题-应该是这个地址-：-https-www-gnome-look-org-browse-cat-109-order-latest"><a href="#去这个地址下载主题-应该是这个地址-：-https-www-gnome-look-org-browse-cat-109-order-latest" class="headerlink" title="去这个地址下载主题(应该是这个地址)： https://www.gnome-look.org/browse/cat/109/order/latest/"></a>去这个地址下载主题(应该是这个地址)： <a href="https://www.gnome-look.org/browse/cat/109/order/latest/">https://www.gnome-look.org/browse/cat/109/order/latest/</a></h3></blockquote>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/setGrubTheme/grubThemes.png" alt="grubThemes"></p>
-<p>比如这个主题<br><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/setGrubTheme/preview.gif" alt="grub"></p>
-<h3 id="点击-Files"><a href="#点击-Files" class="headerlink" title="点击 Files"></a>点击 <code>Files</code></h3><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/setGrubTheme/files.png" alt="files"></p>
-<h2 id="2-配置-grub"><a href="#2-配置-grub" class="headerlink" title="2.配置 grub"></a>2.配置 grub</h2><h3 id="自动安装"><a href="#自动安装" class="headerlink" title="自动安装"></a>自动安装</h3><p>每个主题包里应该都有 <code>README.md</code> 文件,当然你完全可以按照他说明的做</p>
-<p>把整个解压的文件夹放到：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/boot/grub/themes/</span><br></pre></td></tr></table></figure>
-
-<h4 id="好像大部分的主题包里都有一个-install-sh-文件-直接运行它也行-推荐"><a href="#好像大部分的主题包里都有一个-install-sh-文件-直接运行它也行-推荐" class="headerlink" title="好像大部分的主题包里都有一个 install.sh 文件 ,直接运行它也行 推荐"></a>好像大部分的主题包里都有一个 <code>install.sh</code> 文件 ,直接运行它也行 <span id="green-block">推荐</span></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">给它可执行权限</span><br><span class="line">sudo chmod +x install.sh</span><br><span class="line">---</span><br><span class="line">运行</span><br><span class="line">sudo ./install.sh</span><br></pre></td></tr></table></figure>
-
-<h3 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h3><h4 id="如果是-Debian-系的，直接安装-grub-customizer："><a href="#如果是-Debian-系的，直接安装-grub-customizer：" class="headerlink" title="如果是 Debian 系的，直接安装 grub-customizer："></a>如果是 Debian 系的，直接安装 grub-customizer：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install grub-customizer</span><br></pre></td></tr></table></figure>
-
-<h4 id="或者编辑这个文件-推荐-："><a href="#或者编辑这个文件-推荐-：" class="headerlink" title="或者编辑这个文件 推荐 ："></a>或者编辑这个文件 <span id="green-block">推荐</span> ：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/default/grub</span><br></pre></td></tr></table></figure>
-
-<h4 id="添加下面一行："><a href="#添加下面一行：" class="headerlink" title="添加下面一行："></a>添加下面一行：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">GRUB_THEME=<span class="string">&quot;/boot/grub/themes/主题包名/theme.txt&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-更新-grub"><a href="#3-更新-grub" class="headerlink" title="3.更新 grub"></a>3.更新 grub</h3><h4 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo update-grub</span><br></pre></td></tr></table></figure>
-
-<h4 id="或者"><a href="#或者" class="headerlink" title="或者"></a>或者</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure>
-
-<p>主题包里面的背景图片和图标可自定义</p>
-<p>完事~</p>
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>grub</tag>
       </tags>
   </entry>
   <entry>

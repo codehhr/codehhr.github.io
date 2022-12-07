@@ -1,9 +1,11 @@
 window.onload = function () {
-  document.querySelectorAll("a").forEach((a) => {
-    if (/ssl/.test(a.href)) {
-      a.click();
+  let nodeAList = document.querySelectorAll("a");
+  for (let index = 0; index < nodeAList.length; index++) {
+    if (/ssl/.test(nodeAList[index].href)) {
+      nodeAList[index].click();
+      break;
     }
-  });
+  }
 };
 
 // $(document).ready(function () {});

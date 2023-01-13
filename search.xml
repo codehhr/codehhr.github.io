@@ -1363,28 +1363,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ES7 中的 Async/await</title>
-    <url>/2021/06/25/js/es7-async-await/</url>
-    <content><![CDATA[<h1 id="Async-await"><a href="#Async-await" class="headerlink" title="Async/await"></a>Async/await</h1><h2 id="为什么要有-Async-await"><a href="#为什么要有-Async-await" class="headerlink" title="为什么要有 Async/await ?"></a>为什么要有 Async/await ?</h2><p><code>Promise</code> 虽然跳出了异步嵌套的怪圈 , 解决了回调地狱的问题 , 用链式表达更加清晰 , 但是我们也发现如果有大量的异步请求的时候 , 流程复杂的情况下 , 会发现充满了屏幕的 <code>then</code> , 看起来非常吃力 , 而 <code>ES7</code> 的 <code>Async/Await</code> 的出现就是为了解决这种复杂的情况</p>
-<h2 id="Async-await-的基本使用"><a href="#Async-await-的基本使用" class="headerlink" title="Async/await 的基本使用"></a>Async/await 的基本使用</h2><p><code>async</code> 用于申明一个 <code>function</code> 是异步的 , 返回一个 <code>promise</code> 对象 , 而 <code>await</code> 可以认为是 <code>async wait</code> 的简写 , 等待一个异步方法执行完成 , <code>async</code> 必须声明的是一个 <code>function</code> , <code>await</code> 必须在声明的函数内部使用</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// async 用于声明一个 function 是异步的 , 返回一个 Promise 对象</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">demo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;我是 async 声明的异步函数&quot;</span>);</span><br><span class="line">  &#125;, <span class="number">3000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="string">&quot;我是 async 声明的异步函数的返回值&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line">demo();</span><br><span class="line"><span class="built_in">console</span>.log(demo());</span><br><span class="line">demo().then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印结果:</span></span><br><span class="line"><span class="comment">//  Promise &#123;&lt;fulfilled&gt;: &quot;我是 async 声明的异步函数的返回值&quot;&#125;</span></span><br><span class="line"><span class="comment">//  我是 async 声明的异步函数的返回值</span></span><br><span class="line"><span class="comment">//  我是 async 声明的异步函数 ( 调用了三次,打印了三遍 )</span></span><br></pre></td></tr></table></figure>
-
-<p><code>await</code> 可以认为是 <code>async wait</code> 的简写 , <code>await</code> 必须在声明的函数内部使用 , 不能单独使用<br><code>await</code> 等待的虽然是 <code>Promise</code> 对象 , 但不必写 <code>.then()</code> , 直接可以得到返回值</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">demo2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> res = <span class="keyword">await</span> <span class="built_in">Promise</span>.resolve(<span class="number">123</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(res);</span><br><span class="line">&#125;</span><br><span class="line">demo2();</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>js</category>
-        <category>ES7</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>javascript</tag>
-        <tag>ES6</tag>
-        <tag>async</tag>
-        <tag>await</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>var 与 ES6 中的 let const 的区别</title>
     <url>/2021/06/29/js/es6-var-let-const/</url>
     <content><![CDATA[<h1 id="let-const-var-定义变量的区别是什么"><a href="#let-const-var-定义变量的区别是什么" class="headerlink" title="let const var 定义变量的区别是什么"></a>let const var 定义变量的区别是什么</h1><ul>
@@ -1424,6 +1402,28 @@
         <tag>var</tag>
         <tag>const</tag>
         <tag>jsvascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ES7 中的 Async/await</title>
+    <url>/2021/06/25/js/es7-async-await/</url>
+    <content><![CDATA[<h1 id="Async-await"><a href="#Async-await" class="headerlink" title="Async/await"></a>Async/await</h1><h2 id="为什么要有-Async-await"><a href="#为什么要有-Async-await" class="headerlink" title="为什么要有 Async/await ?"></a>为什么要有 Async/await ?</h2><p><code>Promise</code> 虽然跳出了异步嵌套的怪圈 , 解决了回调地狱的问题 , 用链式表达更加清晰 , 但是我们也发现如果有大量的异步请求的时候 , 流程复杂的情况下 , 会发现充满了屏幕的 <code>then</code> , 看起来非常吃力 , 而 <code>ES7</code> 的 <code>Async/Await</code> 的出现就是为了解决这种复杂的情况</p>
+<h2 id="Async-await-的基本使用"><a href="#Async-await-的基本使用" class="headerlink" title="Async/await 的基本使用"></a>Async/await 的基本使用</h2><p><code>async</code> 用于申明一个 <code>function</code> 是异步的 , 返回一个 <code>promise</code> 对象 , 而 <code>await</code> 可以认为是 <code>async wait</code> 的简写 , 等待一个异步方法执行完成 , <code>async</code> 必须声明的是一个 <code>function</code> , <code>await</code> 必须在声明的函数内部使用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// async 用于声明一个 function 是异步的 , 返回一个 Promise 对象</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">demo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;我是 async 声明的异步函数&quot;</span>);</span><br><span class="line">  &#125;, <span class="number">3000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="string">&quot;我是 async 声明的异步函数的返回值&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line">demo();</span><br><span class="line"><span class="built_in">console</span>.log(demo());</span><br><span class="line">demo().then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印结果:</span></span><br><span class="line"><span class="comment">//  Promise &#123;&lt;fulfilled&gt;: &quot;我是 async 声明的异步函数的返回值&quot;&#125;</span></span><br><span class="line"><span class="comment">//  我是 async 声明的异步函数的返回值</span></span><br><span class="line"><span class="comment">//  我是 async 声明的异步函数 ( 调用了三次,打印了三遍 )</span></span><br></pre></td></tr></table></figure>
+
+<p><code>await</code> 可以认为是 <code>async wait</code> 的简写 , <code>await</code> 必须在声明的函数内部使用 , 不能单独使用<br><code>await</code> 等待的虽然是 <code>Promise</code> 对象 , 但不必写 <code>.then()</code> , 直接可以得到返回值</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">demo2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> res = <span class="keyword">await</span> <span class="built_in">Promise</span>.resolve(<span class="number">123</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(res);</span><br><span class="line">&#125;</span><br><span class="line">demo2();</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>js</category>
+        <category>ES7</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>javascript</tag>
+        <tag>ES6</tag>
+        <tag>async</tag>
+        <tag>await</tag>
       </tags>
   </entry>
   <entry>
@@ -3083,58 +3083,6 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
-    <title>VMware 安装 CentOS7 后的简单配置</title>
-    <url>/2020/10/06/linux/linux-centos/</url>
-    <content><![CDATA[<h1 id="1-连网"><a href="#1-连网" class="headerlink" title="1.连网"></a>1.连网</h1><p>如果能连网,跳过此步<br>试着 ping 一下百度</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping baidu.com</span><br></pre></td></tr></table></figure>
-
-<h2 id="动态分配-IP"><a href="#动态分配-IP" class="headerlink" title="动态分配 IP"></a>动态分配 IP</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure>
-
-<p>记得前面加上 <code>sudo</code> ,其实你不加根本编辑不了,哈哈哈哈哈哈 !<br>后面的 <code>ens33</code> 可能不太一样,是网卡名,输入的时候按 <code>Tab</code> 补全就行了</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/dhcp.png" alt="dhcp"></p>
-<p>如上图所示需要改动两个地方</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">BOOTPROTO=dhcp</span><br><span class="line">ONBOOT=yes</span><br></pre></td></tr></table></figure>
-
-<p>顺便说一下<code>vim</code>这个编辑器,按<code>i</code>,<code>o</code>,<code>I</code>,<code>A</code>都可以进入插入模式，退出保存先按<code>esc</code>,然后按 <code>ZZ</code> (大写的) 就可以了,或者按 <code>esc</code> 后输入<code>:wq</code>再按回车</p>
-<p>然后重启网络服务</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart network</span><br></pre></td></tr></table></figure>
-
-<p>输入<code>ip addr</code>可以查看 ip,试着 ping 一下 baidu ,已经有网了</p>
-<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/ipaddr.png" alt="ipaddr"></p>
-<h1 id="2-换为国内软件源-方便快速下载-其实有好几种方式"><a href="#2-换为国内软件源-方便快速下载-其实有好几种方式" class="headerlink" title="2.换为国内软件源,方便快速下载(其实有好几种方式)"></a>2.换为国内软件源,方便快速下载(其实有好几种方式)</h1><blockquote>
-<h2 id="作为参考-https-mirrors-cnnic-cn-help-centos"><a href="#作为参考-https-mirrors-cnnic-cn-help-centos" class="headerlink" title="作为参考: https://mirrors.cnnic.cn/help/centos/"></a>作为参考: <a href="https://mirrors.cnnic.cn/help/centos/">https://mirrors.cnnic.cn/help/centos/</a></h2></blockquote>
-<h2 id="可以先把原来的源文件备份一下"><a href="#可以先把原来的源文件备份一下" class="headerlink" title="可以先把原来的源文件备份一下"></a>可以先把原来的源文件备份一下</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</span><br></pre></td></tr></table></figure>
-
-<h2 id="下载阿里和网易的-CentOS-Base-repo"><a href="#下载阿里和网易的-CentOS-Base-repo" class="headerlink" title="下载阿里和网易的 CentOS-Base.repo"></a>下载阿里和网易的 CentOS-Base.repo</h2><h3 id="我用的-CentOS-7"><a href="#我用的-CentOS-7" class="headerlink" title="我用的 CentOS-7"></a>我用的 CentOS-7</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line">或者</span><br><span class="line">sudo curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.<span class="built_in">help</span>/CentOS7-Base-163.repo</span><br></pre></td></tr></table></figure>
-
-<h2 id="清除-yum-缓存并生成新的-yum-缓存"><a href="#清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="清除 yum 缓存并生成新的 yum 缓存"></a>清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装-epel-源"><a href="#安装-epel-源" class="headerlink" title="安装 epel 源"></a>安装 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum list | grep epel-release</span><br><span class="line">sudo yum install -y epel-release</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用阿里镜像提供的-epel-源"><a href="#使用阿里镜像提供的-epel-源" class="headerlink" title="使用阿里镜像提供的 epel 源"></a>使用阿里镜像提供的 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/epel-7.repo http://mirrors.aliyun.com/repo/epel-7.repo</span><br></pre></td></tr></table></figure>
-
-<h2 id="重新清除-yum-缓存并生成新的-yum-缓存"><a href="#重新清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="重新清除 yum 缓存并生成新的 yum 缓存"></a>重新清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
-
-<h2 id="系统升级"><a href="#系统升级" class="headerlink" title="系统升级"></a>系统升级</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y update</span><br></pre></td></tr></table></figure>
-
-<p>会更新所有软件<br><code>-y</code>可选,加上会同意所有项,即默认 <code>yes</code></p>
-<h1 id="3-安装-卸载软件"><a href="#3-安装-卸载软件" class="headerlink" title="3.安装,卸载软件"></a>3.安装,卸载软件</h1><p>比如安装<code>git</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y install git</span><br></pre></td></tr></table></figure>
-
-<p>卸载 <code>git</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y remove git</span><br></pre></td></tr></table></figure>
-
-<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>CentOS</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>CentOS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Js 基础总结及案例</title>
     <url>/2021/05/13/js/js/</url>
     <content><![CDATA[<h1 id="一-JavaScript-介绍"><a href="#一-JavaScript-介绍" class="headerlink" title="一. JavaScript 介绍"></a>一. JavaScript 介绍</h1><h2 id="1-、JavaScript-是什么"><a href="#1-、JavaScript-是什么" class="headerlink" title="(1) 、JavaScript 是什么"></a>(1) 、JavaScript 是什么</h2><h3 id="1-JavaScript-的历史"><a href="#1-JavaScript-的历史" class="headerlink" title="1. JavaScript 的历史"></a>1. JavaScript 的历史</h3><p>Netscape（网景）在最初将其脚本语言命名为 LiveScript，是布兰登.艾克发明的。后来 Netscape 在与 Sun 合作之后将其改名为 JavaScript。JavaScript 最初受 Java 启发而开始设计的，目的之一就是“看上去像 Java”，因此语法上有类似之处，一些名称和命名规范也借自 Java。JavaScript 与 Java 名称上的近似，是当时 Netscape 为了营销考虑与 Sun 微系统达成协议的结果。</p>
@@ -3468,6 +3416,58 @@ echartsDraggable();
       </tags>
   </entry>
   <entry>
+    <title>VMware 安装 CentOS7 后的简单配置</title>
+    <url>/2020/10/06/linux/linux-centos/</url>
+    <content><![CDATA[<h1 id="1-连网"><a href="#1-连网" class="headerlink" title="1.连网"></a>1.连网</h1><p>如果能连网,跳过此步<br>试着 ping 一下百度</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping baidu.com</span><br></pre></td></tr></table></figure>
+
+<h2 id="动态分配-IP"><a href="#动态分配-IP" class="headerlink" title="动态分配 IP"></a>动态分配 IP</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure>
+
+<p>记得前面加上 <code>sudo</code> ,其实你不加根本编辑不了,哈哈哈哈哈哈 !<br>后面的 <code>ens33</code> 可能不太一样,是网卡名,输入的时候按 <code>Tab</code> 补全就行了</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/dhcp.png" alt="dhcp"></p>
+<p>如上图所示需要改动两个地方</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">BOOTPROTO=dhcp</span><br><span class="line">ONBOOT=yes</span><br></pre></td></tr></table></figure>
+
+<p>顺便说一下<code>vim</code>这个编辑器,按<code>i</code>,<code>o</code>,<code>I</code>,<code>A</code>都可以进入插入模式，退出保存先按<code>esc</code>,然后按 <code>ZZ</code> (大写的) 就可以了,或者按 <code>esc</code> 后输入<code>:wq</code>再按回车</p>
+<p>然后重启网络服务</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart network</span><br></pre></td></tr></table></figure>
+
+<p>输入<code>ip addr</code>可以查看 ip,试着 ping 一下 baidu ,已经有网了</p>
+<p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/centos/ipaddr.png" alt="ipaddr"></p>
+<h1 id="2-换为国内软件源-方便快速下载-其实有好几种方式"><a href="#2-换为国内软件源-方便快速下载-其实有好几种方式" class="headerlink" title="2.换为国内软件源,方便快速下载(其实有好几种方式)"></a>2.换为国内软件源,方便快速下载(其实有好几种方式)</h1><blockquote>
+<h2 id="作为参考-https-mirrors-cnnic-cn-help-centos"><a href="#作为参考-https-mirrors-cnnic-cn-help-centos" class="headerlink" title="作为参考: https://mirrors.cnnic.cn/help/centos/"></a>作为参考: <a href="https://mirrors.cnnic.cn/help/centos/">https://mirrors.cnnic.cn/help/centos/</a></h2></blockquote>
+<h2 id="可以先把原来的源文件备份一下"><a href="#可以先把原来的源文件备份一下" class="headerlink" title="可以先把原来的源文件备份一下"></a>可以先把原来的源文件备份一下</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</span><br></pre></td></tr></table></figure>
+
+<h2 id="下载阿里和网易的-CentOS-Base-repo"><a href="#下载阿里和网易的-CentOS-Base-repo" class="headerlink" title="下载阿里和网易的 CentOS-Base.repo"></a>下载阿里和网易的 CentOS-Base.repo</h2><h3 id="我用的-CentOS-7"><a href="#我用的-CentOS-7" class="headerlink" title="我用的 CentOS-7"></a>我用的 CentOS-7</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line">或者</span><br><span class="line">sudo curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.<span class="built_in">help</span>/CentOS7-Base-163.repo</span><br></pre></td></tr></table></figure>
+
+<h2 id="清除-yum-缓存并生成新的-yum-缓存"><a href="#清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="清除 yum 缓存并生成新的 yum 缓存"></a>清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-epel-源"><a href="#安装-epel-源" class="headerlink" title="安装 epel 源"></a>安装 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum list | grep epel-release</span><br><span class="line">sudo yum install -y epel-release</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用阿里镜像提供的-epel-源"><a href="#使用阿里镜像提供的-epel-源" class="headerlink" title="使用阿里镜像提供的 epel 源"></a>使用阿里镜像提供的 epel 源</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/epel-7.repo http://mirrors.aliyun.com/repo/epel-7.repo</span><br></pre></td></tr></table></figure>
+
+<h2 id="重新清除-yum-缓存并生成新的-yum-缓存"><a href="#重新清除-yum-缓存并生成新的-yum-缓存" class="headerlink" title="重新清除 yum 缓存并生成新的 yum 缓存"></a>重新清除 yum 缓存并生成新的 yum 缓存</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
+
+<h2 id="系统升级"><a href="#系统升级" class="headerlink" title="系统升级"></a>系统升级</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y update</span><br></pre></td></tr></table></figure>
+
+<p>会更新所有软件<br><code>-y</code>可选,加上会同意所有项,即默认 <code>yes</code></p>
+<h1 id="3-安装-卸载软件"><a href="#3-安装-卸载软件" class="headerlink" title="3.安装,卸载软件"></a>3.安装,卸载软件</h1><p>比如安装<code>git</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y install git</span><br></pre></td></tr></table></figure>
+
+<p>卸载 <code>git</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum -y remove git</span><br></pre></td></tr></table></figure>
+
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The_End"></a>The_End</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>CentOS</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>CentOS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Kali 下用 swaks 发送邮件</title>
     <url>/2019/06/01/linux/linux-kaliSwaks/</url>
     <content><![CDATA[<h1 id="kali-下的邮件发送工具-swaks"><a href="#kali-下的邮件发送工具-swaks" class="headerlink" title="kali 下的邮件发送工具 swaks"></a>kali 下的邮件发送工具 swaks</h1><p><img src="https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/kali/kali.jpg" alt="kali.jpg"></p>
@@ -3641,8 +3641,8 @@ echartsDraggable();
   <entry>
     <title>Linux 终端走代理</title>
     <url>/2021/11/09/linux/linux-proxy/</url>
-    <content><![CDATA[<!-- <div class="note info flat"><p><strong>可以吧代理设置写入当前终端环境的 <code>rc</code> 文件或者在当前终端执行 ( 只作用在当前终端, 比较推荐 )</strong></p>
-</div> -->
+    <content><![CDATA[<div class="note info flat"><p><strong>可以把代理设置写入当前终端环境的 <code>rc</code> 文件或者在当前终端执行 ( 只作用在当前终端, 临时使用比较推荐 )</strong></p>
+</div>
 
 <h1 id="在当前终端执行"><a href="#在当前终端执行" class="headerlink" title="在当前终端执行"></a>在当前终端执行</h1><p>假设端口是 <code>2000</code>, 且是 <code>socks5</code> 协议</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> ALL_PROXY=socks5://127.0.0.1:2000</span><br></pre></td></tr></table></figure>
